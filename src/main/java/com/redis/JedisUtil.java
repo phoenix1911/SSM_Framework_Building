@@ -1,65 +1,43 @@
 package com.redis;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
 
 /**
  * Created by Tjl on 2019/3/14 10:59.
  */
+@Component
+public class JedisUtil {
 
+    //spring的@Autowired不能用在静态里 可以使用set方法
+    private static JedisPool jedisPool;
 
+    @Autowired
+    public void setJedisPool(JedisPool setjedisPool) {
+        JedisUtil.jedisPool = setjedisPool;
+    }
 
-    public class JedisUtil {
-        private static String ADDR = "127.0.01";
-        private static int PORT = 6379;
-//        private static String AUTH = "redis";
-
-        private static int MAX_ACTIVE = 1024;
-
-        private static int MAX_IDLE = 200;
-
-        private static int MAX_WAIT = 10000;
-
-        private static int TIMEOUT = 10000;
-
-        private static boolean TEST_ON_BORROW = true;
-
-        private static JedisPool jedisPool = null;
-
-        static {
-            try{
-                JedisPoolConfig config = new JedisPoolConfig();
-                config.setMaxIdle(MAX_IDLE);
-                config.setMaxTotal(3000);
-                config.setMaxWaitMillis(MAX_WAIT);
-                config.setTestOnBorrow(TEST_ON_BORROW);
-                jedisPool = new JedisPool(config,ADDR,PORT,TIMEOUT);
-            }catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-
-        public synchronized static Jedis getJedis(){
-            try{
-                if(jedisPool != null){
-                    Jedis jedis = jedisPool.getResource();
-//                    选择第几个库
-                    jedis.select(3);
-                    return jedis;
-                }else{
-                    return null;
-                }
-            }catch (Exception e) {
-                e.printStackTrace();
+    synchronized static Jedis getJedis() {
+        Jedis jedis = null;
+        try {
+            if (jedisPool != null) {
+                jedis = jedisPool.getResource();
+                return jedis;
+            } else {
                 return null;
             }
-        }
-
-        public static void returnResource(final Jedis jedis){
-            if(jedis != null){
-                jedisPool.returnResource(jedis);
-            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
     }
+
+    public static void returnResource(final Jedis jedis) {
+        if (jedis != null) {
+            jedisPool.returnResource(jedis);
+        }
+    }
+}
 

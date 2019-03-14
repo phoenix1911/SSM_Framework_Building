@@ -4,6 +4,7 @@ import com.hand.bean.City;
 
 import java.util.List;
 
+
 public interface CityMapper {
 
     int deleteByPrimaryKey(Integer id);

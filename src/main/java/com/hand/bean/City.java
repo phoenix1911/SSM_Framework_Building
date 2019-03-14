@@ -1,8 +1,13 @@
 package com.hand.bean;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
+@Entity
+@Table
 public class City implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
