@@ -1,8 +1,8 @@
-package com.hand.service.serviceImpl;
+package com.jialong.testssm.service.serviceImpl;
 
-import com.hand.bean.City;
-import com.hand.dao.CityMapper;
-import com.hand.service.CityService;
+import com.jialong.testssm.bean.City;
+import com.jialong.testssm.mapper.CityMapper;
+import com.jialong.testssm.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

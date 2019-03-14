@@ -28,7 +28,6 @@
     <context:component-scan base-package="**.service"/>
     <context:component-scan base-package="**.redis"/>
 
-    <import resource="classpath:spring-redis.xml"/>
 
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
     <!-- 输出对象转JSON支持   -->

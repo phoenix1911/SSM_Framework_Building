@@ -1,6 +1,6 @@
-package com.hand.dao;
+package com.jialong.testssm.mapper;
 
-import com.hand.bean.City;
+import com.jialong.testssm.bean.City;
 
 import java.util.List;
 

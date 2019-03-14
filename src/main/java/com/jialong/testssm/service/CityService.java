@@ -1,6 +1,6 @@
-package com.hand.service;
+package com.jialong.testssm.service;
 
-import com.hand.bean.City;
+import com.jialong.testssm.bean.City;
 
 import java.util.List;
 

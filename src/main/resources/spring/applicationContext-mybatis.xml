@@ -16,7 +16,7 @@
 
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:jdbc.properties" />
+        <property name="location" value="classpath:config.properties" />
     </bean>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
@@ -54,7 +54,7 @@
                 </bean>
             </array>
         </property>
-        <property name="configLocation" value="classpath:mybatis-configuraation.xml"></property>
+        <property name="configLocation" value="classpath:mybatis-configuration.xml"></property>
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->

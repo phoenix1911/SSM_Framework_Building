@@ -1,4 +1,4 @@
-package com.hand.bean;
+package com.jialong.testssm.bean;
 
 import javax.persistence.*;
 import java.io.Serializable;

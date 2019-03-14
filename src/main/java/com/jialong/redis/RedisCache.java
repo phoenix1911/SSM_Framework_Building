@@ -1,4 +1,4 @@
-package com.redis;
+package com.jialong.redis;
 
 /**
  * Created by Tjl on 2019/3/14 11:00.

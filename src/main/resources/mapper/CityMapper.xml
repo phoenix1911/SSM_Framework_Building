@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.hand.dao.CityMapper" >
-  <cache type="com.redis.RedisCache" />
-  <resultMap id="CityResult" type="com.hand.bean.City" >
+<mapper namespace="com.jialong.testssm.mapper.CityMapper" >
+  <cache type="com.jialong.redis.RedisCache" />
+  <resultMap id="CityResult" type="com.jialong.testssm.bean.City" >
     <id column="ID" property="id" jdbcType="INTEGER" />
     <result column="Name" property="name" jdbcType="CHAR" />
     <result column="CountryCode" property="countrycode" jdbcType="CHAR" />
@@ -25,13 +25,13 @@
     delete from city
     where ID = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.hand.bean.City" >
+  <insert id="insert" parameterType="com.jialong.testssm.bean.City" >
     insert into city (ID, Name, CountryCode,
       District, Population)
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=CHAR}, #{countrycode,jdbcType=CHAR},
       #{district,jdbcType=CHAR}, #{population,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.hand.bean.City" >
+  <insert id="insertSelective" parameterType="com.jialong.testssm.bean.City" >
     insert into city
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -68,7 +68,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.hand.bean.City" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.jialong.testssm.bean.City" >
     update city
     <set >
       <if test="name != null" >
@@ -86,7 +86,7 @@
     </set>
     where ID = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.hand.bean.City" >
+  <update id="updateByPrimaryKey" parameterType="com.jialong.testssm.bean.City" >
     update city
     set Name = #{name,jdbcType=CHAR},
       CountryCode = #{countrycode,jdbcType=CHAR},

@@ -1,4 +1,4 @@
-package com.redis;
+package com.jialong.redis;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
