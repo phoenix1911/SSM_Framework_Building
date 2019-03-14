@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.hand.dao.CityMapper" >
+  <cache type="com.redis.RedisCache" />
   <resultMap id="CityResult" type="com.hand.bean.City" >
     <id column="ID" property="id" jdbcType="INTEGER" />
     <result column="Name" property="name" jdbcType="CHAR" />
