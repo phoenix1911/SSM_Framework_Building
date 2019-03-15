@@ -1,16 +1,12 @@
 package com.jialong.redis;
 
-/**
- * Created by Tjl on 2019/3/14 11:00.
- */
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 import org.apache.ibatis.cache.Cache;
 
-
-
-/*
+/**
+ * Created by Tjl on 2019/3/14 11:00.
  * 使用第三方缓存服务器，处理二级缓存
  */
 public class RedisCache implements Cache {

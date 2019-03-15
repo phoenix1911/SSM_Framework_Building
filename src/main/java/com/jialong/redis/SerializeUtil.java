@@ -8,8 +8,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class SerializeUtil {
-    public static byte[] serialize(Object object) {
+class SerializeUtil {
+    static byte[] serialize(Object object) {
         ObjectOutputStream oos = null;
         ByteArrayOutputStream baos = null;
         try {
@@ -25,7 +25,7 @@ public class SerializeUtil {
         return null;
     }
 
-    public static Object unserialize(byte[] bytes) {
+    static Object unserialize(byte[] bytes) {
         if (bytes == null)
             return null;
         ByteArrayInputStream bais = null;
