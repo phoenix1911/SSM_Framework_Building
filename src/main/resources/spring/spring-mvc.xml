@@ -24,9 +24,9 @@
     <context:annotation-config/>
     <!--自动扫描该包及子包 带有@Component、@Repository @Service、@Controller的类注入 -->
     <!--<context:component-scan base-package="com.jialong" />-->
-    <context:component-scan base-package="**.controller" />
-    <context:component-scan base-package="**.service"/>
-    <context:component-scan base-package="**.redis"/>
+    <context:component-scan base-package="com.**.controller" />
+    <context:component-scan base-package="com.**.service"/>
+    <context:component-scan base-package="com.**.redis"/>
 
 
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
