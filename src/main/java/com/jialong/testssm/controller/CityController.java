@@ -34,7 +34,6 @@ public class CityController {
         List<City> cities = cityService.selectAllCity();
 
         PageInfo<City> page = new PageInfo<>(cities, 9);
-        List<City> list = page.getList();
 
         /*
         //导航页 可以遍历得出  第一页 2 3 4 5 6 7 8 9 下一页的效果
@@ -42,7 +41,6 @@ public class CityController {
         for (int i : navigatepageNums) {
             System.out.println(i);
         }*/
-        System.out.println(list);
         model.addAttribute("list", cities);
         model.addAttribute("page", page);
         return "allCity";
