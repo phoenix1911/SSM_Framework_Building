@@ -26,7 +26,7 @@
 
         <!-- !!!! Model Configurations !!!! -->
         <!-- 模型配置 -->
-        <javaModelGenerator targetPackage="com.jialong.testgenerator.bean" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.jialong.security.bean" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -38,25 +38,19 @@
         </sqlMapGenerator>
 
         <!-- !!!! Mapper Interface Configurations !!!! -->
-        <!-- dao配置 -->
-        <javaClientGenerator targetPackage="com.jialong.testgenerator.dao" targetProject="src/main/java"
-                             type="XMLMAPPER">
+        <!-- mapper配置 -->
+        <javaClientGenerator targetPackage="com.jialong.security.mapper" targetProject="src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
         <!-- !!!! Table Configurations !!!! -->
         <!-- 数据表配置 -->
-        <table tableName="country" enableCountByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false"
-               enableUpdateByExample="false">
-            <!-- 注意，该属性只针对MyBatis3Simple有用；
-        如果选择的runtime是MyBatis3Simple，那么会生成一个SelectAll方法，如果指定了selectAllOrderByClause，那么会在该SQL中添加指定的这个order条件；
-     -->
-            <property name="selectAllOrderByClause" value="id asc"/>
-        </table>
-        <!--<table tableName="country" domainObjectName="County" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
-        <!--enableUpdateByExample="false"/>-->
-        <!--<table tableName="countrylanguage" domainObjectName="Countrylanguage" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
-        <!--enableUpdateByExample="false"/>-->
+        <table tableName="role" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
+        <table tableName="role_resource" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
+        <table tableName="user_role" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
+        <table tableName="resource" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
+
+
+
     </context>
 </generatorConfiguration>
