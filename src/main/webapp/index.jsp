@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
-<%
-    pageContext.setAttribute("path", request.getContextPath());
-%>
+<% pageContext.setAttribute("path", request.getContextPath());%>
+
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -30,9 +30,8 @@
     <div class="row clearfix">
         <div class="col-md-12 column">
             <div class="page-header">
-                <h1>
-                    基于SSM框架的管理系统：简单实现增、删、改、查。
-                </h1>
+
+
             </div>
         </div>
     </div>

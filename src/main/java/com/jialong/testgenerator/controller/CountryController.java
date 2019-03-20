@@ -2,7 +2,6 @@ package com.jialong.testgenerator.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.jialong.testMapper.bean.Student;
 import com.jialong.testgenerator.bean.Country;
 import com.jialong.testgenerator.service.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;

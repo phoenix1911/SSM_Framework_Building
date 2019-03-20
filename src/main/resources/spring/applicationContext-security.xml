@@ -24,7 +24,17 @@
         <security:intercept-url pattern="/users/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')" />
         <!--只有ADMIN角色访问-->
         <security:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')"/>
-        
+
+        <!--自定义权限不足处理handler-->
+        <!--<security:access-denied-handler ref="a"/>-->
+
+        <security:form-login
+                login-page="/login.html"
+                login-processing-url="/login"
+                always-use-default-target="true"
+                authentication-success-handler-ref="myAuthenticationSuccessHandler"
+                authentication-failure-url="/loginerror.html"
+        />
         <!--
             3、登录表单设置
             1)login-page：指定登录页面；
@@ -33,14 +43,14 @@
             4)always-use-default-target：指定了是否在身份验证通过后总是跳转到；default-target-url 属性指定的 URL。
             5)authentication-failure-url：指定了身份验证失败时跳转到的页面；
          -->
+        <!--<security:form-login login-page="/login.html"-->
+                    <!--login-processing-url="/login"-->
+                    <!--always-use-default-target="true"-->
+                    <!--default-target-url="/index.jsp"-->
+                    <!--authentication-failure-url="/loginerror.html"-->
 
-        <security:form-login login-page="/login.html"
-                    login-processing-url="/login"
-                    always-use-default-target="true"
-                    default-target-url="/index.jsp"
-                    authentication-failure-url="/loginerror.html"
+        <!--/>-->
 
-        />
         <!--   4、注销设置
                   1)logout-url：指定注销的url；
                   2)logout-success-url：注销成功后登录返回的页面。
@@ -91,6 +101,7 @@
     <!-- 资源源数据定义，即定义某一资源可以被哪些角色访问 -->
     <bean id="securityMetadataSource" class="com.jialong.security.interceptor.MyFilterSecurityMetadataSource" />
 
-    <!--<bean id="myAuthenticationSuccessHandler" class="com.jialong.security.interceptor.MyAuthenticationSuccessHandler"/>-->
+    <!--角色登陆成功后跳转的页面-->
+    <bean id="myAuthenticationSuccessHandler" class="com.jialong.security.interceptor.MyAuthenticationSuccessHandler"/>
 
 </beans>
