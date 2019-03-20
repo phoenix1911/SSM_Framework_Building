@@ -1,6 +1,8 @@
 package com.jialong.security.bean;
 
-public class RoleResource {
+import java.io.Serializable;
+
+public class RoleResource implements Serializable {
     private Integer id;
 
     private Integer rid;

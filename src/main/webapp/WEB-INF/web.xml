@@ -32,7 +32,7 @@
     <url-pattern>/*</url-pattern>       <!--指定filter所对应的URL-->
   </filter-mapping>
 
-  <filter>l
+  <filter>
         <filter-name>springSecurityFilterChain</filter-name>
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
     </filter>
@@ -69,7 +69,7 @@
   </servlet-mapping>
 
   <welcome-file-list>
-    <welcome-file>/index.jsp</welcome-file>
+    <welcome-file>/login.html</welcome-file>
   </welcome-file-list>
 
 </web-app>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jialong.security.mapper.ResourceMapper" >
+  <cache type="com.jialong.redis.RedisCache" />
   <resultMap id="BaseResultMap" type="com.jialong.security.bean.Resource" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="url" property="url" jdbcType="VARCHAR" />
@@ -17,15 +18,22 @@
     where id = #{id,jdbcType=INTEGER}
   </select>
 
-    <select id="selectAuthByRes" resultType="java.lang.String">
-      select r.role_name rolename from resource res
-        join role_resource rr on res.id=rr.resid
-        join role r on r.id =rr.rid
-      where res.url=#{url,jdbcType=VARCHAR}
+  <select id="selectAuthByRes" resultType="java.lang.String">
+    select r.role_name rolename from resource res
+      join role_resource rr on res.id=rr.resid
+      join role r on r.id =rr.rid
+    where res.url=#{url,jdbcType=VARCHAR}
+  </select>
 
-    </select>
   <select id="selectAll" resultType="com.jialong.security.bean.Resource">
     select * from resource
+  </select>
+
+  <select id="selectByURL" resultType="com.jialong.security.bean.Resource">
+    select
+    <include refid="Base_Column_List" />
+    from resource
+    where url = #{url,jdbcType=VARCHAR}
   </select>
 
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >

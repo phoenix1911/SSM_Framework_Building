@@ -12,13 +12,15 @@ public interface ResourceMapper {
 
     int insertSelective(Resource record);
 
-    Resource selectByPrimaryKey(Integer id);
 
 
     int updateByPrimaryKeySelective(Resource record);
 
     int updateByPrimaryKey(Resource record);
 
+    Resource selectByPrimaryKey(Integer id);
+
+    Resource selectByURL(String url);
     /**
      * 通过资源路径来获取什么角色有权限
      * @param res url路径
@@ -26,5 +28,9 @@ public interface ResourceMapper {
      */
     List<String> selectAuthByRes(String res);
 
+    /**
+     * 获取所有资源
+     * @return
+     */
     List<Resource> selectAll();
 }

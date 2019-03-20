@@ -41,35 +41,33 @@ public class MyAccessDecisionManager implements AccessDecisionManager {
             return;
         }
         // 即将访问的资源URL,如 : /admin.jsp
-        logger.info("URL :"+object);
+        logger.info("即将访问的资源URL :"+object);
         // 遍历所需的角色集合
         Iterator<ConfigAttribute> ite = configAttributes.iterator();
         while (ite.hasNext()) {
             ConfigAttribute ca = ite.next();
             // 该资源所需要的角色
             String needRole = ((SecurityConfig) ca).getAttribute();
-            // authentication.getAuthorities()获取用户所拥有的角色列表,如：OLE_DEFULT
+            logger.debug("该资源所需要的角色："+needRole);
+            // authentication.getAuthorities()获取用户所拥有的角色列表,如：OLE_DEFULT 会一个一个对比有一个符合就能进
+
             for (GrantedAuthority grantedAuthority : authentication.getAuthorities()) {
+                logger.debug("用户所拥有的角色列表"+authentication.getAuthorities());
                 // 将资源所需要的角色与用户拥有的角色比较
                 if (needRole.equals(grantedAuthority.getAuthority())) {
-                    // grantedAuthority is user's role.
                     // 角色相同，直接放行
                     return;
                 }
             }
         }
         // 否则，提示没有权限访问该资源
-        throw new AccessDeniedException("no right");
+        throw new AccessDeniedException("no right没有访问权限");
     }
 
     @Override
-    public boolean supports(ConfigAttribute attribute) {
-        return true;
-    }
+    public boolean supports(ConfigAttribute attribute) { return true; }
 
     @Override
-    public boolean supports(Class<?> clazz) {
-        return true;
-    }
+    public boolean supports(Class<?> clazz) { return true; }
 
 }

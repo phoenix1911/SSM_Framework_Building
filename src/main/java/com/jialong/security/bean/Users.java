@@ -1,6 +1,8 @@
 package com.jialong.security.bean;
 
-public class Users {
+import java.io.Serializable;
+
+public class Users implements Serializable {
     private String username;
 
     private String password;

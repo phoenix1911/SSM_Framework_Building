@@ -64,6 +64,7 @@
 
     </security:http>
 
+    <!--自定义过滤器-->
     <bean id="myFilter" class="com.jialong.security.interceptor.MyFilterSecurityInterceptor" >
         <property name="authenticationManager" ref="authenticationManager" />
         <property name="accessDecisionManager" ref="myAccessDecisionManagerBean" />
@@ -76,7 +77,7 @@
 
     <bean id="daoAuthenticationProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
         <property name="userDetailsService" ref="myUserDetailService" />
-        <!--<property name="passwordEncoder" ref="passwordEncoder" />-->
+        <property name="passwordEncoder" ref="passwordEncoder" />
     </bean>
 
     <!-- spring推荐的单向加密算法 -->
@@ -91,18 +92,5 @@
     <bean id="securityMetadataSource" class="com.jialong.security.interceptor.MyFilterSecurityMetadataSource" />
 
     <!--<bean id="myAuthenticationSuccessHandler" class="com.jialong.security.interceptor.MyAuthenticationSuccessHandler"/>-->
-
-
-    <!--&lt;!&ndash;认证管理器 2）数据库管理方式&ndash;&gt;-->
-    <!--<security:authentication-manager>-->
-        <!--<security:authentication-provider user-service-ref='myUserDetailsService'/>-->
-    <!--</security:authentication-manager>-->
-
-    <!--&lt;!&ndash; 这里使用的默认实现，可以自己定义 &ndash;&gt;-->
-    <!--<bean id="myUserDetailsService" class="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl">-->
-        <!--<property name="dataSource" ref="dataSource"/>-->
-    <!--</bean>-->
-
-
 
 </beans>

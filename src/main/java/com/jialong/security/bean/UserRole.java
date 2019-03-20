@@ -1,6 +1,8 @@
 package com.jialong.security.bean;
 
-public class UserRole {
+import java.io.Serializable;
+
+public class UserRole implements Serializable {
     private Integer id;
 
     private String username;
