@@ -5,8 +5,7 @@
 <generatorConfiguration>
 
     <!-- mysql-jdbc驱动地址 -->
-    <classPathEntry
-            location="C:\Users\JiaLong\.m2\repository\mysql\mysql-connector-java\5.1.30\mysql-connector-java-5.1.30.jar"/>
+    <classPathEntry location="C:\Users\JiaLong\.m2\repository\mysql\mysql-connector-java\5.1.30\mysql-connector-java-5.1.30.jar"/>
 
     <context id="context" targetRuntime="MyBatis3">
         <commentGenerator>
@@ -15,40 +14,31 @@
         </commentGenerator>
 
         <!-- 数据库配置 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/world"
-                        userId="root"
-                        password="123456"/>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/world" userId="root" password="123456"/>
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <!-- !!!! Model Configurations !!!! -->
         <!-- 模型配置 -->
         <javaModelGenerator targetPackage="com.jialong.security.bean" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <!-- !!!! Mapper XML Configurations !!!! -->
         <!--  生成表xml配置  -->
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <!-- !!!! Mapper Interface Configurations !!!! -->
         <!-- mapper配置 -->
         <javaClientGenerator targetPackage="com.jialong.security.mapper" targetProject="src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <!-- !!!! Table Configurations !!!! -->
         <!-- 数据表配置 -->
-        <table tableName="role" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table tableName="role_resource" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table tableName="user_role" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table tableName="resource" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
+        <table tableName="users" />
+        <!--<table tableName="teacher" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
 
 
 

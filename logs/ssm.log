@@ -88,3 +88,72 @@
 [DEBUG] [2019-03-15 13:46:32][org.mybatis.generator.internal.db.DatabaseIntrospector]Found column "name", data type 12, in table "world..student"
 [DEBUG] [2019-03-15 13:46:32][org.mybatis.generator.internal.db.DatabaseIntrospector]Found column "sex", data type 1, in table "world..student"
 [DEBUG] [2019-03-15 13:46:32][org.mybatis.generator.internal.db.DatabaseIntrospector]Found column "age", data type 4, in table "world..student"
+[DEBUG] [2019-03-21 10:07:55][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[DEBUG] [2019-03-21 10:07:55][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:07:55][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:07:55][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:07:55][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.io.ResolverUtil]Class not found: org.jboss.vfs.VFS
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.io.ResolverUtil]JBoss 6 VFS API is not available in this environment.
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.io.ResolverUtil]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.io.ResolverUtil]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.io.ResolverUtil]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG] [2019-03-21 10:14:29][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG] [2019-03-21 10:14:30][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1946403944.
+[DEBUG] [2019-03-21 10:14:30][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7403c468]
+[DEBUG] [2019-03-21 10:14:30][com.jialong.core.mapper.StudentMapper.selectByExample]==>  Preparing: select id, name, xntid, xwtid, paperid, phonenumber, email, topicstatus from student WHERE ( xntid >= ? ) 
+[DEBUG] [2019-03-21 10:14:30][com.jialong.core.mapper.StudentMapper.selectByExample]==> Parameters: 1111(Integer)
+[DEBUG] [2019-03-21 10:14:30][com.jialong.core.mapper.StudentMapper.selectByExample]<==      Total: 1
+[DEBUG] [2019-03-21 10:15:20][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[DEBUG] [2019-03-21 10:15:20][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:15:20][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:15:20][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:15:20][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:15:21][org.apache.ibatis.io.ResolverUtil]Class not found: org.jboss.vfs.VFS
+[DEBUG] [2019-03-21 10:15:21][org.apache.ibatis.io.ResolverUtil]JBoss 6 VFS API is not available in this environment.
+[DEBUG] [2019-03-21 10:15:21][org.apache.ibatis.io.ResolverUtil]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG] [2019-03-21 10:15:21][org.apache.ibatis.io.ResolverUtil]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG] [2019-03-21 10:15:21][org.apache.ibatis.io.ResolverUtil]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG] [2019-03-21 10:15:21][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG] [2019-03-21 10:15:21][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 209833425.
+[DEBUG] [2019-03-21 10:15:21][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@c81cdd1]
+[DEBUG] [2019-03-21 10:15:21][com.jialong.core.mapper.StudentMapper.selectByExample]==>  Preparing: select id, name, xntid, xwtid, paperid, phonenumber, email, topicstatus from student WHERE ( xntid = ? ) 
+[DEBUG] [2019-03-21 10:15:21][com.jialong.core.mapper.StudentMapper.selectByExample]==> Parameters: 1111(Integer)
+[DEBUG] [2019-03-21 10:15:21][com.jialong.core.mapper.StudentMapper.selectByExample]<==      Total: 1
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.io.ResolverUtil]Class not found: org.jboss.vfs.VFS
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.io.ResolverUtil]JBoss 6 VFS API is not available in this environment.
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.io.ResolverUtil]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.io.ResolverUtil]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.io.ResolverUtil]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG] [2019-03-21 10:15:56][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG] [2019-03-21 10:15:57][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 209833425.
+[DEBUG] [2019-03-21 10:15:57][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@c81cdd1]
+[DEBUG] [2019-03-21 10:15:57][com.jialong.core.mapper.StudentMapper.selectByExample]==>  Preparing: select id, name, xntid, xwtid, paperid, phonenumber, email, topicstatus from student WHERE ( xntid = ? ) 
+[DEBUG] [2019-03-21 10:15:57][com.jialong.core.mapper.StudentMapper.selectByExample]==> Parameters: 1111(Integer)
+[DEBUG] [2019-03-21 10:15:57][com.jialong.core.mapper.StudentMapper.selectByExample]<==      Total: 1
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.io.ResolverUtil]Class not found: org.jboss.vfs.VFS
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.io.ResolverUtil]JBoss 6 VFS API is not available in this environment.
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.io.ResolverUtil]Class not found: org.jboss.vfs.VirtualFile
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.io.ResolverUtil]VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.io.ResolverUtil]Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[DEBUG] [2019-03-21 10:17:11][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG] [2019-03-21 10:17:12][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 209833425.
+[DEBUG] [2019-03-21 10:17:12][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@c81cdd1]
+[DEBUG] [2019-03-21 10:17:12][com.jialong.core.mapper.StudentMapper.selectByExample]==>  Preparing: select id, name, xntid, xwtid, paperid, phonenumber, email, topicstatus from student WHERE ( xntid = ? ) 
+[DEBUG] [2019-03-21 10:17:12][com.jialong.core.mapper.StudentMapper.selectByExample]==> Parameters: 1111(Integer)
+[DEBUG] [2019-03-21 10:17:12][com.jialong.core.mapper.StudentMapper.selectByExample]<==      Total: 1
