@@ -2,7 +2,7 @@
          pageEncoding="UTF-8" %>
 <% pageContext.setAttribute("path", request.getContextPath());%>
 
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+<%--<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>--%>
 <!DOCTYPE HTML>
 <html>
 <head>

@@ -71,11 +71,11 @@
     </bean>
 
     <!--  配置静态资源，防止被springmvc过滤 -->
-    <mvc:resources location="/html/" mapping="/**/*.html"/>
-    <mvc:resources location="/js/" mapping="/**/*.js"/>
-    <mvc:resources location="/css/" mapping="/**/*.css"/>
-    <mvc:resources location="/img/" mapping="/**/*.*"/>
-    <mvc:resources location="/fonts/" mapping="/**/*.*"/>
+    <mvc:resources location="/html/" mapping="/html/**"/>
+    <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/img/" mapping="/img/**"/>
+    <mvc:resources location="/fonts/" mapping="/fonts/**"/>
 
 
 
