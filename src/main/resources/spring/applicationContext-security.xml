@@ -12,12 +12,13 @@
     1、设置放行资源，如登录注册页面，静态资源css、js等等
         security="none" 设置此资源不被拦截.
     -->
+    <security:http pattern="/favicon.ico" security="none"/>
     <security:http pattern="/login.html" security="none"/>
     <security:http pattern="/loginerror.html" security="none"/>
-    <security:http pattern="/css/**" security="none"/>
-    <security:http pattern="/img/**" security="none"/>
-    <security:http pattern="/js/**" security="none"/>
-    <security:http pattern="/plugins/**" security="none"/>
+    <security:http pattern="/index.html" security="none"/>
+    <security:http pattern="/fonts/*.ico" security="none"/>
+    <security:http pattern="/js/*.js" security="none"/>
+    <security:http pattern="/fonts/**" security="none"/>
 
     <security:http>
         <!-- 2、拦截所有（除放行资源外） -->

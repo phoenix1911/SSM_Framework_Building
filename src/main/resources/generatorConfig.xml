@@ -37,7 +37,7 @@
         </javaClientGenerator>
 
         <!-- 数据表配置 -->
-        <table tableName="users" />
+        <table tableName="resource" />
         <!--<table tableName="teacher" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
 
 

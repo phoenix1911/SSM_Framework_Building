@@ -11,16 +11,6 @@ public class Users implements Serializable {
 
     private String roleName;
 
-    @Override
-    public String toString() {
-        return "Users{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", enabled=" + enabled +
-                ", roleName='" + roleName + '\'' +
-                '}';
-    }
-
     public String getRoleName() {
         return roleName;
     }
