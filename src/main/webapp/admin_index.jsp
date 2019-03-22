@@ -1,26 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
-<% pageContext.setAttribute("path", request.getContextPath());%>
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="renderer" content="webkit">
-    <title>H+ 后台主题UI框架 - 主页</title>
-
-    <!--[if lt IE 9]>
-    <meta http-equiv="refresh" content="0;ie.html" />
-    <![endif]-->
-
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    
-    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css?v=4.1.0" rel="stylesheet">
-</head>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ include file="header.jsp"%>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
     <div id="wrapper">
@@ -35,7 +14,7 @@
                             <span><img alt="image" class="img-circle" src="img/profile_small.jpg" /></span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
-                               <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
+                               <span class="block m-t-xs"><strong class="font-bold">${requestScope.username}</strong></span>
                                 <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
                                 </span>
                             </a>
@@ -67,20 +46,32 @@
                                 <a class="J_menuItem" href="admin_v1.jsp" data-index="0">主页示例一</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="admin_v2.jsp">主页示例二</a>
+                                <a class="J_menuItem" href="/admin/student/allStudent">学生信息维护</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="admin_v3.jsp">主页示例三</a>
+                                <a class="J_menuItem" href="admin_v3.jsp">教师信息管理</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="admin_v4.jsp">主页示例四</a>
+                                <a class="J_menuItem" href="admin_v4.jsp">功能维护</a>
                             </li>
 
                         </ul>
 
                     </li>
                     <li>
-                        <a class="J_menuItem" href=""><i class="fa fa-columns"></i> <span class="nav-label">布局</span></a>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">主页</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="admin_v1.jsp" data-index="0">查看公告</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="admin_v2.jsp">新增公告</a>
+                            </li>
+                        </ul>
                     </li>
 
                 </ul>
@@ -395,18 +386,18 @@
     </div>
 
     <!-- 全局js -->
-    <script src="js/jquery.min.js?v=2.1.4"></script>
-    <script src="js/bootstrap.min.js?v=3.3.6"></script>
-    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="js/plugins/layer/layer.min.js"></script>
+    <script src="${path}/js/jquery.min.js?v=2.1.4"></script>
+    <script src="${path}/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="${path}/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="${path}/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="${path}/js/plugins/layer/layer.min.js"></script>
 
     <!-- 自定义js -->
-    <script src="js/hplus.js?v=4.1.0"></script>
-    <script src="js/contabs.js"></script>
+    <script src="${path}/js/hplus.js?v=4.1.0"></script>
+    <script src="${path}/js/contabs.js"></script>
 
     <!-- 第三方插件 -->
-    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="${path}/js/plugins/pace/pace.min.js"></script>
 
 </body>
 

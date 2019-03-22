@@ -148,7 +148,10 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
-  <update id="updateByExampleSelective" parameterType="map" >
+    <select id="selectAll" resultType="com.jialong.core.bean.Teacher">
+
+    </select>
+    <update id="updateByExampleSelective" parameterType="map" >
     update teacher
     <set >
       <if test="record.tid != null" >

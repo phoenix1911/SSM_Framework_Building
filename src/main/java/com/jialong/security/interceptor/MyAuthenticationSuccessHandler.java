@@ -21,7 +21,15 @@ public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHand
         String path = request.getContextPath() ;
         String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
         if (roles.contains("ROLE_ADMIN")){
-            response.sendRedirect(basePath+"city/allCity");
+            response.sendRedirect(basePath+"admin_index.jsp");
+            return;
+        }
+        if (roles.contains("ROLE_STUDENT")){
+            response.sendRedirect(basePath+"student_index.jsp");
+            return;
+        }
+        if (roles.contains("ROLE_TEACHER")){
+            response.sendRedirect(basePath+"teacher_index.jsp");
             return;
         }
         response.sendRedirect(basePath+"login.html");

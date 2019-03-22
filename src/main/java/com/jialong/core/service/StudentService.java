@@ -19,28 +19,33 @@ import java.util.List;
  */
 @Service
 public class StudentService {
-//    @Autowired
-//    private StudentMapper studentMapper;
+    @Autowired
+    private StudentMapper studentMapper;
 
-    public static void main(String[] args) {
-        InputStream inputStream = null;
-        try {
-            inputStream = Resources.getResourceAsStream("testDAO.xml");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        SqlSession sqlSession = sqlSessionFactory.openSession();
-
-        StudentMapper studentMapper = sqlSession.getMapper(StudentMapper.class);
-        Student student = new Student();
-        student.setXntid(1111);
-        StudentExample studentExample = new StudentExample();
-        StudentExample.Criteria criteria= studentExample.createCriteria();
-        criteria.andXntidEqualTo(1111);
-        List<Student> students = studentMapper.selectByExample(studentExample);
-        System.out.println(student);
-        sqlSession.commit();
+    public List<Student> selectAll() {
+        return studentMapper.selectAll();
     }
+
+    //测试
+//    public static void main(String[] args) {
+//        InputStream inputStream = null;
+//        try {
+//            inputStream = Resources.getResourceAsStream("testDAO.xml");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+//        SqlSession sqlSession = sqlSessionFactory.openSession();
+//
+//        StudentMapper studentMapper = sqlSession.getMapper(StudentMapper.class);
+//        Student student = new Student();
+//        student.setXntid(1111);
+//        StudentExample studentExample = new StudentExample();
+//        StudentExample.Criteria criteria= studentExample.createCriteria();
+//        criteria.andXntidEqualTo(1111);
+//        List<Student> students = studentMapper.selectByExample(studentExample);
+//        System.out.println(student);
+//        sqlSession.commit();
+//    }
 }

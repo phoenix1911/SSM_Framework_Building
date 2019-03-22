@@ -1,9 +1,10 @@
 package com.jialong.core.bean;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentExample {
+public class StudentExample implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;

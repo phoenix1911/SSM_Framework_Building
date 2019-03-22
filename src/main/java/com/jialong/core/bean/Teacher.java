@@ -1,6 +1,8 @@
 package com.jialong.core.bean;
 
-public class Teacher {
+import java.io.Serializable;
+
+public class Teacher implements Serializable {
     private Integer tid;
 
     private String tname;
