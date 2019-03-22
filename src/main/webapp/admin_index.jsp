@@ -49,7 +49,7 @@
                                 <a class="J_menuItem" href="/admin/student/allStudent">学生信息维护</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="admin_v3.jsp">教师信息管理</a>
+                                <a class="J_menuItem" href="/admin/teacher/allTeacher">教师信息管理</a>
                             </li>
                             <li>
                                 <a class="J_menuItem" href="admin_v4.jsp">功能维护</a>
@@ -92,7 +92,7 @@
                     <ul class="nav navbar-top-links navbar-right">
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-envelope"></i> <span class="label label-warning"></span> 
+                                <i class="fa fa-envelope"></i> <span class="label label-warning"></span>
                             </a>
                         <!--     <ul class="dropdown-menu dropdown-messages">
                                 <li class="m-t-xs">

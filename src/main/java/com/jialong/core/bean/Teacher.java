@@ -13,6 +13,8 @@ public class Teacher implements Serializable {
 
     private Integer type;
 
+    private Integer isuploadtopic;
+
     public Integer getTid() {
         return tid;
     }
@@ -51,5 +53,13 @@ public class Teacher implements Serializable {
 
     public void setType(Integer type) {
         this.type = type;
+    }
+
+    public Integer getIsuploadtopic() {
+        return isuploadtopic;
+    }
+
+    public void setIsuploadtopic(Integer isuploadtopic) {
+        this.isuploadtopic = isuploadtopic;
     }
 }

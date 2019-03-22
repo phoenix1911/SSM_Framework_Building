@@ -39,7 +39,7 @@
                             <th>邮箱</th>
                             <th>选题状态</th>
                             <th>论文题号</th>
-
+                            <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -49,8 +49,12 @@
                             <th>${student.name}</th>
                             <th>${student.phonenumber}</th>
                             <th>${student.email}</th>
-                            <th>${student.topicstatus==0?"未选题":"以选题"}</th>
+                            <th>${student.topicstatus==0?"未选题":"已选题"}</th>
                             <th>${empty student.paperid?"---":student.paperid}</th>
+                            <th>
+                                <a href="${path}/admin/student/toUpdate?id=${student.id}" class="btn">修改</a>
+                                <a href="${path}/admin/student/del?id=${student.id}" class="btn">删除</a>
+                            </th>
                         </tr>
                         </c:forEach>
                         </tbody>
@@ -85,7 +89,7 @@
     $('#upload').on('click', function(){
         layer.open({
             type: 2,
-            title: 'iframe父子操作',
+            title: '添加学生',
             maxmin: true,
             shadeClose: true, //点击遮罩关闭层
             area : ['800px' , '520px'],

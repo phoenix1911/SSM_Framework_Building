@@ -3,6 +3,7 @@ package com.jialong.core.service;
 import com.jialong.core.bean.Student;
 import com.jialong.core.bean.StudentExample;
 import com.jialong.core.mapper.StudentMapper;
+import com.jialong.testssm.bean.City;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -25,6 +26,26 @@ public class StudentService {
     public List<Student> selectAll() {
         return studentMapper.selectAll();
     }
+
+    public Student queryById(int id) {
+        return studentMapper.selectByPrimaryKey(id);
+    }
+
+    public int updateCity(Student city) {
+        return studentMapper.updateByPrimaryKey(city);
+    }
+    public int deleteCityById(int id) {
+        return studentMapper.deleteByPrimaryKey(id);
+    }
+
+
+
+
+
+
+
+
+
 
     //测试
 //    public static void main(String[] args) {

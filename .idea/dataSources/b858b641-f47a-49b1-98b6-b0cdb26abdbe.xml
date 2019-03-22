@@ -939,13 +939,11 @@
     <table id="237" parent="13" name="country">
       <Collation>latin1_swedish_ci</Collation>
     </table>
-    <table id="238" parent="13" name="countrylanguage">
-      <Collation>latin1_swedish_ci</Collation>
-    </table>
-    <table id="239" parent="13" name="resource"/>
-    <table id="240" parent="13" name="role"/>
-    <table id="241" parent="13" name="role_resource"/>
-    <table id="242" parent="13" name="student"/>
+    <table id="238" parent="13" name="resource"/>
+    <table id="239" parent="13" name="role"/>
+    <table id="240" parent="13" name="role_resource"/>
+    <table id="241" parent="13" name="student"/>
+    <table id="242" parent="13" name="teacher"/>
     <table id="243" parent="13" name="user_role"/>
     <table id="244" parent="13" name="users"/>
     <column id="245" parent="236" name="ID">
@@ -1096,181 +1094,196 @@
       <ColNames>Code</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="269" parent="238" name="CountryCode">
-      <Position>1</Position>
-      <DataType>char(3)|0s</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>&apos;&apos;</DefaultExpression>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="270" parent="238" name="Language">
-      <Position>2</Position>
-      <DataType>char(30)|0s</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>&apos;&apos;</DefaultExpression>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="271" parent="238" name="IsOfficial">
-      <Position>3</Position>
-      <DataType>enum(&apos;T&apos;, &apos;F&apos;)|0e</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>&apos;F&apos;</DefaultExpression>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="272" parent="238" name="Percentage">
-      <Position>4</Position>
-      <DataType>float(4,1 digit)|0s</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>0.0</DefaultExpression>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="273" parent="238" name="CountryCode">
-      <ColNames>CountryCode</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="274" parent="238" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>CountryCode
-Language</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="275" parent="238" name="countryLanguage_ibfk_1">
-      <ColNames>CountryCode</ColNames>
-      <RefSchemaName>world</RefSchemaName>
-      <RefTableName>country</RefTableName>
-      <RefColNames>Code</RefColNames>
-    </foreign-key>
-    <column id="276" parent="239" name="id">
+    <column id="269" parent="238" name="id">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="239" name="url">
+    <column id="270" parent="238" name="url">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="239" name="res_name">
+    <column id="271" parent="238" name="res_name">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="279" parent="239" name="PRIMARY">
+    <key id="272" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="280" parent="240" name="id">
+    <column id="273" parent="239" name="id">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="240" name="role_name">
+    <column id="274" parent="239" name="role_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="240" name="role_name_Zh">
+    <column id="275" parent="239" name="role_name_Zh">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="283" parent="240" name="PRIMARY">
+    <key id="276" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="284" parent="241" name="id">
+    <column id="277" parent="240" name="id">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="241" name="rid">
+    <column id="278" parent="240" name="rid">
       <Position>2</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="241" name="resid">
+    <column id="279" parent="240" name="resid">
       <Position>3</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="287" parent="241" name="PRIMARY">
+    <key id="280" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="288" parent="242" name="id">
+    <column id="281" parent="241" name="id">
       <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>int(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="242" name="name">
+    <column id="282" parent="241" name="name">
       <Position>2</Position>
-      <DataType>varchar(10)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="242" name="sex">
+    <column id="283" parent="241" name="xntid">
       <Position>3</Position>
-      <DataType>char(1)|0s</DataType>
+      <DataType>int(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="242" name="age">
+    <column id="284" parent="241" name="xwtid">
       <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>int(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="292" parent="242" name="PRIMARY">
+    <column id="285" parent="241" name="paperid">
+      <Position>5</Position>
+      <DataType>int(15)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="286" parent="241" name="phonenumber">
+      <Position>6</Position>
+      <DataType>bigint(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="241" name="email">
+      <Position>7</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="288" parent="241" name="topicstatus">
+      <Position>8</Position>
+      <Comment>论文选题状态</Comment>
+      <DataType>int(10) unsigned zerofill|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="289" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="293" parent="243" name="id">
+    <column id="290" parent="242" name="tid">
+      <Position>1</Position>
+      <DataType>int(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="291" parent="242" name="tname">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="292" parent="242" name="tphonenumber">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="293" parent="242" name="address">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="294" parent="242" name="type">
+      <Position>5</Position>
+      <DataType>int(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="295" parent="242" name="isuploadtopic">
+      <Position>6</Position>
+      <DataType>int(1) unsigned zerofill|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="296" parent="242" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>tid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="297" parent="243" name="id">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="243" name="username">
+    <column id="298" parent="243" name="username">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="243" name="rid">
+    <column id="299" parent="243" name="rid">
       <Position>3</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="296" parent="243" name="PRIMARY">
+    <key id="300" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="297" parent="244" name="username">
+    <column id="301" parent="244" name="username">
       <Position>1</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="244" name="password">
+    <column id="302" parent="244" name="password">
       <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="244" name="enabled">
+    <column id="303" parent="244" name="enabled">
       <Position>3</Position>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="300" parent="244" name="PRIMARY">
+    <key id="304" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>username</ColNames>
       <Primary>1</Primary>

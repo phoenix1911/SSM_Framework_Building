@@ -7,6 +7,7 @@
     <result column="tphonenumber" property="tphonenumber" jdbcType="INTEGER" />
     <result column="address" property="address" jdbcType="VARCHAR" />
     <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="isuploadtopic" property="isuploadtopic" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -67,7 +68,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    tid, tname, tphonenumber, address, type
+    tid, tname, tphonenumber, address, type, isuploadtopic
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jialong.core.bean.TeacherExample" >
     select
@@ -101,9 +102,11 @@
   </delete>
   <insert id="insert" parameterType="com.jialong.core.bean.Teacher" >
     insert into teacher (tid, tname, tphonenumber, 
-      address, type)
+      address, type, isuploadtopic
+      )
     values (#{tid,jdbcType=INTEGER}, #{tname,jdbcType=VARCHAR}, #{tphonenumber,jdbcType=INTEGER}, 
-      #{address,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER})
+      #{address,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, #{isuploadtopic,jdbcType=INTEGER}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.jialong.core.bean.Teacher" >
     insert into teacher
@@ -123,6 +126,9 @@
       <if test="type != null" >
         type,
       </if>
+      <if test="isuploadtopic != null" >
+        isuploadtopic,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="tid != null" >
@@ -140,6 +146,9 @@
       <if test="type != null" >
         #{type,jdbcType=INTEGER},
       </if>
+      <if test="isuploadtopic != null" >
+        #{isuploadtopic,jdbcType=INTEGER},
+      </if>
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.jialong.core.bean.TeacherExample" resultType="java.lang.Integer" >
@@ -149,7 +158,7 @@
     </if>
   </select>
     <select id="selectAll" resultType="com.jialong.core.bean.Teacher">
-
+      select * from teacher
     </select>
     <update id="updateByExampleSelective" parameterType="map" >
     update teacher
@@ -169,6 +178,9 @@
       <if test="record.type != null" >
         type = #{record.type,jdbcType=INTEGER},
       </if>
+      <if test="record.isuploadtopic != null" >
+        isuploadtopic = #{record.isuploadtopic,jdbcType=INTEGER},
+      </if>
     </set>
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -180,7 +192,8 @@
       tname = #{record.tname,jdbcType=VARCHAR},
       tphonenumber = #{record.tphonenumber,jdbcType=INTEGER},
       address = #{record.address,jdbcType=VARCHAR},
-      type = #{record.type,jdbcType=INTEGER}
+      type = #{record.type,jdbcType=INTEGER},
+      isuploadtopic = #{record.isuploadtopic,jdbcType=INTEGER}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -200,6 +213,9 @@
       <if test="type != null" >
         type = #{type,jdbcType=INTEGER},
       </if>
+      <if test="isuploadtopic != null" >
+        isuploadtopic = #{isuploadtopic,jdbcType=INTEGER},
+      </if>
     </set>
     where tid = #{tid,jdbcType=INTEGER}
   </update>
@@ -208,7 +224,8 @@
     set tname = #{tname,jdbcType=VARCHAR},
       tphonenumber = #{tphonenumber,jdbcType=INTEGER},
       address = #{address,jdbcType=VARCHAR},
-      type = #{type,jdbcType=INTEGER}
+      type = #{type,jdbcType=INTEGER},
+      isuploadtopic = #{isuploadtopic,jdbcType=INTEGER}
     where tid = #{tid,jdbcType=INTEGER}
   </update>
 </mapper>

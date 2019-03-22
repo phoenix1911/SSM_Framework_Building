@@ -1,10 +1,9 @@
 package com.jialong.core.bean;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TeacherExample implements Serializable {
+public class TeacherExample {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -422,6 +421,66 @@ public class TeacherExample implements Serializable {
 
         public Criteria andTypeNotBetween(Integer value1, Integer value2) {
             addCriterion("type not between", value1, value2, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicIsNull() {
+            addCriterion("isuploadtopic is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicIsNotNull() {
+            addCriterion("isuploadtopic is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicEqualTo(Integer value) {
+            addCriterion("isuploadtopic =", value, "isuploadtopic");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicNotEqualTo(Integer value) {
+            addCriterion("isuploadtopic <>", value, "isuploadtopic");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicGreaterThan(Integer value) {
+            addCriterion("isuploadtopic >", value, "isuploadtopic");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicGreaterThanOrEqualTo(Integer value) {
+            addCriterion("isuploadtopic >=", value, "isuploadtopic");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicLessThan(Integer value) {
+            addCriterion("isuploadtopic <", value, "isuploadtopic");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicLessThanOrEqualTo(Integer value) {
+            addCriterion("isuploadtopic <=", value, "isuploadtopic");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicIn(List<Integer> values) {
+            addCriterion("isuploadtopic in", values, "isuploadtopic");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicNotIn(List<Integer> values) {
+            addCriterion("isuploadtopic not in", values, "isuploadtopic");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicBetween(Integer value1, Integer value2) {
+            addCriterion("isuploadtopic between", value1, value2, "isuploadtopic");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsuploadtopicNotBetween(Integer value1, Integer value2) {
+            addCriterion("isuploadtopic not between", value1, value2, "isuploadtopic");
             return (Criteria) this;
         }
     }
