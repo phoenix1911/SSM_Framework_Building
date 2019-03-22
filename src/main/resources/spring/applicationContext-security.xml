@@ -12,11 +12,11 @@
     1、设置放行资源，如登录注册页面，静态资源css、js等等
         security="none" 设置此资源不被拦截.
     -->
-    <security:http pattern="/html/*.*" security="none"/>
-    <security:http pattern="/css/*.*" security="none"/>
-    <security:http pattern="/fonts/*.*" security="none"/>
-    <security:http pattern="/js/*.*" security="none"/>
-    <security:http pattern="/img/*.*" security="none"/>
+    <security:http pattern="/html/**/*.*" security="none"/>
+    <security:http pattern="/css/**/*.*" security="none"/>
+    <security:http pattern="/fonts/**/*.*" security="none"/>
+    <security:http pattern="/js/**/*.*" security="none"/>
+    <security:http pattern="/img/**/*.*" security="none"/>
 
     <security:http>
         <!--自定义权限不足处理handler-->
@@ -51,9 +51,9 @@
          -->
         <security:csrf disabled="true" />
 
-        <!-- 6、iframe 框架结构展示 -->
+        <!-- 6、iframe security安全控制 -->
         <security:headers>
-            <security:frame-options policy="SAMEORIGIN" />
+            <security:frame-options policy="ALLOW-FROM" strategy="static" value="/**" />
         </security:headers>
 
         <security:custom-filter before="FILTER_SECURITY_INTERCEPTOR" ref="myFilter"/>
