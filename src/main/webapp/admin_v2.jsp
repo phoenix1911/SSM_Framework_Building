@@ -28,7 +28,7 @@
                 </div>
                 <div class="ibox-content">
                     <div class="">
-                        <a class="btn btn-info" id="upload">添加学生</a>
+                        <a href="${path}/admin_v2_add.jsp" class="btn btn-info" id="upload">添加学生</a>
                     </div>
                     <table class="table table-striped table-bordered table-hover dataTables-example">
                         <thead>
@@ -84,19 +84,19 @@
 <script src="${path}/js/content.js?v=1.0.0"></script>
 
 <%--layer插件--%>
-<script src="${path}/js/plugins/layer/layer.min.js"></script>
-<script>
-    $('#upload').on('click', function(){
-        layer.open({
-            type: 2,
-            title: '添加学生',
-            maxmin: true,
-            shadeClose: true, //点击遮罩关闭层
-            area : ['800px' , '520px'],
-            content: '${path}/admin_v2_add.jsp'
-        });
-    });
-</script>
+<%--<script src="${path}/js/plugins/layer/layer.min.js"></script>--%>
+<%--<script>--%>
+    <%--$('#upload').on('click', function(){--%>
+        <%--layer.open({--%>
+            <%--type: 2,--%>
+            <%--title: '添加学生',--%>
+            <%--maxmin: true,--%>
+            <%--shadeClose: true, //点击遮罩关闭层--%>
+            <%--area : ['800px' , '520px'],--%>
+            <%--content: '${path}/admin_v2_add.jsp'--%>
+        <%--});--%>
+    <%--});--%>
+<%--</script>--%>
 <!-- 分页插件 -->
 <script>
     $(document).ready(function () {

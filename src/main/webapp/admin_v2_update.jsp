@@ -33,7 +33,7 @@
                         <div class="form-group">
                             <label class="col-sm-3 control-label">学号：</label>
                             <div class="col-sm-8">
-                                <input id="cid" value="${student.id}" name="id" minlength="10" type="text" class="form-control" required="" aria-required="true">
+                                <input id="cid" readonly value="${student.id}" name="id" minlength="10" type="text" class="form-control" required="" aria-required="true">
                             </div>
                         </div>
 

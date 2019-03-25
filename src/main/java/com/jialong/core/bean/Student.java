@@ -3,6 +3,7 @@ package com.jialong.core.bean;
 import java.io.Serializable;
 
 public class Student implements Serializable {
+//    Integer.MAX_VALUE=2147483647 学号输入过大会出错
     private Integer id;
 
     private String name;
@@ -18,6 +19,16 @@ public class Student implements Serializable {
     private String email;
 
     private Integer topicstatus;
+
+    private long sfz;
+
+    public long getSfz() {
+        return sfz;
+    }
+
+    public void setSfz(long sfz) {
+        this.sfz = sfz;
+    }
 
     public Integer getId() {
         return id;

@@ -33,65 +33,74 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
+    /**
+     * 显示所有学生
+     */
     @RequestMapping("allStudent")
     public String list(@RequestParam(value = "pageNum",defaultValue = "1")Integer pageNum, Model model) {
-
-
         List<Student> students = studentService.selectAll();
-
         model.addAttribute("list", students);
         model.addAttribute("username", SecurityContextHolder.getContext().getAuthentication().getName());
         return "admin_v2";
     }
 
+    /**
+     * 跳转至更新页面
+     * @param model
+     * @param id
+     * @return
+     */
     @RequestMapping("toUpdate")
-    public String toUpdateCity(Model model, int id) {
+    public String toUpdate(Model model, int id) {
         model.addAttribute("student", studentService.queryById(id));
         return "admin_v2_update";
     }
 
+    /**
+     * 处理更新业务逻辑 返回到列表
+     * @param model
+     * @param student
+     * @return
+     */
     @RequestMapping("update")
-    public String updateCity(Model model, Student student) {
-        studentService.updateCity(student);
+    public String update(Model model, Student student) {
+        studentService.update(student);
         student = studentService.queryById(student.getId());
         model.addAttribute("student", student);
         return "redirect:/admin/student/allStudent";
     }
 
+    /**
+     * 删除学生
+     * @param id
+     * @return
+     */
     @RequestMapping("del")
-    public String deleteCity(@RequestParam("id") int id) {
-        studentService.deleteCityById(id);
+    public String delete(@RequestParam("id") int id) {
+        studentService.deleteById(id);
         return "redirect:/admin/student/allStudent";
     }
 
+    @RequestMapping("addone")
+    public String insertone(Model model,Student student) {
+        studentService.insert(student);
+        return "redirect:/admin/student/allStudent";
+
+    }
 
     /**
      * 下载学生信息模板
      * @param request
-     * @param model
      * @return
      * @throws IOException
      */
     @RequestMapping("downloadStuTemplate")
-    public ResponseEntity<byte[]> download(HttpServletRequest request, Model model) throws IOException {
-
+    public ResponseEntity<byte[]> download(HttpServletRequest request) throws IOException {
         String realPath = request.getSession().getServletContext().getRealPath("/file");
-        System.err.println(realPath);
-        File file = new File(realPath+"/template/StudentTemplate.xlsx");//新建一个文件
-
-        HttpHeaders headers = new HttpHeaders();//http头信息
-
-        String downloadFileName = new String("学生信息模板.xlsx".getBytes("UTF-8"),"iso-8859-1");//设置编码
-
-        headers.setContentDispositionFormData("attachment", downloadFileName);
-
-        headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
-
-        //MediaType:互联网媒介类型  contentType：具体请求中的媒体类型信息
-
-        return new ResponseEntity<byte[]>(FileUtils.readFileToByteArray(file),headers, HttpStatus.CREATED);
-
+        return studentService.getResponseEntity(realPath);
     }
+
+
 
 
 

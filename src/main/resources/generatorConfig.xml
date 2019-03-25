@@ -37,7 +37,7 @@
         </javaClientGenerator>
 
         <!-- 数据表配置 -->
-        <table tableName="teacher" />
+        <table tableName="user_role" />
         <!--<table tableName="teacher" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
 
 
