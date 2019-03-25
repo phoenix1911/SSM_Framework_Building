@@ -22,6 +22,18 @@ public class Student implements Serializable {
 
     private long sfz;
 
+    public Student() {
+    }
+
+    public Student(Integer id, String name, Long phonenumber, String email, Integer topicstatus, long sfz) {
+        this.id = id;
+        this.name = name;
+        this.phonenumber = phonenumber;
+        this.email = email;
+        this.topicstatus = topicstatus;
+        this.sfz = sfz;
+    }
+
     public long getSfz() {
         return sfz;
     }

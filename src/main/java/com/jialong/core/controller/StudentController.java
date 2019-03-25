@@ -6,6 +6,10 @@ import com.jialong.core.bean.Student;
 import com.jialong.core.service.StudentService;
 import com.jialong.testssm.bean.City;
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -17,10 +21,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -85,8 +91,66 @@ public class StudentController {
     public String insertone(Model model,Student student) {
         studentService.insert(student);
         return "redirect:/admin/student/allStudent";
-
     }
+
+    @RequestMapping("addmany")
+    public String insertmany(@RequestParam("uploadfile") CommonsMultipartFile file, HttpServletRequest request) {
+        // MultipartFile是对当前上传的文件的封装，当要同时上传多个文件时，可以给定多个MultipartFile参数(数组)
+        if (!file.isEmpty()) {
+            String type = file.getOriginalFilename().substring(file.getOriginalFilename().indexOf("."));// 取文件格式后缀名
+            String filename = System.currentTimeMillis() + type;// 取当前时间戳作为文件名
+            String path = request.getSession().getServletContext().getRealPath("/file/admin/uploadStu/" + filename);// 存放位置
+            File destFile = new File(path);
+
+            try {
+                // FileUtils.copyInputStreamToFile()这个方法里对IO进行了自动操作，不需要额外的再去关闭IO流
+                FileUtils.copyInputStreamToFile(file.getInputStream(), destFile);// 复制临时文件到指定目录下
+
+                InputStream inputStream = file.getInputStream();
+                XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
+                XSSFSheet sheet = workbook.getSheetAt(0);
+                //获取行数
+                int rowNum=sheet.getLastRowNum();
+                System.err.println(rowNum);
+                Student student = null;
+                for (Row row:sheet) {
+                    //不读取表头
+                    if (("").equals(row.getCell(0).getStringCellValue())) {
+                        break;
+                    } else  {
+                        if (row.getRowNum() == 0) {
+                            continue;
+                        }
+                        row.getCell(0).setCellType(Cell.CELL_TYPE_STRING);
+                        row.getCell(1).setCellType(Cell.CELL_TYPE_STRING);
+                        row.getCell(2).setCellType(Cell.CELL_TYPE_STRING);
+                        row.getCell(3).setCellType(Cell.CELL_TYPE_STRING);
+                        row.getCell(4).setCellType(Cell.CELL_TYPE_STRING);
+                        String id = row.getCell(0).getStringCellValue();
+                        System.out.println(id);
+                        String name = row.getCell(1).getStringCellValue();
+                        String phonenumber = row.getCell(2).getStringCellValue();
+                        String email = row.getCell(3).getStringCellValue();
+                        String sfz = row.getCell(4).getStringCellValue();
+
+                        student = new Student(Integer.valueOf(id), name, Long.valueOf(phonenumber), email, 0, Long.valueOf(sfz));
+                        studentService.insert(student);
+                    }
+                }
+                inputStream.close();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+
+            return "redirect:/admin/student/allStudent";
+        } else {
+            return "redirect:upload_error.jsp";
+        }
+    }
+
 
     /**
      * 下载学生信息模板

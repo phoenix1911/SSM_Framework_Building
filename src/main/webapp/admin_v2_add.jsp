@@ -137,19 +137,20 @@
                 </div>
             </div>
             <div class="ibox-content">
-                <a href="/admin/student/downloadStuTemplate"class="btn btn-primary" type="submit">下载Excle模板</a>
-                <form action="${path}/admin/student/addmany" class="form-horizontal m-t" id="commentForm">
+                <a href="/admin/student/downloadStuTemplate" class="btn btn-primary" type="submit">下载Excle模板</a>
+
+                <form action="${path}/admin/student/addmany" method="post" enctype="multipart/form-data" class="form-horizontal m-t" id="commentForm">
 
                     <div class="form-group">
                         <label class="col-sm-3 control-label">选择文件：</label>
                         <div class="col-sm-8">
-                            <input id="cid"  name="id" minlength="10" type="text" class="form-control" required="" aria-required="true">
+                            <input  name="uploadfile" type="file" class="form-control" required="" aria-required="true">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-sm-4 col-sm-offset-3">
-                            <button class="btn btn-primary" type="submit">提交</button>
+                            <button class="btn btn-primary" type="submit">上传</button>
                         </div>
                     </div>
 
