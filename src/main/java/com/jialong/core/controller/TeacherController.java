@@ -111,24 +111,26 @@ public class TeacherController {
                 for (Row row:sheet) {
                     //不读取表头
                     row.getCell(0).setCellType(Cell.CELL_TYPE_STRING);
-                    row.getCell(1).setCellType(Cell.CELL_TYPE_STRING);
-                    row.getCell(2).setCellType(Cell.CELL_TYPE_STRING);
-                    row.getCell(3).setCellType(Cell.CELL_TYPE_STRING);
-                    row.getCell(4).setCellType(Cell.CELL_TYPE_STRING);
+
                     if (("").equals(row.getCell(0).getStringCellValue())) {
                         break;
                     } else  {
                         if (row.getRowNum() == 0) {
                             continue;
                         }
-
+                        row.getCell(1).setCellType(Cell.CELL_TYPE_STRING);
+                        row.getCell(2).setCellType(Cell.CELL_TYPE_STRING);
+                        row.getCell(3).setCellType(Cell.CELL_TYPE_STRING);
+                        row.getCell(4).setCellType(Cell.CELL_TYPE_STRING);
+                        row.getCell(5).setCellType(Cell.CELL_TYPE_STRING);
                         String id = row.getCell(0).getStringCellValue();
                         String name = row.getCell(1).getStringCellValue();
                         String phonenumber = row.getCell(2).getStringCellValue();
                         String adress = row.getCell(3).getStringCellValue();
                         String sfz = row.getCell(4).getStringCellValue();
+                        String ttype = row.getCell(5).getStringCellValue();
 
-                        teacher = new Teacher(Integer.valueOf(id),name,Integer.valueOf(phonenumber),adress,Long.valueOf(sfz));
+                        teacher = new Teacher(Integer.valueOf(id),name,Integer.valueOf(phonenumber),adress,Integer.valueOf(ttype),0,Long.valueOf(sfz));
                         teacherService.insert(teacher);
                     }
                 }

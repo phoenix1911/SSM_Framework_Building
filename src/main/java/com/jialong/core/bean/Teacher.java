@@ -20,11 +20,13 @@ public class Teacher implements Serializable {
     public Teacher() {
     }
 
-    public Teacher(Integer tid, String tname, Integer tphonenumber, String address, Long sfz) {
+    public Teacher(Integer tid, String tname, Integer tphonenumber, String address, Integer type, Integer isuploadtopic, Long sfz) {
         this.tid = tid;
         this.tname = tname;
         this.tphonenumber = tphonenumber;
         this.address = address;
+        this.type = type;
+        this.isuploadtopic = isuploadtopic;
         this.sfz = sfz;
     }
 

@@ -97,6 +97,15 @@
                     </div>
 
                     <div class="form-group">
+                        <label class="col-sm-3 control-label">教师类型：</label>
+                        <div class="col-sm-8">
+                            <label class="radio-inline">
+                                <input type="radio" checked="" value="0" id="optionsRadios1" name="type">校内老师</label>
+                            <label class="radio-inline">
+                                <input type="radio" value="1" id="optionsRadios2" name="type">校外老师</label></div>
+                    </div>
+
+                    <div class="form-group">
                         <label class="col-sm-3 control-label">身份证号：</label>
                         <div class="col-sm-8">
                             <input id="cpaperid"  type="text" class="form-control" name="sfz">
