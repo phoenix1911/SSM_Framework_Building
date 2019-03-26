@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jialong.core.mapper.TitleMapper" >
+  <resultMap id="BaseResultMap" type="com.jialong.core.bean.Title" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="isuploadrws" property="isuploadrws" jdbcType="INTEGER" />
+    <result column="rws" property="rws" jdbcType="VARCHAR" />
+    <result column="isuploadktbg" property="isuploadktbg" jdbcType="INTEGER" />
+    <result column="ktbg" property="ktbg" jdbcType="VARCHAR" />
+    <result column="isuploadsms" property="isuploadsms" jdbcType="INTEGER" />
+    <result column="sms" property="sms" jdbcType="VARCHAR" />
+    <result column="rwsState" property="rwsstate" jdbcType="VARCHAR" />
+    <result column="ktbgState" property="ktbgstate" jdbcType="VARCHAR" />
+    <result column="smsState" property="smsstate" jdbcType="VARCHAR" />
+    <result column="tid" property="tid" jdbcType="INTEGER" />
+    <result column="isuploadzqbg" property="isuploadzqbg" jdbcType="INTEGER" />
+    <result column="zqbg" property="zqbg" jdbcType="VARCHAR" />
+    <result column="zqbgState" property="zqbgstate" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, title, isuploadrws, rws, isuploadktbg, ktbg, isuploadsms, sms, rwsState, ktbgState, 
+    smsState, tid, isuploadzqbg, zqbg, zqbgState
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jialong.core.bean.TitleExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from title
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from title
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from title
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.jialong.core.bean.TitleExample" >
+    delete from title
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.jialong.core.bean.Title" >
+    insert into title (id, title, isuploadrws, 
+      rws, isuploadktbg, ktbg, 
+      isuploadsms, sms, rwsState, 
+      ktbgState, smsState, tid, 
+      isuploadzqbg, zqbg, zqbgState
+      )
+    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{isuploadrws,jdbcType=INTEGER}, 
+      #{rws,jdbcType=VARCHAR}, #{isuploadktbg,jdbcType=INTEGER}, #{ktbg,jdbcType=VARCHAR}, 
+      #{isuploadsms,jdbcType=INTEGER}, #{sms,jdbcType=VARCHAR}, #{rwsstate,jdbcType=VARCHAR}, 
+      #{ktbgstate,jdbcType=VARCHAR}, #{smsstate,jdbcType=VARCHAR}, #{tid,jdbcType=INTEGER}, 
+      #{isuploadzqbg,jdbcType=INTEGER}, #{zqbg,jdbcType=VARCHAR}, #{zqbgstate,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.jialong.core.bean.Title" >
+    insert into title
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="isuploadrws != null" >
+        isuploadrws,
+      </if>
+      <if test="rws != null" >
+        rws,
+      </if>
+      <if test="isuploadktbg != null" >
+        isuploadktbg,
+      </if>
+      <if test="ktbg != null" >
+        ktbg,
+      </if>
+      <if test="isuploadsms != null" >
+        isuploadsms,
+      </if>
+      <if test="sms != null" >
+        sms,
+      </if>
+      <if test="rwsstate != null" >
+        rwsState,
+      </if>
+      <if test="ktbgstate != null" >
+        ktbgState,
+      </if>
+      <if test="smsstate != null" >
+        smsState,
+      </if>
+      <if test="tid != null" >
+        tid,
+      </if>
+      <if test="isuploadzqbg != null" >
+        isuploadzqbg,
+      </if>
+      <if test="zqbg != null" >
+        zqbg,
+      </if>
+      <if test="zqbgstate != null" >
+        zqbgState,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="isuploadrws != null" >
+        #{isuploadrws,jdbcType=INTEGER},
+      </if>
+      <if test="rws != null" >
+        #{rws,jdbcType=VARCHAR},
+      </if>
+      <if test="isuploadktbg != null" >
+        #{isuploadktbg,jdbcType=INTEGER},
+      </if>
+      <if test="ktbg != null" >
+        #{ktbg,jdbcType=VARCHAR},
+      </if>
+      <if test="isuploadsms != null" >
+        #{isuploadsms,jdbcType=INTEGER},
+      </if>
+      <if test="sms != null" >
+        #{sms,jdbcType=VARCHAR},
+      </if>
+      <if test="rwsstate != null" >
+        #{rwsstate,jdbcType=VARCHAR},
+      </if>
+      <if test="ktbgstate != null" >
+        #{ktbgstate,jdbcType=VARCHAR},
+      </if>
+      <if test="smsstate != null" >
+        #{smsstate,jdbcType=VARCHAR},
+      </if>
+      <if test="tid != null" >
+        #{tid,jdbcType=INTEGER},
+      </if>
+      <if test="isuploadzqbg != null" >
+        #{isuploadzqbg,jdbcType=INTEGER},
+      </if>
+      <if test="zqbg != null" >
+        #{zqbg,jdbcType=VARCHAR},
+      </if>
+      <if test="zqbgstate != null" >
+        #{zqbgstate,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.jialong.core.bean.TitleExample" resultType="java.lang.Integer" >
+    select count(*) from title
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <select id="selectAll" resultType="com.jialong.core.bean.Title">
+    select * from title
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update title
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.title != null" >
+        title = #{record.title,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isuploadrws != null" >
+        isuploadrws = #{record.isuploadrws,jdbcType=INTEGER},
+      </if>
+      <if test="record.rws != null" >
+        rws = #{record.rws,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isuploadktbg != null" >
+        isuploadktbg = #{record.isuploadktbg,jdbcType=INTEGER},
+      </if>
+      <if test="record.ktbg != null" >
+        ktbg = #{record.ktbg,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isuploadsms != null" >
+        isuploadsms = #{record.isuploadsms,jdbcType=INTEGER},
+      </if>
+      <if test="record.sms != null" >
+        sms = #{record.sms,jdbcType=VARCHAR},
+      </if>
+      <if test="record.rwsstate != null" >
+        rwsState = #{record.rwsstate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ktbgstate != null" >
+        ktbgState = #{record.ktbgstate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.smsstate != null" >
+        smsState = #{record.smsstate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tid != null" >
+        tid = #{record.tid,jdbcType=INTEGER},
+      </if>
+      <if test="record.isuploadzqbg != null" >
+        isuploadzqbg = #{record.isuploadzqbg,jdbcType=INTEGER},
+      </if>
+      <if test="record.zqbg != null" >
+        zqbg = #{record.zqbg,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zqbgstate != null" >
+        zqbgState = #{record.zqbgstate,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update title
+    set id = #{record.id,jdbcType=INTEGER},
+      title = #{record.title,jdbcType=VARCHAR},
+      isuploadrws = #{record.isuploadrws,jdbcType=INTEGER},
+      rws = #{record.rws,jdbcType=VARCHAR},
+      isuploadktbg = #{record.isuploadktbg,jdbcType=INTEGER},
+      ktbg = #{record.ktbg,jdbcType=VARCHAR},
+      isuploadsms = #{record.isuploadsms,jdbcType=INTEGER},
+      sms = #{record.sms,jdbcType=VARCHAR},
+      rwsState = #{record.rwsstate,jdbcType=VARCHAR},
+      ktbgState = #{record.ktbgstate,jdbcType=VARCHAR},
+      smsState = #{record.smsstate,jdbcType=VARCHAR},
+      tid = #{record.tid,jdbcType=INTEGER},
+      isuploadzqbg = #{record.isuploadzqbg,jdbcType=INTEGER},
+      zqbg = #{record.zqbg,jdbcType=VARCHAR},
+      zqbgState = #{record.zqbgstate,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jialong.core.bean.Title" >
+    update title
+    <set >
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="isuploadrws != null" >
+        isuploadrws = #{isuploadrws,jdbcType=INTEGER},
+      </if>
+      <if test="rws != null" >
+        rws = #{rws,jdbcType=VARCHAR},
+      </if>
+      <if test="isuploadktbg != null" >
+        isuploadktbg = #{isuploadktbg,jdbcType=INTEGER},
+      </if>
+      <if test="ktbg != null" >
+        ktbg = #{ktbg,jdbcType=VARCHAR},
+      </if>
+      <if test="isuploadsms != null" >
+        isuploadsms = #{isuploadsms,jdbcType=INTEGER},
+      </if>
+      <if test="sms != null" >
+        sms = #{sms,jdbcType=VARCHAR},
+      </if>
+      <if test="rwsstate != null" >
+        rwsState = #{rwsstate,jdbcType=VARCHAR},
+      </if>
+      <if test="ktbgstate != null" >
+        ktbgState = #{ktbgstate,jdbcType=VARCHAR},
+      </if>
+      <if test="smsstate != null" >
+        smsState = #{smsstate,jdbcType=VARCHAR},
+      </if>
+      <if test="tid != null" >
+        tid = #{tid,jdbcType=INTEGER},
+      </if>
+      <if test="isuploadzqbg != null" >
+        isuploadzqbg = #{isuploadzqbg,jdbcType=INTEGER},
+      </if>
+      <if test="zqbg != null" >
+        zqbg = #{zqbg,jdbcType=VARCHAR},
+      </if>
+      <if test="zqbgstate != null" >
+        zqbgState = #{zqbgstate,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jialong.core.bean.Title" >
+    update title
+    set title = #{title,jdbcType=VARCHAR},
+      isuploadrws = #{isuploadrws,jdbcType=INTEGER},
+      rws = #{rws,jdbcType=VARCHAR},
+      isuploadktbg = #{isuploadktbg,jdbcType=INTEGER},
+      ktbg = #{ktbg,jdbcType=VARCHAR},
+      isuploadsms = #{isuploadsms,jdbcType=INTEGER},
+      sms = #{sms,jdbcType=VARCHAR},
+      rwsState = #{rwsstate,jdbcType=VARCHAR},
+      ktbgState = #{ktbgstate,jdbcType=VARCHAR},
+      smsState = #{smsstate,jdbcType=VARCHAR},
+      tid = #{tid,jdbcType=INTEGER},
+      isuploadzqbg = #{isuploadzqbg,jdbcType=INTEGER},
+      zqbg = #{zqbg,jdbcType=VARCHAR},
+      zqbgState = #{zqbgstate,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <!--教师更新论文题目-->
+  <update id="updateTitleAndRWSByPrimaryKey" parameterType="com.jialong.core.bean.Title">
+    update title
+    set title = #{title,jdbcType=VARCHAR},
+        isuploadrws = #{isuploadrws,jdbcType=INTEGER},
+        rws = #{rws,jdbcType=VARCHAR},
+        rwsState = #{rwsstate,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+</mapper>
