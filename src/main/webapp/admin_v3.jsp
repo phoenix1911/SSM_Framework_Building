@@ -28,7 +28,7 @@
                 </div>
                 <div class="ibox-content">
                     <div class="">
-                        <a class="btn btn-info" id="upload">添加教师</a>
+                        <a href="${path}/admin_v3_add.jsp" class="btn btn-info" id="upload">添加教师</a>
                     </div>
                     <table class="table table-striped table-bordered table-hover dataTables-example">
                         <thead>
@@ -39,6 +39,7 @@
                             <th>办公地址</th>
                             <th>教师类型</th>
                             <th>是否上传题目</th>
+                            <th>编辑</th>
 
                         </tr>
                         </thead>
@@ -51,6 +52,10 @@
                             <th>${teacher.address}</th>
                             <th>${teacher.type==0?"校内老师":"校外老师"}</th>
                             <th>${empty student.paperid?"未上传":"已上传"}</th>
+                            <th>
+                                <a href="${path}/admin/teacher/toUpdate?tid=${teacher.tid}" class="btn">修改</a>
+                                <a href="${path}/admin/teacher/del?tid=${teacher.tid}" class="btn">删除</a>
+                            </th>
                         </tr>
                         </c:forEach>
                         </tbody>
@@ -80,19 +85,19 @@
 <script src="${path}/js/content.js?v=1.0.0"></script>
 
 <%--layer插件--%>
-<script src="${path}/js/plugins/layer/layer.min.js"></script>
-<script>
-    $('#upload').on('click', function(){
-        layer.open({
-            type: 2,
-            title: '添加教师',
-            maxmin: true,
-            shadeClose: true, //点击遮罩关闭层
-            area : ['800px' , '520px'],
-            content: '${path}/admin_v3_add.jsp'
-        });
-    });
-</script>
+<%--<script src="${path}/js/plugins/layer/layer.min.js"></script>--%>
+<%--<script>--%>
+    <%--$('#upload').on('click', function(){--%>
+        <%--layer.open({--%>
+            <%--type: 2,--%>
+            <%--title: '添加教师',--%>
+            <%--maxmin: true,--%>
+            <%--shadeClose: true, //点击遮罩关闭层--%>
+            <%--area : ['800px' , '520px'],--%>
+            <%--content: '${path}/admin_v3_add.jsp'--%>
+        <%--});--%>
+    <%--});--%>
+<%--</script>--%>
 <!-- 分页插件 -->
 <script>
     $(document).ready(function () {

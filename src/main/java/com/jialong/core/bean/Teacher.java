@@ -15,6 +15,28 @@ public class Teacher implements Serializable {
 
     private Integer isuploadtopic;
 
+    private Long sfz;
+
+    public Teacher() {
+    }
+
+    public Teacher(Integer tid, String tname, Integer tphonenumber, String address, Long sfz) {
+        this.tid = tid;
+        this.tname = tname;
+        this.tphonenumber = tphonenumber;
+        this.address = address;
+        this.sfz = sfz;
+    }
+
+    public Long getSfz() {
+        return sfz;
+    }
+
+
+    public void setSfz(Long sfz) {
+        this.sfz = sfz;
+    }
+
     public Integer getTid() {
         return tid;
     }
