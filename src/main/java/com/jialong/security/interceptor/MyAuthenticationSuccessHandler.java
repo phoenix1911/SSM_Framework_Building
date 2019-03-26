@@ -29,7 +29,7 @@ public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHand
             return;
         }
         if (roles.contains("ROLE_TEACHER")){
-            response.sendRedirect(basePath+"teacher_index.jsp");
+            response.sendRedirect(basePath+"tea/toIndex");
             return;
         }
         response.sendRedirect(basePath+"login.html");

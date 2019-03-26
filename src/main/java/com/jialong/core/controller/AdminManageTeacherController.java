@@ -30,7 +30,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/admin/teacher")
-public class TeacherController {
+public class AdminManageTeacherController {
 
     @Autowired
     private TeacherService teacherService;
