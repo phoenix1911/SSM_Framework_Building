@@ -80,7 +80,16 @@ public class TitleService {
      * @return
      */
     public int insert(Title title) {
-
+        title.setKtbgstate("待上传");
+        title.setIsuploadktbg(0);
+        title.setZqbgstate("待上传");
+        title.setIsuploadzqbg(0);
+        title.setSmsstate("待上传");
+        title.setIsuploadsms(0);
+        if (title.getRws()== null) {
+            title.setIsuploadrws(0);
+            title.setRwsstate("待上传");
+        }
         return titleMapper.insert(title);
     }
 

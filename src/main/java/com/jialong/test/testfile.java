@@ -7,5 +7,6 @@ public class testfile {
     public static void main(String[] args) {
         String path = testfile.class.getResource("/").getPath();
         System.out.println(path);
+
     }
 }

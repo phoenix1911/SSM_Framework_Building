@@ -3,13 +3,24 @@ package com.jialong.core.controller;
 import com.jialong.core.bean.Student;
 import com.jialong.core.bean.Title;
 import com.jialong.core.service.TitleService;
+import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -20,6 +31,9 @@ import java.util.List;
 public class TeacherController {
     @Autowired
     private TitleService titleService;
+
+    @Value("#{configProperties['filepath']}")
+     private String filepath;
 
     @RequestMapping("toIndex")
     public String toIndex(Model model) {
@@ -56,7 +70,21 @@ public class TeacherController {
     }
 
     @RequestMapping("/title/add")
-    public String insertone(Title title) {
+    public String insertone(@RequestParam("uploadfile") CommonsMultipartFile file, Title title) {
+
+        if (!file.isEmpty()) {
+            String path = filepath+"\\title\\"+"高校毕设"+"\\"+file.getOriginalFilename();
+            title.setRws("\\title\\"+"高校毕设"+"\\"+file.getOriginalFilename());
+            title.setRwsstate("已上传");
+            title.setIsuploadrws(1);
+            File destFile = new File(path);
+
+            try {
+                FileUtils.copyInputStreamToFile(file.getInputStream(), destFile);// 复制临时文件到指定目录下
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         String tid = SecurityContextHolder.getContext().getAuthentication().getName();
         title.setTid(Integer.valueOf(tid));
         titleService.insert(title);

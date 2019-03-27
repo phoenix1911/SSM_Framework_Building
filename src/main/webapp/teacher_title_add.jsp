@@ -65,12 +65,19 @@
             </div>
             <div class="ibox-content">
 
-                <form action="${path}/tea/title/add" class="form-horizontal m-t" id="commentForm">
+                <form action="${path}/tea/title/add" method="post" enctype="multipart/form-data" class="form-horizontal m-t" id="commentForm">
 
                     <div class="form-group">
                         <label class="col-sm-3 control-label">毕业设计题目：</label>
                         <div class="col-sm-8">
-                            <input id="cid"  name="title" value="《》" type="text" class="form-control" required="" aria-required="true">
+                            <input id="cid"  name="title" value="" type="text" class="form-control" required="" aria-required="true">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">选择文件：</label>
+                        <div class="col-sm-8">
+                            <input  name="uploadfile" type="file" class="form-control" required="" aria-required="true">
                         </div>
                     </div>
 
