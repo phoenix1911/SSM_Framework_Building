@@ -137,6 +137,7 @@ public class TitleService {
      * @return
      */
     public int insert(Title title) {
+        title.setSid(0);
         title.setKtbgstate("未上传");
         title.setIsuploadktbg(0);
         title.setZqbgstate("未上传");

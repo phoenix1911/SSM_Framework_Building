@@ -25,11 +25,21 @@ public class Title {
 
     private Integer tid;
 
+    private Integer sid;
+
     private Integer isuploadzqbg;
 
     private String zqbg;
 
     private String zqbgstate;
+
+    public Integer getSid() {
+        return sid;
+    }
+
+    public void setSid(Integer sid) {
+        this.sid = sid;
+    }
 
     public Integer getId() {
         return id;

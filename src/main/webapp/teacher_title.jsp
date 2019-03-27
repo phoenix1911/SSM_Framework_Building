@@ -48,7 +48,16 @@
                         <tr class="gradeX">
                             <th>${title.id}</th>
                             <th>${title.title}</th>
-                            <th>选题学生</th>
+                            <th>
+                                <c:choose>
+                                    <c:when test="${title.sid==0}">
+                                        未被选题
+                                    </c:when>
+                                    <c:when test="${title.sid!=0}">
+                                        ${title.sid}
+                                    </c:when>
+                                </c:choose>
+                            </th>
 
                             <th>
                                 <c:choose>

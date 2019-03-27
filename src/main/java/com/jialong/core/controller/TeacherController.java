@@ -117,6 +117,9 @@ public class TeacherController {
     @RequestMapping("/title/download")
     public ResponseEntity<byte[]> download(@RequestParam("type") String type,@RequestParam("id") int id) throws IOException {
         Title title = titleService.queryById(id);
+        if (("rwstemplate").equals(type)) {
+            return baseService.getResponseEntity("\\template\\任务书.docx");
+        }
         if (("rws").equals(type)) {
             return baseService.getResponseEntity(title.getRws());
         }

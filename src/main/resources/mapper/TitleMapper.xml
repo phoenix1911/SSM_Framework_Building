@@ -14,6 +14,7 @@
     <result column="ktbgState" property="ktbgstate" jdbcType="VARCHAR" />
     <result column="smsState" property="smsstate" jdbcType="VARCHAR" />
     <result column="tid" property="tid" jdbcType="INTEGER" />
+    <result column="sid" property="sid" jdbcType="INTEGER" />
     <result column="isuploadzqbg" property="isuploadzqbg" jdbcType="INTEGER" />
     <result column="zqbg" property="zqbg" jdbcType="VARCHAR" />
     <result column="zqbgState" property="zqbgstate" jdbcType="VARCHAR" />
@@ -78,7 +79,7 @@
   </sql>
   <sql id="Base_Column_List" >
     id, title, isuploadrws, rws, isuploadktbg, ktbg, isuploadsms, sms, rwsState, ktbgState, 
-    smsState, tid, isuploadzqbg, zqbg, zqbgState
+    smsState, sid,tid, isuploadzqbg, zqbg, zqbgState
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jialong.core.bean.TitleExample" >
     select
