@@ -8,6 +8,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -28,6 +29,9 @@ import java.util.List;
 @Controller
 @RequestMapping("/admin/student")
 public class AdminManageStudentController {
+
+    @Value("#{configProperties['filepath']}")
+    private String filepath;
 
     @Autowired
     private StudentService studentService;
@@ -92,7 +96,7 @@ public class AdminManageStudentController {
         if (!file.isEmpty()) {
             String type = file.getOriginalFilename().substring(file.getOriginalFilename().indexOf("."));// 取文件格式后缀名
             String filename = System.currentTimeMillis() + type;// 取当前时间戳作为文件名
-            String path = request.getSession().getServletContext().getRealPath("/file/admin/uploadStu/" + filename);// 存放位置
+            String path = filepath+"\\admin\\uploadStu\\" + filename;// 存放位置
             File destFile = new File(path);
 
             try {

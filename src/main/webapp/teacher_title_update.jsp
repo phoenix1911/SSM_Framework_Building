@@ -28,29 +28,37 @@
                 </div>
                 <div class="ibox-content">
 
-                    <form action="${path}/tea/title/update" class="form-horizontal m-t" id="commentForm">
+                        <form action="${path}/tea/title/update" method="post" enctype="multipart/form-data" class="form-horizontal m-t" id="commentForm">
 
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label">论文编号：</label>
-                            <div class="col-sm-8">
-                                <input id="cid" readonly value="${title.id}" name="id" minlength="10" type="text" class="form-control" required="" aria-required="true">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">论文编号：</label>
+                                <div class="col-sm-8">
+                                    <input id="id" readonly value="${title.id}" name="id" minlength="10" type="text" class="form-control" required="" aria-required="true">
+                                 </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label">论文题目：</label>
-                            <div class="col-sm-8">
-                                <input id="cname" value="${title.title}" name="title" minlength="2" type="text" class="form-control" required="" aria-required="true">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">毕业设计题目：</label>
+                                <div class="col-sm-8">
+                                    <input id="cid"  name="title" value="${title.title}" type="text" class="form-control" required="" aria-required="true">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <div class="col-sm-4 col-sm-offset-3">
-                                <button class="btn btn-primary" type="submit">提交</button>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">选择文件：</label>
+                                <div class="col-sm-8">
+                                    <input  name="uploadfile" type="file" class="form-control" required="" aria-required="true">
+                                </div>
                             </div>
-                        </div>
 
-                    </form>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-3">
+                                    <button class="btn btn-primary" type="submit">提交</button>
+                                </div>
+                            </div>
+
+                        </form>
+
                 </div>
             </div>
 

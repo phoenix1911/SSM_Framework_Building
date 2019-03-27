@@ -1,15 +1,12 @@
 package com.jialong.core.controller;
 
-import com.jialong.core.bean.Student;
 import com.jialong.core.bean.Title;
 import com.jialong.core.service.TitleService;
+import com.jialong.core.service.BaseService;
 import org.apache.commons.io.FileUtils;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,10 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
-import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -29,11 +24,15 @@ import java.util.List;
 @Controller
 @RequestMapping("tea")
 public class TeacherController {
+
+    @Autowired
+    private BaseService baseService;
+
     @Autowired
     private TitleService titleService;
 
     @Value("#{configProperties['filepath']}")
-     private String filepath;
+    private String filepath;
 
     @RequestMapping("toIndex")
     public String toIndex(Model model) {
@@ -72,19 +71,7 @@ public class TeacherController {
     @RequestMapping("/title/add")
     public String insertone(@RequestParam("uploadfile") CommonsMultipartFile file, Title title) {
 
-        if (!file.isEmpty()) {
-            String path = filepath+"\\title\\"+"高校毕设"+"\\"+file.getOriginalFilename();
-            title.setRws("\\title\\"+"高校毕设"+"\\"+file.getOriginalFilename());
-            title.setRwsstate("已上传");
-            title.setIsuploadrws(1);
-            File destFile = new File(path);
-
-            try {
-                FileUtils.copyInputStreamToFile(file.getInputStream(), destFile);// 复制临时文件到指定目录下
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
+        titleService.uploadrws(file, title);
         String tid = SecurityContextHolder.getContext().getAuthentication().getName();
         title.setTid(Integer.valueOf(tid));
         titleService.insert(title);
@@ -104,21 +91,47 @@ public class TeacherController {
     }
 
     @RequestMapping("/title/update")
-    public String update(Model model, Title title) {
+    public String update(@RequestParam("uploadfile") CommonsMultipartFile file, Title title) {
+
+        titleService.uploadrws(file, title);
         String tid = SecurityContextHolder.getContext().getAuthentication().getName();
         title.setTid(Integer.valueOf(tid));
         titleService.update(title);
         return "redirect:/tea/title/toTitle";
     }
 
+
+
     /**
-     * 删除学生
+     * 删除论文
      * @param id
      * @return
      */
     @RequestMapping("/title/del")
     public String delete(@RequestParam("id") int id) {
+        //TODO 删除时一起删除文件
         titleService.deleteById(id);
         return "redirect:/tea/title/toTitle";
+    }
+
+    @RequestMapping("/title/download")
+    public ResponseEntity<byte[]> download(@RequestParam("type") String type,@RequestParam("id") int id) throws IOException {
+        Title title = titleService.queryById(id);
+        if (("rws").equals(type)) {
+            return baseService.getResponseEntity(title.getRws());
+        }
+        if (("zqbg").equals(type)) {
+            return baseService.getResponseEntity(title.getZqbg());
+        }
+        if (("ktbg").equals(type)) {
+            return baseService.getResponseEntity(title.getKtbg());
+        }
+        if (("sms").equals(type)) {
+            return baseService.getResponseEntity(title.getSms());
+        }
+
+        return null;
+
+
     }
 }

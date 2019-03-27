@@ -49,13 +49,82 @@
                             <th>${title.id}</th>
                             <th>${title.title}</th>
                             <th>选题学生</th>
-                            <th>${title.isuploadrws==0?"<a>上传</a>":"<a>查看</a><br><a>修改</a>"}</th>
-                            <th>${title.isuploadktbg==0?"未上传":"<a>下载</a><br><a>审批</a>"}</th>
-                            <th>${title.isuploadzqbg==0?"未上传":"<a>下载</a><br><a>审批</a>"}</th>
-                            <th>${title.isuploadsms==0?"未上传":"<a>下载</a><br><a>审批</a>"}</th>
+
                             <th>
-                                <a href="${path}/tea/title/toUpdate?id=${title.id}" class="btn">修改</a>
-                                <a href="${path}/tea/title/del?id=${title.id}" class="btn">删除</a>
+                                <c:choose>
+                                    <c:when test="${title.rwsstate=='未上传'}">
+                                        <a href="${path}/tea/title/toUpdate?id=${title.id}" class="btn btn-success btn-xs">上传</a>
+                                    </c:when>
+                                    <c:when test="${title.rwsstate=='已上传'}">
+                                        <a href="${path}/tea/title/download?id=${title.id}&type=rws" class="btn btn-info btn-xs">查看</a>
+                                    </c:when>
+                                    <c:when test="${title.rwsstate=='待审批'}">
+                                        审批中 &nbsp <a href="${path}/tea/title/download?id=${title.id}&type=rws" class="btn btn-info btn-xs">查看</a>
+                                    </c:when>
+                                </c:choose>
+                            </th>
+
+
+                            <th>
+                                <c:choose>
+                                <c:when test="${title.ktbgstate=='未上传'}">
+                                    未上传
+                                </c:when>
+                                <c:when test="${title.ktbgstate=='已上传'}">
+                                    <a href="${path}/tea/title/download?id=${title.id}&type=ktbg" class="btn btn-info btn-xs">查看</a>
+                                    <a href="${path}/tea/title/" class="btn btn-success btn-xs">通过</a>
+                                    <a href="${path}/tea/title/" class="btn btn-danger btn-xs">未通过</a>
+                                </c:when>
+                                <c:when test="${title.ktbgstate=='审批通过'}">
+                                    审批通过
+                                </c:when>
+                                <c:when test="${title.ktbgstate=='审批未通过'}">
+                                    审批未通过
+                                </c:when>
+                            </c:choose>
+                            </th>
+
+                            <th>
+                                <c:choose>
+                                    <c:when test="${title.zqbgstate=='未上传'}">
+                                        未上传
+                                    </c:when>
+                                    <c:when test="${title.zqbgstate=='已上传'}">
+                                        <a href="${path}/tea/title/download?id=${title.id}&type=zqbg" class="btn btn-info btn-xs">查看</a>
+                                        <a href="${path}/tea/title/" class="btn btn-success btn-xs">通过</a>
+                                        <a href="${path}/tea/title/" class="btn btn-danger btn-xs">未通过</a>
+                                    </c:when>
+                                    <c:when test="${title.zqbgstate=='审批通过'}">
+                                        审批通过
+                                    </c:when>
+                                    <c:when test="${title.zqbgstate=='审批未通过'}">
+                                        审批未通过
+                                    </c:when>
+                                </c:choose>
+                            </th>
+
+                            <th>
+                                <c:choose>
+                                    <c:when test="${title.smsstate=='未上传'}">
+                                        未上传
+                                    </c:when>
+                                    <c:when test="${title.smsstate=='已上传'}">
+                                        <a href="${path}/tea/title/download?id=${title.id}&type=sms" class="btn btn-info btn-xs">查看</a>
+                                        <a href="${path}/tea/title/" class="btn btn-success btn-xs">通过</a>
+                                        <a href="${path}/tea/title/" class="btn btn-danger btn-xs">未通过</a>
+                                    </c:when>
+                                    <c:when test="${title.smsstate=='审批通过'}">
+                                        审批通过
+                                    </c:when>
+                                    <c:when test="${title.smsstate=='审批未通过'}">
+                                        审批未通过
+                                    </c:when>
+                                </c:choose>
+                            </th>
+
+                            <th>
+                                <a href="${path}/tea/title/toUpdate?id=${title.id}" class="btn btn-primary btn-xs">修改</a>
+                                <a href="${path}/tea/title/del?id=${title.id}" class="btn btn-danger btn-xs">删除</a>
                             </th>
                         </tr>
                         </c:forEach>
