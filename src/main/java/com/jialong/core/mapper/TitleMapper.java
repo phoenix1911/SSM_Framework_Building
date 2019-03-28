@@ -47,4 +47,7 @@ public interface TitleMapper {
      */
     int updateTitleAndRWSByPrimaryKey(Title record);
 
+    List<Title> queryNotSelected();
+
+    Title selectBySid(int sid);
 }

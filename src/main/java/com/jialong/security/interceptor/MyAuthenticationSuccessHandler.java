@@ -25,7 +25,7 @@ public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHand
             return;
         }
         if (roles.contains("ROLE_STUDENT")){
-            response.sendRedirect(basePath+"student_index.jsp");
+            response.sendRedirect(basePath+"stu/toIndex");
             return;
         }
         if (roles.contains("ROLE_TEACHER")){

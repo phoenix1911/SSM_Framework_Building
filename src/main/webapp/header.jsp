@@ -18,13 +18,19 @@
     <link href="${path}/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="${path}/css/font-awesome.css?v=4.4.0" rel="stylesheet">
 
-    <!-- Morris -->
-    <link href="${path}/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <%--<!-- Morris -->--%>
+    <%--<link href="${path}/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">--%>
 
-    <!-- Gritter -->
-    <link href="${path}/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <%--<!-- Gritter -->--%>
+    <%--<link href="${path}/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">--%>
+
+    <!-- Data Tables -->
+    <link href="${path}/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
 
     <link href="${path}/css/animate.css" rel="stylesheet">
     <link href="${path}/css/style.css?v=4.1.0" rel="stylesheet">
+
+
+
 
 </head>

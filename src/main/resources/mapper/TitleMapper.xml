@@ -231,6 +231,14 @@
   <select id="selectAll" resultType="com.jialong.core.bean.Title">
     select * from title
   </select>
+
+  <select id="queryNotSelected" resultType="com.jialong.core.bean.Title">
+    select id,title,rws from title where sid=0
+  </select>
+  <select id="selectBySid" resultType="com.jialong.core.bean.Title">
+    select * from title where sid=#{sid,jdbcType=INTEGER}
+  </select>
+
   <update id="updateByExampleSelective" parameterType="map" >
     update title
     <set >
@@ -341,6 +349,9 @@
       <if test="tid != null" >
         tid = #{tid,jdbcType=INTEGER},
       </if>
+      <if test="sid != null" >
+        sid = #{sid,jdbcType=INTEGER},
+      </if>
       <if test="isuploadzqbg != null" >
         isuploadzqbg = #{isuploadzqbg,jdbcType=INTEGER},
       </if>
@@ -350,6 +361,7 @@
       <if test="zqbgstate != null" >
         zqbgState = #{zqbgstate,jdbcType=VARCHAR},
       </if>
+
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>

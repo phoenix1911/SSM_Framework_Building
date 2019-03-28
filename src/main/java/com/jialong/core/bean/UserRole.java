@@ -1,6 +1,8 @@
 package com.jialong.core.bean;
 
-public class UserRole {
+import java.io.Serializable;
+
+public class UserRole implements Serializable {
     public UserRole(String username, Integer rid) {
         this.username = username;
         this.rid = rid;

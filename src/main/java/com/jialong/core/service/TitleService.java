@@ -45,6 +45,15 @@ public class TitleService {
         criteria.andTidEqualTo(tid);
         return titleMapper.selectByExample(titleExample);
     }
+    /**
+     * 获取学生选择的论文题目
+     * @param sid
+     * @return
+     */
+    public Title queryBySid(int sid) {
+
+        return titleMapper.selectBySid(sid);
+    }
 
     /**
      * 更新论文信息
@@ -56,12 +65,16 @@ public class TitleService {
      * @param title
      * @return
      */
-    public int update(Title title) {
+    public int updateTitleAndRWS(Title title) {
         if (!("").equals(title.getRws())) {
             title.setIsuploadrws(1);
             title.setRwsstate("已上传");
         }
         return titleMapper.updateTitleAndRWSByPrimaryKey(title);
+    }
+
+    public int updateTitle(Title title) {
+        return titleMapper.updateByPrimaryKeySelective(title);
     }
 
     /**
@@ -71,6 +84,10 @@ public class TitleService {
      */
     public Title queryById(int id) {
         return titleMapper.selectByPrimaryKey(id);
+    }
+
+    public List<Title> queryNotSelected() {
+        return titleMapper.queryNotSelected();
     }
 
     /**

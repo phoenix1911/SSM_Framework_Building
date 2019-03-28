@@ -96,7 +96,7 @@ public class TeacherController {
         titleService.uploadrws(file, title);
         String tid = SecurityContextHolder.getContext().getAuthentication().getName();
         title.setTid(Integer.valueOf(tid));
-        titleService.update(title);
+        titleService.updateTitleAndRWS(title);
         return "redirect:/tea/title/toTitle";
     }
 
@@ -118,7 +118,7 @@ public class TeacherController {
     public ResponseEntity<byte[]> download(@RequestParam("type") String type,@RequestParam("id") int id) throws IOException {
         Title title = titleService.queryById(id);
         if (("rwstemplate").equals(type)) {
-            return baseService.getResponseEntity("\\template\\任务书.docx");
+            return baseService.getResponseEntity("\\template\\任务书模板.docx");
         }
         if (("rws").equals(type)) {
             return baseService.getResponseEntity(title.getRws());

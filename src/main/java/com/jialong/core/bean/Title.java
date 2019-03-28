@@ -1,6 +1,9 @@
 package com.jialong.core.bean;
 
-public class Title {
+
+import java.io.Serializable;
+
+public class Title implements Serializable {
     private Integer id;
 
     private String title;
