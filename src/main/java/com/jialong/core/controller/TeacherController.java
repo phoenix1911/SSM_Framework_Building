@@ -132,9 +132,23 @@ public class TeacherController {
         if (("sms").equals(type)) {
             return baseService.getResponseEntity(title.getSms());
         }
-
         return null;
+    }
 
+    @RequestMapping("/title/Approval")
+    public String approval(@RequestParam("id") int id, @RequestParam("type") String type, @RequestParam("mark") int mark) {
+        Title title = titleService.queryById(id);
 
+        if (("ktbg").equals(type)) {
+            title.setKtbgstate(mark==1?"审批通过":"审批未通过");
+        }
+        if (("zqbg").equals(type)) {
+            title.setZqbgstate(mark==1?"审批通过":"审批未通过");
+        }
+        if (("sms").equals(type)) {
+            title.setSmsstate(mark==1?"审批通过":"审批未通过");
+        }
+        titleService.updateTitle(title);
+        return "redirect:/tea/title/toTitle";
     }
 }

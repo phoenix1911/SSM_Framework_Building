@@ -63,41 +63,41 @@
                                         <a href="${path}/stu/title/download?type=ktbg" class="btn btn-info btn-xs">查看</a> &nbsp 状态：审批通过
                                     </c:when>
                                     <c:when test="${title.ktbgstate=='审批未通过'}">
-                                        审批未通过 &nbsp <a href="${path}/stu/title/upload?id=${title.title}&type=ktbg" class="btn btn-info btn-xs">重新上传</a>
+                                        审批未通过 &nbsp <a href="${path}/stu/title/toUpload" class="btn btn-info btn-xs">重新上传</a>
                                     </c:when>
                             </c:choose>
                             </th>
 
                             <th>
                                 <c:choose>
-                                    <c:when test="${title.ktbgstate=='未上传'}">
-                                        <a href="${path}/stu/title/upload?id=${title.title}&type=zqbg" class="btn btn-info btn-xs">上传</a>
+                                    <c:when test="${title.zqbgstate=='未上传'}">
+                                        <a href="${path}/stu/title/toUpload" class="btn btn-info btn-xs">上传</a>
                                     </c:when>
-                                    <c:when test="${title.ktbgstate=='已上传'}">
+                                    <c:when test="${title.zqbgstate=='已上传'}">
                                         <a href="${path}/stu/title/download?type=zqbg" class="btn btn-info btn-xs">查看</a> &nbsp 状态：待审批
                                     </c:when>
-                                    <c:when test="${title.ktbgstate=='审批通过'}">
+                                    <c:when test="${title.zqbgstate=='审批通过'}">
                                         <a href="${path}/stu/title/download?type=zqbg" class="btn btn-info btn-xs">查看</a> &nbsp 状态：审批通过
                                     </c:when>
-                                    <c:when test="${title.ktbgstate=='审批未通过'}">
-                                        审批未通过 &nbsp <a href="${path}/stu/title/upload?id=${title.title}&type=zqbg" class="btn btn-info btn-xs">重新上传</a>
+                                    <c:when test="${title.zqbgstate=='审批未通过'}">
+                                        审批未通过 &nbsp <a href="${path}/stu/titletoUpload" class="btn btn-info btn-xs">重新上传</a>
                                     </c:when>
                                 </c:choose>
                             </th>
 
                             <th>
                                 <c:choose>
-                                    <c:when test="${title.ktbgstate=='未上传'}">
-                                        <a href="${path}/stu/title/upload?id=${title.title}&type=sms" class="btn btn-info btn-xs">上传</a>
+                                    <c:when test="${title.smsstate=='未上传'}">
+                                        <a href="${path}/stu/title/toUpload" class="btn btn-info btn-xs">上传</a>
                                     </c:when>
-                                    <c:when test="${title.ktbgstate=='已上传'}">
+                                    <c:when test="${title.smsstate=='已上传'}">
                                         <a href="${path}/stu/title/download?type=sms" class="btn btn-info btn-xs">查看</a> &nbsp 状态：待审批
                                     </c:when>
-                                    <c:when test="${title.ktbgstate=='审批通过'}">
+                                    <c:when test="${title.smsstate=='审批通过'}">
                                         <a href="${path}/stu/title/download?type=sms" class="btn btn-info btn-xs">查看</a> &nbsp 状态：审批通过
                                     </c:when>
-                                    <c:when test="${title.ktbgstate=='审批未通过'}">
-                                        审批未通过 &nbsp <a href="${path}/stu/title/upload?id=${title.title}&type=sms" class="btn btn-info btn-xs">重新上传</a>
+                                    <c:when test="${title.smsstate=='审批未通过'}">
+                                        审批未通过 &nbsp <a href="${path}/stu/title/toUpload" class="btn btn-info btn-xs">重新上传</a>
                                     </c:when>
                                 </c:choose>
                             </th>

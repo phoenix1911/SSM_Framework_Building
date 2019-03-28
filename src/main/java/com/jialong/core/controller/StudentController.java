@@ -101,13 +101,17 @@ public class StudentController {
         return "student_title_upload";
     }
 
+    /**
+     * 上传的时候修改状态为 已上传 无论有没有审批 重新上传时都会再次审批
+     * @param file
+     * @param type
+     * @return
+     */
     @RequestMapping("/title/upload")
     public String insertone(@RequestParam("uploadfile") CommonsMultipartFile file,@RequestParam("type") String type) {
 
         //获取学生的题目对象
         Title title = titleService.queryBySid(Integer.parseInt(SecurityContextHolder.getContext().getAuthentication().getName()));
-
-
         if (!file.isEmpty()) {
             String path = filepath + "\\title\\" + title.getTitle() + "\\" + file.getOriginalFilename();
 
