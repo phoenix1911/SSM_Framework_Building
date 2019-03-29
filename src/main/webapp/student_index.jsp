@@ -67,7 +67,7 @@
                                 <a class="J_menuItem" href="${path}/stu/weekly/toTimeline" data-index="0">毕设阶段任务</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="admin_v2.jsp">新增公告</a>
+                                <a class="J_menuItem" href="${path}/stu/weekly/toWeekly">查看周报</a>
                             </li>
                         </ul>
                     </li>

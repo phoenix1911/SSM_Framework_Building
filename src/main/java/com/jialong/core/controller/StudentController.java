@@ -45,6 +45,8 @@ public class StudentController {
 
     @Value("#{configProperties['filepath']}")
     private String filepath;
+    @Value("#{configProperties['imgpath']}")
+    private String imgpath;
 
     @RequestMapping("toIndex")
     public String toIndex(Model model) {
@@ -71,6 +73,14 @@ public class StudentController {
         return "student_weekly_timeline";
     }
 
+    @RequestMapping("weekly/toWeekly")
+    public String toWeekly(Model model) {
+        String sid = SecurityContextHolder.getContext().getAuthentication().getName();
+        Student student = studentService.queryById(Integer.parseInt(sid));
+        List<Weekly> weeklies = weeklyService.selectWeeklyBySessionid(student.getXntid() + "_" + sid);
+        model.addAttribute("list", weeklies);
+        return "student_weekly";
+    }
     @RequestMapping("/weekly/toAdd")
     public String toAddWeekly(Model model) {
         model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
@@ -101,17 +111,17 @@ public class StudentController {
         if (files != null) {
             weekly.setIncludepic(1);
             for (int i = 0; i < files.length; i++) {
-                String imgpath= "\\title\\weekly\\" + sessionid + "\\" + l + files[i].getOriginalFilename();
+                String origipath= "\\weekly\\" + sessionid + "\\" + l + files[i].getOriginalFilename();
 
-                if (i == 0) { weekly.setP1(imgpath);}
-                if (i == 1) { weekly.setP2(imgpath);}
-                if (i == 2) { weekly.setP3(imgpath);}
-                if (i == 3) { weekly.setP4(imgpath);}
-                if (i == 4) { weekly.setP5(imgpath);}
-                if (i == 5) { weekly.setP6(imgpath);}
-                if (i == 6) { weekly.setP7(imgpath);}
-                if (i == 7) { weekly.setP8(imgpath);}
-                String path = filepath + imgpath;
+                if (i == 0) { weekly.setP1(origipath);}
+                if (i == 1) { weekly.setP2(origipath);}
+                if (i == 2) { weekly.setP3(origipath);}
+                if (i == 3) { weekly.setP4(origipath);}
+                if (i == 4) { weekly.setP5(origipath);}
+                if (i == 5) { weekly.setP6(origipath);}
+                if (i == 6) { weekly.setP7(origipath);}
+                if (i == 7) { weekly.setP8(origipath);}
+                String path = imgpath + origipath;
                 File destFile = new File(path);
                 try{
                     //复制文件

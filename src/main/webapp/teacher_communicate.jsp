@@ -23,21 +23,33 @@
                                                 <img alt="image" class="img-circle" src="${path}/img/a4.jpg">
                                             </a>
                                             <div class="media-body text-right ">
-                                                <small class="pull-left">第${weekly.weeks}周周报</small>
-                                                <strong>${weekly.tname}</strong>
-                                                <h3 class="m-b-xs">${weekly.describe}</h3>
+                                                <c:choose>
+                                                    <c:when test="${weekly.weeks!=null}">
+                                                        <small class="pull-left">第${weekly.weeks}周周报</small><br>
+                                                        <h4 class="pull-left">教师评价：<button class="btn btn-info btn-xs">${weekly.scoregrade}</button></h4>
+                                                    </c:when>
+                                                </c:choose>
+
+                                                <strong>${weekly.tname}</strong><br>
+
                                                 <small class="text-muted">${weekly.date}</small>
+
+                                                <h3 class="m-b-xs">${weekly.describe}</h3>
+
 
                                                 <c:choose>
                                                     <c:when test="${weekly.includepic==1}">
                                                         <div class="lightBoxGallery">
-                                                            <a href="${path}/img/p_big2.jpg" title="图片" data-gallery=""><img src="${path}/img/p2.jpg"></a>
-                                                            <a href="${path}/img/p_big3.jpg" title="图片" data-gallery=""><img src="${path}/img/p3.jpg"></a>
-                                                            <a href="${path}/img/p_big1.jpg" title="图片" data-gallery=""><img src="${path}/img/p1.jpg"></a>
-                                                            <a href="${path}/img/p_big2.jpg" title="图片" data-gallery=""><img src="${path}/img/p2.jpg"></a>
-                                                            <a href="${path}/img/p_big3.jpg" title="图片" data-gallery=""><img src="${path}/img/p3.jpg"></a>
+                                                            <c:choose><c:when test="${weekly.p1!=null}"> <a href="${path}/img${weekly.p1}" title="图片" data-gallery=""><img src="${path}/img${weekly.p1}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p2!=null}"> <a href="${path}/img${weekly.p2}" title="图片" data-gallery=""><img src="${path}/img${weekly.p2}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p3!=null}"> <a href="${path}/img${weekly.p3}" title="图片" data-gallery=""><img src="${path}/img${weekly.p3}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p4!=null}"> <a href="${path}/img${weekly.p4}" title="图片" data-gallery=""><img src="${path}/img${weekly.p4}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p5!=null}"> <a href="${path}/img${weekly.p5}" title="图片" data-gallery=""><img src="${path}/img${weekly.p5}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p6!=null}"> <a href="${path}/img${weekly.p6}" title="图片" data-gallery=""><img src="${path}/img${weekly.p6}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p7!=null}"> <a href="${path}/img${weekly.p7}" title="图片" data-gallery=""><img src="${path}/img${weekly.p7}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p8!=null}"> <a href="${path}/img${weekly.p8}" title="图片" data-gallery=""><img src="${path}/img${weekly.p8}"></a></c:when></c:choose>
 
-                                                        <div id="blueimp-gallery" class="blueimp-gallery">
+                                                            <div id="blueimp-gallery" class="blueimp-gallery">
                                                             <div class="slides"></div>
                                                             <h3 class="title"></h3>
                                                             <a class="prev">‹</a>
@@ -56,24 +68,36 @@
                                 <c:choose><%--学生--%>
                                     <c:when test="${weekly.sid!=null}">
                                         <div class="chat-element">
-                                            <a href="widgets.html#" class="pull-left">
+                                            <a class="pull-left">
                                                 <img alt="image" class="img-circle" src="${path}/img/a2.jpg">
                                             </a>
                                             <div class="media-body ">
-                                                <small class="pull-right">第${weekly.weeks}周周报</small>
-                                                <strong>${weekly.sname}</strong>
-                                                <h3 class="m-b-xs">${weekly.describe}</h3>
+                                                <c:choose>
+                                                    <c:when test="${weekly.weeks!=null}">
+                                                        <small class="pull-right">第${weekly.weeks}周周报</small>
+                                                    </c:when>
+                                                </c:choose>
+
+                                                <strong>${weekly.sname}</strong><br>
+
                                                 <small class="text-muted">${weekly.date}</small>
+
+                                                <h3 class="m-b-xs">${weekly.describe}</h3>
+
+
                                                 <c:choose>
                                                     <c:when test="${weekly.includepic==1}">
                                                         <div class="lightBoxGallery">
-                                                            <a href="${path}/img/p_big2.jpg" title="图片" data-gallery=""><img src="${path}/img/p2.jpg"></a>
-                                                            <a href="${path}/img/p_big3.jpg" title="图片" data-gallery=""><img src="${path}/img/p3.jpg"></a>
-                                                            <a href="${path}/img/p_big1.jpg" title="图片" data-gallery=""><img src="${path}/img/p1.jpg"></a>
-                                                            <a href="${path}/img/p_big2.jpg" title="图片" data-gallery=""><img src="${path}/img/p2.jpg"></a>
-                                                            <a href="${path}/img/p_big3.jpg" title="图片" data-gallery=""><img src="${path}/img/p3.jpg"></a>
+                                                            <c:choose><c:when test="${weekly.p1!=null}"> <a href="${path}/img${weekly.p1}" title="图片" data-gallery=""><img src="${path}/img${weekly.p1}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p2!=null}"> <a href="${path}/img${weekly.p2}" title="图片" data-gallery=""><img src="${path}/img${weekly.p2}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p3!=null}"> <a href="${path}/img${weekly.p3}" title="图片" data-gallery=""><img src="${path}/img${weekly.p3}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p4!=null}"> <a href="${path}/img${weekly.p4}" title="图片" data-gallery=""><img src="${path}/img${weekly.p4}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p5!=null}"> <a href="${path}/img${weekly.p5}" title="图片" data-gallery=""><img src="${path}/img${weekly.p5}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p6!=null}"> <a href="${path}/img${weekly.p6}" title="图片" data-gallery=""><img src="${path}/img${weekly.p6}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p7!=null}"> <a href="${path}/img${weekly.p7}" title="图片" data-gallery=""><img src="${path}/img${weekly.p7}"></a></c:when></c:choose>
+                                                            <c:choose><c:when test="${weekly.p8!=null}"> <a href="${path}/img${weekly.p8}" title="图片" data-gallery=""><img src="${path}/img${weekly.p8}"></a></c:when></c:choose>
 
-                                                        <div id="blueimp-gallery" class="blueimp-gallery">
+                                                            <div id="blueimp-gallery" class="blueimp-gallery">
                                                             <div class="slides"></div>
                                                             <h3 class="title"></h3>
                                                             <a class="prev">‹</a>
@@ -122,8 +146,8 @@
 <style>
     .lightBoxGallery img {
         margin: 5px;
-        height: 120px;
-        width: 120px;
+        height: 80px;
+        width: 80px;
 
     }
 </style>

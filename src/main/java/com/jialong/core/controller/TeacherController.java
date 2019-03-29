@@ -162,6 +162,7 @@ public class TeacherController {
         String tid = SecurityContextHolder.getContext().getAuthentication().getName();
         String sessionid = tid+"_"+sid;
         List<Weekly> weeklies = weeklyService.selectWeeklyBySessionid(sessionid);
+        model.addAttribute("filepath",filepath);
         model.addAttribute("list", weeklies);
         return "teacher_communicate";
     }

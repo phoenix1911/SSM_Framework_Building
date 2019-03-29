@@ -266,7 +266,7 @@
   </select>
   <!---->
   <select id="selectBySessionid" resultType="com.jialong.core.bean.Weekly">
-    select * from weekly where sessionid=#{sessionid,jdbcType=VARCHAR} order by systemtime desc
+    select * from weekly where sessionid=#{sessionid,jdbcType=VARCHAR} order by systemtime
   </select>
 
   <update id="updateByExampleSelective" parameterType="map" >
