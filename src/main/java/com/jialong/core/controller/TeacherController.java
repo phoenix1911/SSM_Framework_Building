@@ -1,8 +1,10 @@
 package com.jialong.core.controller;
 
 import com.jialong.core.bean.Title;
+import com.jialong.core.bean.Weekly;
 import com.jialong.core.service.TitleService;
 import com.jialong.core.service.BaseService;
+import com.jialong.core.service.WeeklyService;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -30,6 +32,9 @@ public class TeacherController {
 
     @Autowired
     private TitleService titleService;
+
+    @Autowired
+    private WeeklyService weeklyService;
 
     @Value("#{configProperties['filepath']}")
     private String filepath;
@@ -151,4 +156,15 @@ public class TeacherController {
         titleService.updateTitle(title);
         return "redirect:/tea/title/toTitle";
     }
+
+    @RequestMapping("/toCommunicate")
+    public String toCommunicate(Model model,@RequestParam("sid") int sid) {
+        String tid = SecurityContextHolder.getContext().getAuthentication().getName();
+        String sessionid = tid+"_"+sid;
+        List<Weekly> weeklies = weeklyService.selectWeeklyBySessionid(sessionid);
+        model.addAttribute("list", weeklies);
+        return "teacher_communicate";
+    }
+
+
 }

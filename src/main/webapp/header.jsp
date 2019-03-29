@@ -30,7 +30,7 @@
     <link href="${path}/css/animate.css" rel="stylesheet">
     <link href="${path}/css/style.css?v=4.1.0" rel="stylesheet">
 
-
+    <link href="${path}/css/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet">
 
 
 </head>

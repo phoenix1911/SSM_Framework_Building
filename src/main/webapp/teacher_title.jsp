@@ -40,6 +40,7 @@
                             <th>毕设开题报告</th>
                             <th>毕设中期报告</th>
                             <th>毕设说明书</th>
+                            <th>周报</th>
                             <th>操作</th>
                         </tr>
                         </thead>
@@ -130,6 +131,8 @@
                                     </c:when>
                                 </c:choose>
                             </th>
+
+                            <th><a href="${path}/tea/toCommunicate?sid=${title.sid}" class="btn btn-primary btn-xs">查看周报</a></th>
 
                             <th>
                                 <a href="${path}/tea/title/toUpdate?id=${title.id}" class="btn btn-primary btn-xs">修改</a>
