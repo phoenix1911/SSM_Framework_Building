@@ -29,23 +29,23 @@
                                                 <small class="text-muted">${weekly.date}</small>
 
                                                 <c:choose>
-                                                    <c:when test="${weekly.includepic==0}">
-                                                <div class="lightBoxGallery">
-                                                    <a href="${path}/img/p_big2.jpg" title="图片" data-gallery=""><img src="${path}/img/p2.jpg"></a>
-                                                    <a href="${path}/img/p_big3.jpg" title="图片" data-gallery=""><img src="${path}/img/p3.jpg"></a>
-                                                    <a href="${path}/img/p_big1.jpg" title="图片" data-gallery=""><img src="${path}/img/p1.jpg"></a>
-                                                    <a href="${path}/img/p_big2.jpg" title="图片" data-gallery=""><img src="${path}/img/p2.jpg"></a>
-                                                    <a href="${path}/img/p_big3.jpg" title="图片" data-gallery=""><img src="${path}/img/p3.jpg"></a>
+                                                    <c:when test="${weekly.includepic==1}">
+                                                        <div class="lightBoxGallery">
+                                                            <a href="${path}/img/p_big2.jpg" title="图片" data-gallery=""><img src="${path}/img/p2.jpg"></a>
+                                                            <a href="${path}/img/p_big3.jpg" title="图片" data-gallery=""><img src="${path}/img/p3.jpg"></a>
+                                                            <a href="${path}/img/p_big1.jpg" title="图片" data-gallery=""><img src="${path}/img/p1.jpg"></a>
+                                                            <a href="${path}/img/p_big2.jpg" title="图片" data-gallery=""><img src="${path}/img/p2.jpg"></a>
+                                                            <a href="${path}/img/p_big3.jpg" title="图片" data-gallery=""><img src="${path}/img/p3.jpg"></a>
 
-                                                    <div id="blueimp-gallery" class="blueimp-gallery">
-                                                        <div class="slides"></div>
-                                                        <h3 class="title"></h3>
-                                                        <a class="prev">‹</a>
-                                                        <a class="next">›</a>
-                                                        <a class="close">×</a>
-                                                        <a class="play-pause"></a>
-                                                        <ol class="indicator"></ol>
-                                                    </div>
+                                                        <div id="blueimp-gallery" class="blueimp-gallery">
+                                                            <div class="slides"></div>
+                                                            <h3 class="title"></h3>
+                                                            <a class="prev">‹</a>
+                                                            <a class="next">›</a>
+                                                            <a class="close">×</a>
+                                                            <a class="play-pause"></a>
+                                                            <ol class="indicator"></ol>
+                                                        </div>
                                                     </c:when>
                                                 </c:choose>
                                             </div>
@@ -65,7 +65,7 @@
                                                 <h3 class="m-b-xs">${weekly.describe}</h3>
                                                 <small class="text-muted">${weekly.date}</small>
                                                 <c:choose>
-                                                    <c:when test="${weekly.includepic==0}">
+                                                    <c:when test="${weekly.includepic==1}">
                                                         <div class="lightBoxGallery">
                                                             <a href="${path}/img/p_big2.jpg" title="图片" data-gallery=""><img src="${path}/img/p2.jpg"></a>
                                                             <a href="${path}/img/p_big3.jpg" title="图片" data-gallery=""><img src="${path}/img/p3.jpg"></a>

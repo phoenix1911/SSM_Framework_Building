@@ -2,9 +2,11 @@ package com.jialong.core.controller;
 
 import com.jialong.core.bean.Student;
 import com.jialong.core.bean.Title;
+import com.jialong.core.bean.Weekly;
 import com.jialong.core.service.BaseService;
 import com.jialong.core.service.StudentService;
 import com.jialong.core.service.TitleService;
+import com.jialong.core.service.WeeklyService;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,6 +20,8 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -36,21 +40,93 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
+    @Autowired
+    private WeeklyService weeklyService;
+
     @Value("#{configProperties['filepath']}")
     private String filepath;
 
     @RequestMapping("toIndex")
     public String toIndex(Model model) {
         model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
-        //TODO 获取教师姓名
         return "student_index";
     }
+
 
     @RequestMapping("toIntro")
     public String toIntro(Model model) {
         model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
         return "student_intro";
     }
+
+    @RequestMapping("/weekly/toCalendar")
+    public String toCalender(Model model) {
+        model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
+        return "student_weekly_calendar";
+    }
+
+    @RequestMapping("/weekly/toTimeline")
+    public String toTimeline(Model model) {
+        model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
+        return "student_weekly_timeline";
+    }
+
+    @RequestMapping("/weekly/toAdd")
+    public String toAddWeekly(Model model) {
+        model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
+        return "student_weekly_add";
+    }
+
+    @RequestMapping("/weekly/add")
+    public String addWeekly(@RequestParam("uploadfile") CommonsMultipartFile[] files ,@RequestParam("describe") String describe, Model model) {
+        Integer sid = Integer.valueOf(SecurityContextHolder.getContext().getAuthentication().getName());
+        //获取学生对象
+        Student student = studentService.queryById(sid);
+
+        Weekly weekly = new Weekly();
+        weekly.setSid(sid);
+        weekly.setSname(student.getName());
+        weekly.setDescribe(describe);
+
+        Date day=new Date();
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        weekly.setDate(df.format(day));
+
+        long l = System.currentTimeMillis();
+        weekly.setSystemtime(String.valueOf(l));
+
+        String sessionid = student.getXntid() + "_" + student.getId();
+        weekly.setSessionid(sessionid);
+
+        if (files != null) {
+            weekly.setIncludepic(1);
+            for (int i = 0; i < files.length; i++) {
+                String imgpath= "\\title\\weekly\\" + sessionid + "\\" + l + files[i].getOriginalFilename();
+
+                if (i == 0) { weekly.setP1(imgpath);}
+                if (i == 1) { weekly.setP2(imgpath);}
+                if (i == 2) { weekly.setP3(imgpath);}
+                if (i == 3) { weekly.setP4(imgpath);}
+                if (i == 4) { weekly.setP5(imgpath);}
+                if (i == 5) { weekly.setP6(imgpath);}
+                if (i == 6) { weekly.setP7(imgpath);}
+                if (i == 7) { weekly.setP8(imgpath);}
+                String path = filepath + imgpath;
+                File destFile = new File(path);
+                try{
+                    //复制文件
+                    FileUtils.copyInputStreamToFile(files[i].getInputStream(),destFile);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        weeklyService.studentAddWeekly(weekly);
+
+        return "student_weekly_add";
+    }
+
+
 
     /**
      * 跳转至论文选择页面

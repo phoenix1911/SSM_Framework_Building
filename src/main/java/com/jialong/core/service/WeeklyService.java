@@ -32,4 +32,9 @@ public class WeeklyService {
 
     }
 
+    public int studentAddWeekly(Weekly weekly) {
+        return weeklyMapper.insert(weekly);
+
+    }
+
 }

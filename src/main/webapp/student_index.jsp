@@ -50,7 +50,7 @@
                                 <a class="J_menuItem" href="${path}/stu/title/toTitle">毕设进度管理</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="${path}/stu/">毕设周报管理</a>
+                                <a class="J_menuItem" href="${path}/stu/weekly/toCalendar">毕设周报管理</a>
                             </li>
 
                         </ul>
@@ -64,7 +64,7 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="admin_v1.jsp" data-index="0">查看公告</a>
+                                <a class="J_menuItem" href="${path}/stu/weekly/toTimeline" data-index="0">毕设阶段任务</a>
                             </li>
                             <li>
                                 <a class="J_menuItem" href="admin_v2.jsp">新增公告</a>

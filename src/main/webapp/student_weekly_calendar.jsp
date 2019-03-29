@@ -13,16 +13,17 @@
     <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
     <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
 
-    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link rel="shortcut icon" href="${path}/img/favicon.ico">
+    <link href="${path}/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="${path}/css/font-awesome.css?v=4.4.0" rel="stylesheet">
 
-    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="${path}/css/plugins/iCheck/custom.css" rel="stylesheet">
 
-    <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
-    <link href="css/plugins/fullcalendar/fullcalendar.print.css" rel="stylesheet">
+    <link href="${path}/css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="${path}/css/plugins/fullcalendar/fullcalendar.print.css" rel="stylesheet">
 
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+    <link href="${path}/css/animate.css" rel="stylesheet">
+    <link href="${path}/css/style.css?v=4.1.0" rel="stylesheet">
 
 </head>
 
@@ -46,22 +47,19 @@
 
 
 <!-- 全局js -->
-<script src="js/jquery.min.js?v=2.1.4"></script>
-<script src="js/bootstrap.min.js?v=3.3.6"></script>
-
-
+<script src="${path}/js/jquery.min.js?v=2.1.4"></script>
+<script src="${path}/js/bootstrap.min.js?v=3.3.6"></script>
 
 <!-- 自定义js -->
-<script src="js/content.js?v=1.0.0"></script>
+<script src="${path}/js/content.js?v=1.0.0"></script>
 
-
-<script src="js/jquery-ui.custom.min.js"></script>
+<script src="${path}/js/jquery-ui.custom.min.js"></script>
 
 <!-- iCheck -->
-<script src="js/plugins/iCheck/icheck.min.js"></script>
+<script src="${path}/js/plugins/iCheck/icheck.min.js"></script>
 
 <!-- Full Calendar -->
-<script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="${path}/js/plugins/fullcalendar/fullcalendar.min.js"></script>
 
 <script>
     $(document).ready(function () {
@@ -143,35 +141,7 @@
                     start: new Date(y, m, d - 5),
                     end: new Date(y, m, d - 2),
                 },
-                {
-                    id: 999,
-                    title: '重复事件',
-                    start: new Date(y, m, d - 3, 16, 0),
-                    allDay: false,
-                },
-                {
-                    id: 999,
-                    title: '重复事件',
-                    start: new Date(y, m, d + 4, 16, 0),
-                    allDay: false
-                },
-                {
-                    title: '会议',
-                    start: new Date(y, m, d, 10, 30),
-                    allDay: false
-                },
-                {
-                    title: '午餐',
-                    start: new Date(y, m, d, 12, 0),
-                    end: new Date(y, m, d, 14, 0),
-                    allDay: false
-                },
-                {
-                    title: '生日',
-                    start: new Date(y, m, d + 1, 19, 0),
-                    end: new Date(y, m, d + 1, 22, 30),
-                    allDay: false
-                },
+                
                 {
                     title: '打开百度',
                     start: new Date(y, m, 28),
