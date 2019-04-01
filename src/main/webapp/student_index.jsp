@@ -36,22 +36,17 @@
                     <li>
                         <a href="#">
                             <i class="fa fa-home"></i>
-                            <span class="nav-label">主页</span>
+                            <span class="nav-label">公告通知</span>
                             <span class="fa arrow"></span>
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="${path}/stu/toIntro" data-index="0">功能介绍</a>
+                                <a class="J_menuItem" href="${path}/stu/toIntro" data-index="0">公告通知</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="${path}/stu/title/toTitleSelect">毕设题目选择</a>
+                                <a class="J_menuItem" href="${path}/stu/title/toTitleSelect">毕设选题</a>
                             </li>
-                            <li>
-                                <a class="J_menuItem" href="${path}/stu/title/toTitle">毕设进度管理</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="${path}/stu/weekly/toCalendar">毕设周报管理</a>
-                            </li>
+
 
                         </ul>
 
@@ -59,12 +54,18 @@
                     <li>
                         <a href="#">
                             <i class="fa fa-home"></i>
-                            <span class="nav-label">主页</span>
+                            <span class="nav-label">毕设管理</span>
                             <span class="fa arrow"></span>
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a class="J_menuItem" href="${path}/stu/weekly/toTimeline" data-index="0">毕设阶段任务</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="${path}/stu/title/toTitle">毕设进度管理</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="${path}/stu/weekly/toCalendar">毕设周报管理</a>
                             </li>
                             <li>
                                 <a class="J_menuItem" href="${path}/stu/weekly/toWeekly">查看周报</a>

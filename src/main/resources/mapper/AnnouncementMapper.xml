@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jialong.core.mapper.AnnouncementMapper" >
+  <resultMap id="BaseResultMap" type="com.jialong.core.bean.Announcement" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="usertype" property="usertype" jdbcType="VARCHAR" />
+    <result column="tid" property="tid" jdbcType="INTEGER" />
+    <result column="tname" property="tname" jdbcType="VARCHAR" />
+    <result column="date" property="date" jdbcType="VARCHAR" />
+    <result column="systemtime" property="systemtime" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="describe" property="describe" jdbcType="VARCHAR" />
+    <result column="includepic" property="includepic" jdbcType="INTEGER" />
+    <result column="p1" property="p1" jdbcType="VARCHAR" />
+    <result column="p2" property="p2" jdbcType="VARCHAR" />
+    <result column="p3" property="p3" jdbcType="VARCHAR" />
+    <result column="p4" property="p4" jdbcType="VARCHAR" />
+    <result column="p5" property="p5" jdbcType="VARCHAR" />
+    <result column="announcementtype" property="announcementtype" jdbcType="VARCHAR" />
+    <result column="includefile" property="includefile" jdbcType="INTEGER" />
+    <result column="f1" property="f1" jdbcType="VARCHAR" />
+    <result column="f2" property="f2" jdbcType="VARCHAR" />
+    <result column="f3" property="f3" jdbcType="VARCHAR" />
+    <result column="f4" property="f4" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, usertype, tid, tname, date, systemtime, title, `describe`, includepic, p1, p2,
+    p3, p4, p5, announcementtype, includefile, f1, f2, f3, f4
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jialong.core.bean.AnnouncementExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from announcement
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from announcement
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from announcement
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.jialong.core.bean.AnnouncementExample" >
+    delete from announcement
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.jialong.core.bean.Announcement" >
+    insert into announcement (id, usertype, tid, 
+      tname, date, systemtime, 
+      title, `describe`, includepic,
+      p1, p2, p3, p4, 
+      p5, announcementtype, includefile, 
+      f1, f2, f3, f4
+      )
+    values (#{id,jdbcType=INTEGER}, #{usertype,jdbcType=VARCHAR}, #{tid,jdbcType=INTEGER}, 
+      #{tname,jdbcType=VARCHAR}, #{date,jdbcType=VARCHAR}, #{systemtime,jdbcType=VARCHAR}, 
+      #{title,jdbcType=VARCHAR}, #{`describe`,jdbcType=VARCHAR}, #{includepic,jdbcType=INTEGER},
+      #{p1,jdbcType=VARCHAR}, #{p2,jdbcType=VARCHAR}, #{p3,jdbcType=VARCHAR}, #{p4,jdbcType=VARCHAR}, 
+      #{p5,jdbcType=VARCHAR}, #{announcementtype,jdbcType=VARCHAR}, #{includefile,jdbcType=INTEGER}, 
+      #{f1,jdbcType=VARCHAR}, #{f2,jdbcType=VARCHAR}, #{f3,jdbcType=VARCHAR}, #{f4,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.jialong.core.bean.Announcement" >
+    insert into announcement
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="usertype != null" >
+        usertype,
+      </if>
+      <if test="tid != null" >
+        tid,
+      </if>
+      <if test="tname != null" >
+        tname,
+      </if>
+      <if test="date != null" >
+        date,
+      </if>
+      <if test="systemtime != null" >
+        systemtime,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="`describe` != null" >
+        `describe`,
+      </if>
+      <if test="includepic != null" >
+        includepic,
+      </if>
+      <if test="p1 != null" >
+        p1,
+      </if>
+      <if test="p2 != null" >
+        p2,
+      </if>
+      <if test="p3 != null" >
+        p3,
+      </if>
+      <if test="p4 != null" >
+        p4,
+      </if>
+      <if test="p5 != null" >
+        p5,
+      </if>
+      <if test="announcementtype != null" >
+        announcementtype,
+      </if>
+      <if test="includefile != null" >
+        includefile,
+      </if>
+      <if test="f1 != null" >
+        f1,
+      </if>
+      <if test="f2 != null" >
+        f2,
+      </if>
+      <if test="f3 != null" >
+        f3,
+      </if>
+      <if test="f4 != null" >
+        f4,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="usertype != null" >
+        #{usertype,jdbcType=VARCHAR},
+      </if>
+      <if test="tid != null" >
+        #{tid,jdbcType=INTEGER},
+      </if>
+      <if test="tname != null" >
+        #{tname,jdbcType=VARCHAR},
+      </if>
+      <if test="date != null" >
+        #{date,jdbcType=VARCHAR},
+      </if>
+      <if test="systemtime != null" >
+        #{systemtime,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="`describe` != null" >
+        #{`describe`,jdbcType=VARCHAR},
+      </if>
+      <if test="includepic != null" >
+        #{includepic,jdbcType=INTEGER},
+      </if>
+      <if test="p1 != null" >
+        #{p1,jdbcType=VARCHAR},
+      </if>
+      <if test="p2 != null" >
+        #{p2,jdbcType=VARCHAR},
+      </if>
+      <if test="p3 != null" >
+        #{p3,jdbcType=VARCHAR},
+      </if>
+      <if test="p4 != null" >
+        #{p4,jdbcType=VARCHAR},
+      </if>
+      <if test="p5 != null" >
+        #{p5,jdbcType=VARCHAR},
+      </if>
+      <if test="announcementtype != null" >
+        #{announcementtype,jdbcType=VARCHAR},
+      </if>
+      <if test="includefile != null" >
+        #{includefile,jdbcType=INTEGER},
+      </if>
+      <if test="f1 != null" >
+        #{f1,jdbcType=VARCHAR},
+      </if>
+      <if test="f2 != null" >
+        #{f2,jdbcType=VARCHAR},
+      </if>
+      <if test="f3 != null" >
+        #{f3,jdbcType=VARCHAR},
+      </if>
+      <if test="f4 != null" >
+        #{f4,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.jialong.core.bean.AnnouncementExample" resultType="java.lang.Integer" >
+    select count(*) from announcement
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update announcement
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.usertype != null" >
+        usertype = #{record.usertype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tid != null" >
+        tid = #{record.tid,jdbcType=INTEGER},
+      </if>
+      <if test="record.tname != null" >
+        tname = #{record.tname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.date != null" >
+        date = #{record.date,jdbcType=VARCHAR},
+      </if>
+      <if test="record.systemtime != null" >
+        systemtime = #{record.systemtime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.title != null" >
+        title = #{record.title,jdbcType=VARCHAR},
+      </if>
+      <if test="record.`describe` != null" >
+        `describe` = #{record.`describe`,jdbcType=VARCHAR},
+      </if>
+      <if test="record.includepic != null" >
+        includepic = #{record.includepic,jdbcType=INTEGER},
+      </if>
+      <if test="record.p1 != null" >
+        p1 = #{record.p1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.p2 != null" >
+        p2 = #{record.p2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.p3 != null" >
+        p3 = #{record.p3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.p4 != null" >
+        p4 = #{record.p4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.p5 != null" >
+        p5 = #{record.p5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.announcementtype != null" >
+        announcementtype = #{record.announcementtype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.includefile != null" >
+        includefile = #{record.includefile,jdbcType=INTEGER},
+      </if>
+      <if test="record.f1 != null" >
+        f1 = #{record.f1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.f2 != null" >
+        f2 = #{record.f2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.f3 != null" >
+        f3 = #{record.f3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.f4 != null" >
+        f4 = #{record.f4,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update announcement
+    set id = #{record.id,jdbcType=INTEGER},
+      usertype = #{record.usertype,jdbcType=VARCHAR},
+      tid = #{record.tid,jdbcType=INTEGER},
+      tname = #{record.tname,jdbcType=VARCHAR},
+      date = #{record.date,jdbcType=VARCHAR},
+      systemtime = #{record.systemtime,jdbcType=VARCHAR},
+      title = #{record.title,jdbcType=VARCHAR},
+      `describe` = #{record.`describe`,jdbcType=VARCHAR},
+      includepic = #{record.includepic,jdbcType=INTEGER},
+      p1 = #{record.p1,jdbcType=VARCHAR},
+      p2 = #{record.p2,jdbcType=VARCHAR},
+      p3 = #{record.p3,jdbcType=VARCHAR},
+      p4 = #{record.p4,jdbcType=VARCHAR},
+      p5 = #{record.p5,jdbcType=VARCHAR},
+      announcementtype = #{record.announcementtype,jdbcType=VARCHAR},
+      includefile = #{record.includefile,jdbcType=INTEGER},
+      f1 = #{record.f1,jdbcType=VARCHAR},
+      f2 = #{record.f2,jdbcType=VARCHAR},
+      f3 = #{record.f3,jdbcType=VARCHAR},
+      f4 = #{record.f4,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jialong.core.bean.Announcement" >
+    update announcement
+    <set >
+      <if test="usertype != null" >
+        usertype = #{usertype,jdbcType=VARCHAR},
+      </if>
+      <if test="tid != null" >
+        tid = #{tid,jdbcType=INTEGER},
+      </if>
+      <if test="tname != null" >
+        tname = #{tname,jdbcType=VARCHAR},
+      </if>
+      <if test="date != null" >
+        date = #{date,jdbcType=VARCHAR},
+      </if>
+      <if test="systemtime != null" >
+        systemtime = #{systemtime,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="`describe` != null" >
+        `describe` = #{`describe`,jdbcType=VARCHAR},
+      </if>
+      <if test="includepic != null" >
+        includepic = #{includepic,jdbcType=INTEGER},
+      </if>
+      <if test="p1 != null" >
+        p1 = #{p1,jdbcType=VARCHAR},
+      </if>
+      <if test="p2 != null" >
+        p2 = #{p2,jdbcType=VARCHAR},
+      </if>
+      <if test="p3 != null" >
+        p3 = #{p3,jdbcType=VARCHAR},
+      </if>
+      <if test="p4 != null" >
+        p4 = #{p4,jdbcType=VARCHAR},
+      </if>
+      <if test="p5 != null" >
+        p5 = #{p5,jdbcType=VARCHAR},
+      </if>
+      <if test="announcementtype != null" >
+        announcementtype = #{announcementtype,jdbcType=VARCHAR},
+      </if>
+      <if test="includefile != null" >
+        includefile = #{includefile,jdbcType=INTEGER},
+      </if>
+      <if test="f1 != null" >
+        f1 = #{f1,jdbcType=VARCHAR},
+      </if>
+      <if test="f2 != null" >
+        f2 = #{f2,jdbcType=VARCHAR},
+      </if>
+      <if test="f3 != null" >
+        f3 = #{f3,jdbcType=VARCHAR},
+      </if>
+      <if test="f4 != null" >
+        f4 = #{f4,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jialong.core.bean.Announcement" >
+    update announcement
+    set usertype = #{usertype,jdbcType=VARCHAR},
+      tid = #{tid,jdbcType=INTEGER},
+      tname = #{tname,jdbcType=VARCHAR},
+      date = #{date,jdbcType=VARCHAR},
+      systemtime = #{systemtime,jdbcType=VARCHAR},
+      title = #{title,jdbcType=VARCHAR},
+      `describe` = #{`describe`,jdbcType=VARCHAR},
+      includepic = #{includepic,jdbcType=INTEGER},
+      p1 = #{p1,jdbcType=VARCHAR},
+      p2 = #{p2,jdbcType=VARCHAR},
+      p3 = #{p3,jdbcType=VARCHAR},
+      p4 = #{p4,jdbcType=VARCHAR},
+      p5 = #{p5,jdbcType=VARCHAR},
+      announcementtype = #{announcementtype,jdbcType=VARCHAR},
+      includefile = #{includefile,jdbcType=INTEGER},
+      f1 = #{f1,jdbcType=VARCHAR},
+      f2 = #{f2,jdbcType=VARCHAR},
+      f3 = #{f3,jdbcType=VARCHAR},
+      f4 = #{f4,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

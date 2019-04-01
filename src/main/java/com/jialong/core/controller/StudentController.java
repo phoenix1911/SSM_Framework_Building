@@ -1,12 +1,10 @@
 package com.jialong.core.controller;
 
+import com.jialong.core.bean.Announcement;
 import com.jialong.core.bean.Student;
 import com.jialong.core.bean.Title;
 import com.jialong.core.bean.Weekly;
-import com.jialong.core.service.BaseService;
-import com.jialong.core.service.StudentService;
-import com.jialong.core.service.TitleService;
-import com.jialong.core.service.WeeklyService;
+import com.jialong.core.service.*;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -43,6 +41,9 @@ public class StudentController {
     @Autowired
     private WeeklyService weeklyService;
 
+    @Autowired
+    private AnnouncementService announcementService;
+
     @Value("#{configProperties['filepath']}")
     private String filepath;
     @Value("#{configProperties['imgpath']}")
@@ -50,6 +51,7 @@ public class StudentController {
 
     @RequestMapping("toIndex")
     public String toIndex(Model model) {
+
         model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
         return "student_index";
     }
@@ -57,6 +59,11 @@ public class StudentController {
 
     @RequestMapping("toIntro")
     public String toIntro(Model model) {
+        List<Announcement> adminAnnouncement = announcementService.selectByUsertype("admin");
+        List<Announcement> teacherAnnouncement = announcementService.selectByUsertype("teacher");
+
+        model.addAttribute("adminAnnouncement", adminAnnouncement);
+        model.addAttribute("teacherAnnouncement", teacherAnnouncement);
         model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
         return "student_intro";
     }

@@ -51,7 +51,6 @@
                                                 <c:choose>
                                                     <c:when test="${weekly.weeks!=null}">
                                                         <small class="pull-right" style="text-align:right">第${weekly.weeks}周周报</small>
-
                                                     </c:when>
                                                 </c:choose>
 
@@ -137,13 +136,27 @@
                                                     </div>
                                                 </div>
                                             </c:when>
-
-
                                 </c:choose>
                             </c:forEach>
-                                                </div>
 
                         </div>
+
+                    </div>
+                    <div class="chat-form" style="margin-right: 20px; margin-left:40px">
+                        <form role="form" action="${path}/stu/weekly/add" method="post" enctype="multipart/form-data">
+                            <div class="form-group" style="margin-bottom: 5px">
+                                <textarea name="describe" class="form-control" placeholder="消息内容…"></textarea>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 5px">
+                                <input  id="file_input" name="uploadfile" type="file" multiple class="form-control" required="" aria-required="true">
+                            </div>
+
+                            <div class="text-right" style="margin-top:10px;align:right">
+                                <button type="submit" class="btn btn-xl btn-primary m-t-n-xs"><strong>发送消息</strong>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                     </div>
                 </div>
 
