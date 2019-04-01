@@ -88,8 +88,8 @@
                                                         </div>
                                                     </c:when>
                                                 </c:choose>
-                                                <hr>
                                             </div>
+                                        </div>
                                             </c:when>
                                     <c:when test="${weekly.sid!=null}">
                                                 <div class="chat-element">
