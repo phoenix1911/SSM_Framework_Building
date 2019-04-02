@@ -21,7 +21,7 @@
         </javaTypeResolver>
 
         <!-- 模型配置 -->
-        <javaModelGenerator targetPackage="com.jialong.core.bean" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.jialong.security.bean" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -32,12 +32,14 @@
         </sqlMapGenerator>
 
         <!-- mapper配置 -->
-        <javaClientGenerator targetPackage="com.jialong.core.mapper" targetProject="src/main/java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.jialong.security.mapper" targetProject="src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
         <!-- 数据表配置 -->
-        <table tableName="announcement" />
+        <table tableName="role" />
+        <table tableName="role_resource" />
+        <table tableName="user_role" />
         <!--<table tableName="teacher" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
 
 

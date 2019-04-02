@@ -76,10 +76,10 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a>查看角色功能</a>
+                                <a class="J_menuItem" href="${path}/roleresource/all">查看角色功能</a>
                             </li>
                             <li>
-                                <a>查看用户角色</a>
+                                <a class="J_menuItem" href="${path}/userrole/all">查看用户角色</a>
                             </li>
                             <li>
                                 <a class="J_menuItem" href="admin_v4.jsp">功能维护</a>

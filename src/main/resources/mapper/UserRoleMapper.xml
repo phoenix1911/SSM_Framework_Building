@@ -82,7 +82,7 @@
     </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from user_role
     where id = #{id,jdbcType=INTEGER}
@@ -99,9 +99,9 @@
   </delete>
   <insert id="insert" parameterType="com.jialong.core.bean.UserRole" >
     insert into user_role (id, username, rid
-      )
+    )
     values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{rid,jdbcType=INTEGER}
-      )
+           )
   </insert>
   <insert id="insertSelective" parameterType="com.jialong.core.bean.UserRole" >
     insert into user_role
@@ -154,8 +154,8 @@
   <update id="updateByExample" parameterType="map" >
     update user_role
     set id = #{record.id,jdbcType=INTEGER},
-      username = #{record.username,jdbcType=VARCHAR},
-      rid = #{record.rid,jdbcType=INTEGER}
+    username = #{record.username,jdbcType=VARCHAR},
+    rid = #{record.rid,jdbcType=INTEGER}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -175,7 +175,7 @@
   <update id="updateByPrimaryKey" parameterType="com.jialong.core.bean.UserRole" >
     update user_role
     set username = #{username,jdbcType=VARCHAR},
-      rid = #{rid,jdbcType=INTEGER}
+        rid = #{rid,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

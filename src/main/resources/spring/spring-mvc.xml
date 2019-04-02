@@ -29,6 +29,7 @@
     <context:component-scan base-package="com.**.redis"/>
     <context:component-scan base-package="com.**.security"/>
     <context:component-scan base-package="com.jialong.security.interceptor"/>
+    <context:component-scan base-package="com.jialong.security.controller"/>
 
 
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
