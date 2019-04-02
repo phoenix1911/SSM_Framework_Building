@@ -106,6 +106,8 @@
                 center: 'title',
                 right: 'month,agendaWeek,agendaDay'
             },
+            firstDay:1,
+            weekNumbers:true,
             editable: true,
             droppable: true, // this allows things to be dropped onto the calendar !!!
             drop: function (date, allDay) { // this function is called when something is dropped
@@ -132,6 +134,11 @@
 
             },
             events: [
+                {
+                    title:"填写周报",
+                    start: new Date(2018,3,28),
+                    end: new Date(2018,3,31)
+                },
                 {
                     title: '日事件',
                     start: new Date(y, m, 1)

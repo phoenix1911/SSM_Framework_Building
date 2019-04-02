@@ -1,11 +1,10 @@
 package com.jialong.core.controller;
 
+import com.jialong.core.bean.Announcement;
+import com.jialong.core.bean.Teacher;
 import com.jialong.core.bean.Title;
 import com.jialong.core.bean.Weekly;
-import com.jialong.core.service.TitleService;
-import com.jialong.core.service.BaseService;
-import com.jialong.core.service.WeeklyService;
-import org.apache.commons.io.FileUtils;
+import com.jialong.core.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
@@ -34,22 +32,36 @@ public class TeacherController {
     private TitleService titleService;
 
     @Autowired
+    private TeacherService teacherService;
+
+    @Autowired
     private WeeklyService weeklyService;
+
+    @Autowired
+    private AnnouncementService announcementService;
 
     @Value("#{configProperties['filepath']}")
     private String filepath;
 
     @RequestMapping("toIndex")
     public String toIndex(Model model) {
-        model.addAttribute("tid", SecurityContextHolder.getContext().getAuthentication().getName());
-        //TODO 获取教师姓名
+        String tid = SecurityContextHolder.getContext().getAuthentication().getName();
+        Teacher teacher = teacherService.queryById(Integer.parseInt(tid));
+        System.out.println(teacher);
+        model.addAttribute("teacher", teacher);
+        model.addAttribute("tid", tid);
+
         return "teacher_index";
     }
 
     @RequestMapping("toIntro")
     public String toIntro(Model model) {
-        model.addAttribute("tid", SecurityContextHolder.getContext().getAuthentication().getName());
-        return "teacher_intro";
+        List<Announcement> adminAnnouncement = announcementService.selectByUsertype("admin");
+        List<Announcement> teacherAnnouncement = announcementService.selectByUsertype("teacher");
+
+        model.addAttribute("adminAnnouncement", adminAnnouncement);
+        model.addAttribute("teacherAnnouncement", teacherAnnouncement);
+        model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());return "teacher_intro";
     }
 
     /**

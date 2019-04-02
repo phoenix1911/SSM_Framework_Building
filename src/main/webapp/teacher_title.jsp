@@ -132,7 +132,18 @@
                                 </c:choose>
                             </th>
 
-                            <th><a href="${path}/tea/toCommunicate?sid=${title.sid}" class="btn btn-primary btn-xs">查看周报</a></th>
+
+                            <th>
+                                <c:choose>
+                                    <c:when test="${title.sid==0}">
+                                        ---
+                                    </c:when>
+                                    <c:when test="${title.sid!=0}">
+                                        <a href="${path}/tea/toCommunicate?sid=${title.sid}" class="btn btn-primary btn-xs">查看周报</a>
+                                    </c:when>
+                                </c:choose>
+
+                            </th>
 
                             <th>
                                 <a href="${path}/tea/title/toUpdate?id=${title.id}" class="btn btn-primary btn-xs">修改</a>

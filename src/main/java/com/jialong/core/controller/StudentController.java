@@ -51,7 +51,9 @@ public class StudentController {
 
     @RequestMapping("toIndex")
     public String toIndex(Model model) {
-
+        String sid= SecurityContextHolder.getContext().getAuthentication().getName();
+        Student student = studentService.queryById(Integer.parseInt(sid));
+        model.addAttribute("student", student);
         model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
         return "student_index";
     }
