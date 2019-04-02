@@ -24,5 +24,18 @@ public class AnnouncementService {
         return announcementMapper.selectByExample(announcementExample);
     }
 
+    public List<Announcement> selectByAnnouncementtype(String announcementtype) {
+        AnnouncementExample announcementExample = new AnnouncementExample();
+        AnnouncementExample.Criteria criteria = announcementExample.createCriteria();
+        criteria.andAnnouncementtypeEqualTo(announcementtype);
+        announcementExample.setOrderByClause("systemtime");
+        return announcementMapper.selectByExample(announcementExample);
+    }
+
+
+    public int add(Announcement announcement) {
+        return announcementMapper.insert(announcement);
+    }
+
 
 }

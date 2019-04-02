@@ -61,9 +61,8 @@ public class StudentController {
 
     @RequestMapping("toIntro")
     public String toIntro(Model model) {
-        List<Announcement> adminAnnouncement = announcementService.selectByUsertype("admin");
-        List<Announcement> teacherAnnouncement = announcementService.selectByUsertype("teacher");
-
+        List<Announcement> adminAnnouncement = announcementService.selectByAnnouncementtype("网站概览");
+        List<Announcement> teacherAnnouncement = announcementService.selectByAnnouncementtype("公告");
         model.addAttribute("adminAnnouncement", adminAnnouncement);
         model.addAttribute("teacherAnnouncement", teacherAnnouncement);
         model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());

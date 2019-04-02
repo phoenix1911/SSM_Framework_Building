@@ -125,7 +125,7 @@
       )
     values (#{id,jdbcType=INTEGER}, #{usertype,jdbcType=VARCHAR}, #{tid,jdbcType=INTEGER}, 
       #{tname,jdbcType=VARCHAR}, #{date,jdbcType=VARCHAR}, #{systemtime,jdbcType=VARCHAR}, 
-      #{title,jdbcType=VARCHAR}, #{`describe`,jdbcType=VARCHAR}, #{includepic,jdbcType=INTEGER},
+      #{title,jdbcType=VARCHAR}, #{describe,jdbcType=VARCHAR}, #{includepic,jdbcType=INTEGER},
       #{p1,jdbcType=VARCHAR}, #{p2,jdbcType=VARCHAR}, #{p3,jdbcType=VARCHAR}, #{p4,jdbcType=VARCHAR}, 
       #{p5,jdbcType=VARCHAR}, #{announcementtype,jdbcType=VARCHAR}, #{includefile,jdbcType=INTEGER}, 
       #{f1,jdbcType=VARCHAR}, #{f2,jdbcType=VARCHAR}, #{f3,jdbcType=VARCHAR}, #{f4,jdbcType=VARCHAR}

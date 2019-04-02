@@ -96,8 +96,9 @@
                             <li>
                                 <a class="J_menuItem" href="${path}/admin/toAnnouncement">查看公告视图</a>
                             </li>
+
                             <li>
-                                <a class="J_menuItem" href="admin_v4.jsp">公告管理</a>
+                                <a class="J_menuItem" href="${path}/admin/announcement/toAdd">添加公告</a>
                             </li>
                         </ul>
                     </li>

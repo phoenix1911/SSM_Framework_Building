@@ -129,16 +129,16 @@
 
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>二次开发</h5>
+                    <h5>sdafsdaf</h5>
                 </div>
                 <div class="ibox-content">
-                    <p>我们提供基于H+的二次开发服务，具体费用请联系作者。</p>
-                    <p>同时，我们也提供以下服务：</p>
+                    <p>safasdfsdfasfsfasfsd。</p>
+                    <p>wetwettwet：</p>
                     <ol>
-                        <li>基于WordPress的网站建设和主题定制</li>
-                        <li>PSD转WordPress主题</li>
-                        <li>PSD转XHTML</li>
-                        <li>Html页面（CSS+XHTML+jQuery）制作</li>
+                        <li>asfsdafsdfasdf</li>
+                        <li>sadfffffffffffffff</li>
+                        <li>ffffffffffffffffff</li>
+                        <li>ffffffffffffffffffffff</li>
                     </ol>
                 </div>
             </div>

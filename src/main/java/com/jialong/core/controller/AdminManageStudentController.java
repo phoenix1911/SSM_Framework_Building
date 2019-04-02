@@ -108,7 +108,6 @@ public class AdminManageStudentController {
                 XSSFSheet sheet = workbook.getSheetAt(0);
                 //获取行数
                 int rowNum=sheet.getLastRowNum();
-                System.err.println(rowNum);
                 Student student = null;
                 for (Row row:sheet) {
                     //不读取表头
@@ -124,7 +123,6 @@ public class AdminManageStudentController {
                         row.getCell(3).setCellType(Cell.CELL_TYPE_STRING);
                         row.getCell(4).setCellType(Cell.CELL_TYPE_STRING);
                         String id = row.getCell(0).getStringCellValue();
-                        System.out.println(id);
                         String name = row.getCell(1).getStringCellValue();
                         String phonenumber = row.getCell(2).getStringCellValue();
                         String email = row.getCell(3).getStringCellValue();
@@ -139,9 +137,6 @@ public class AdminManageStudentController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
-
-
             return "redirect:/admin/student/allStudent";
         } else {
             return "redirect:upload_error.jsp";
