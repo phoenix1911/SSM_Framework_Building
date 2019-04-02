@@ -3,6 +3,7 @@ package com.jialong.core.controller;
 import com.jialong.core.bean.Announcement;
 import com.jialong.core.service.AnnouncementService;
 import org.apache.commons.io.FileUtils;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -57,7 +58,7 @@ public class AnnouncementController {
         announcement.setTitle(title);
         announcement.setDescribe(describe);
 
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         announcement.setDate(df.format(new Date()));
 
         announcement.setSystemtime(String.valueOf(System.currentTimeMillis()));
@@ -113,7 +114,7 @@ public class AnnouncementController {
         announcement.setTitle(title);
         announcement.setDescribe(describe);
 
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         announcement.setDate(df.format(new Date()));
 
         announcement.setSystemtime(String.valueOf(System.currentTimeMillis()));
@@ -124,4 +125,16 @@ public class AnnouncementController {
         announcementService.add(announcement);
         return "admin_Announcement_add";
     }
+
+    @RequestMapping("/announcement/del")
+    public String del(@RequestParam("id") String id,Model model){
+        int del = announcementService.del(id);
+        if (del == 1) {
+            model.addAttribute("message", "删除成功");
+        } else {
+            model.addAttribute("message", "删除失败");
+        }
+        return "redirect:/admin/toAnnouncement";
+    }
+
 }

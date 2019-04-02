@@ -45,7 +45,7 @@
                             <th>${adminAnnouncement.title}</th>
                             <th>${adminAnnouncement.describe}</th>
                             <th>
-                                -
+                                <a href="${path}/admin/announcement/del?id=${adminAnnouncement.id}">删除</a>
                             </th>
                         </tr>
                     </c:forEach>
@@ -74,51 +74,34 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h5 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#version" href="#v${tA.tid+""+tA.id}">${tA.title}</a><code class="pull-right">${tA.date}</code>
+                                        <a data-toggle="collapse" data-parent="#version" href="#v${tA.tid+""+tA.id}">${tA.title}</a> <code class="pull-right"> ${tA.date}</code> <a href="${path}/admin/announcement/del?id=${tA.id}" class="btn btn-xs btn-danger">删除</a>
                                     </h5>
                                 </div>
                                 <div id="v${tA.tid+""+tA.id}" class="panel-collapse collapse ">
                                     <div class="panel-body">
 
-                                            <li>${tA.describe}</li>
+                                        <li>${tA.describe}</li>
+                                            <c:choose><c:when test="${tA.f1!=null}"> <a href="${path}/common/download?path=${tA.f1}" >下载附件1</a></c:when></c:choose>
+                                            <c:choose><c:when test="${tA.f2!=null}"> <a href="${path}/common/download?path=${tA.f2}" >下载附件2</a></c:when></c:choose>
+                                            <c:choose><c:when test="${tA.f3!=null}"> <a href="${path}/common/download?path=${tA.f3}" >下载附件3</a></c:when></c:choose>
+                                            <c:choose><c:when test="${tA.f4!=null}"> <a href="${path}/common/download?path=${tA.f4}" >下载附件4</a></c:when></c:choose>
 
                                         <c:choose>
                                             <c:when test="${tA.includepic!=0}">
-                                               <li> <img alt="?" style="width: 140px; height: 140px" src="${path}/img/p1.jpg"/></li>
+                                                <c:choose><c:when test="${tA.p1!=null}"> <a href="${path}/img${tA.p1}" title="图片" data-gallery=""><img src="${path}/img${tA.p1}" style="height: 120px;width: 120px;"></a></c:when></c:choose>
+                                                <c:choose><c:when test="${tA.p2!=null}"> <a href="${path}/img${tA.p2}" title="图片" data-gallery=""><img src="${path}/img${tA.p2}" style="height: 120px;width: 120px;"></a></c:when></c:choose>
+                                                <c:choose><c:when test="${tA.p3!=null}"> <a href="${path}/img${tA.p3}" title="图片" data-gallery=""><img src="${path}/img${tA.p3}" style="height: 120px;width: 120px;"></a></c:when></c:choose>
+                                                <c:choose><c:when test="${tA.p4!=null}"> <a href="${path}/img${tA.p4}" title="图片" data-gallery=""><img src="${path}/img${tA.p4}" style="height: 120px;width: 120px;"></a></c:when></c:choose>
+                                                <c:choose><c:when test="${tA.p5!=null}"> <a href="${path}/img${tA.p5}" title="图片" data-gallery=""><img src="${path}/img${tA.p5}" style="height: 120px;width: 120px;"></a></c:when></c:choose>
                                             </c:when>
+
                                         </c:choose>
 
 
                                     </div>
                                 </div>
                             </div>
-                            <%--<div class="panel panel-default">--%>
-                                <%--<div class="panel-heading">--%>
-                                    <%--<h5 class="panel-title">--%>
-                                        <%--<a data-toggle="collapse" data-parent="#version" href="#v40">v4.1.0</a><code class="pull-right">2015.10.21</code>--%>
-                                    <%--</h5>--%>
-                                <%--</div>--%>
-                                <%--<div id="v40" class="panel-collapse collapse">--%>
-                                    <%--<div class="panel-body">--%>
-                                        <%--<ol>--%>
-                                            <%--<li>升级bootstrap到最新版本3.3.5；</li>--%>
-                                            <%--<li>升级jquery版本到最新版本2.1.4；</li>--%>
-                                            <%--<li>升级Font Awesome到最新版本4.4.0；</li>--%>
-                                            <%--<li>修复了登录页面的一处错误；</li>--%>
-                                            <%--<li>修复了主页面出现多个滚动条的问题；</li>--%>
-                                            <%--<li>修复了已知的各种浏览器兼容问题；</li>--%>
-                                            <%--<li>修复了layphoto和suggest等页面的显示问题；</li>--%>
-                                            <%--<li>新增Glyphicons字体图标的预览；</li>--%>
-                                            <%--<li>新增对不支持的浏览器的友好提示；</li>--%>
-                                            <%--<li>新增视频/音乐播放器的支持；</li>--%>
-                                            <%--<li>新增Bootstrap Table(推荐)；</li>--%>
-                                            <%--<li>进一步完善了开发文档；</li>--%>
-                                            <%--<li>提供了离线支持，开箱即用；</li>--%>
-                                            <%--<li>对IE系列的浏览器支持更好。</li>--%>
-                                        <%--</ol>--%>
-                                    <%--</div>--%>
-                                <%--</div>--%>
-                            <%--</div>--%>
+
                         </c:forEach>
                         </div>
                     </div>

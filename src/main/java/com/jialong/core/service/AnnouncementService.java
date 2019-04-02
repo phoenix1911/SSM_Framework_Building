@@ -38,4 +38,7 @@ public class AnnouncementService {
     }
 
 
+    public int del(String id) {
+        return announcementMapper.deleteByPrimaryKey(Integer.valueOf(id));
+    }
 }
