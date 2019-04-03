@@ -63,9 +63,7 @@
                             <li>
                                 <a class="J_menuItem" href="/admin/teacher/allTeacher">教师信息管理</a>
                             </li>
-                            <li>
-                                <a class="J_menuItem" href="admin_v4.jsp">功能维护</a>
-                            </li>
+
                         </ul>
                     </li>
                     <li>

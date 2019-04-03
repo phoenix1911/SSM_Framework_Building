@@ -5,7 +5,22 @@
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="username" property="username" jdbcType="VARCHAR" />
     <result column="rid" property="rid" jdbcType="INTEGER" />
+
+    <association property="role" javaType="com.jialong.security.bean.Role">
+      <id column="id" property="id" jdbcType="INTEGER" />
+      <result column="id" property="id" jdbcType="INTEGER" />
+      <result column="role_name" property="roleName" jdbcType="VARCHAR" />
+      <result column="role_name_Zh" property="roleNameZh" jdbcType="VARCHAR" />
+    </association>
+
+    <association property="users" javaType="com.jialong.security.bean.Users">
+      <id column="username" property="username" jdbcType="VARCHAR" />
+      <result column="password" property="password" jdbcType="VARCHAR" />
+      <result column="enabled" property="enabled" jdbcType="INTEGER" />
+    </association>
   </resultMap>
+
+
   <sql id="Example_Where_Clause" >
     <where >
       <foreach collection="oredCriteria" item="criteria" separator="or" >
@@ -134,6 +149,21 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
+
+
+
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select ur.id,role_name_Zh,u.username,password,enabled
+    from user_role ur join users u on ur.username=u.username
+    join role r on ur.rid =r.id
+    order by role_name_Zh;
+
+  </select>
+
+
+
+
   <update id="updateByExampleSelective" parameterType="map" >
     update user_role
     <set >

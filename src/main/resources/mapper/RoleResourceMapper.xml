@@ -158,6 +158,7 @@
     from role_resource rr
            join role r on rr.rid=r.id
            join resource res on rr.resid=res.id
+    order by role_name_Zh;
   </select>
 
 
