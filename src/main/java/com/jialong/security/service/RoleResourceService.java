@@ -18,4 +18,24 @@ public class RoleResourceService {
     public List<RoleResource> selectAll() {
         return roleResourceMapper.selectAll();
     }
+
+    /**
+     * 56 是 学生角色选题对应的id
+     * @param enabled
+     * @return
+     */
+    public void updateStuSelectTitle(int enabled) {
+        RoleResource roleResource = roleResourceMapper.selectByPrimaryKey(56);
+        if (enabled == 1) {
+            roleResource.setRid(3);
+        }else if (enabled==0) {
+            roleResource.setRid(0);
+        }
+        roleResourceMapper.updateByPrimaryKey(roleResource);
+    }
+
+    public int stuSelectTitlefunctionstate() {
+        RoleResource roleResource = roleResourceMapper.selectByPrimaryKey(56);
+        return roleResource.getRid();
+    }
 }

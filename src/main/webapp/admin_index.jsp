@@ -80,7 +80,7 @@
                                 <a class="J_menuItem" href="${path}/userrole/all">查看用户角色</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="admin_v4.jsp">功能维护</a>
+                                <a class="J_menuItem" href="${path}/function/toFunction">功能维护</a>
                             </li>
                         </ul>
                     </li>
