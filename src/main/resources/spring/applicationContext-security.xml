@@ -18,6 +18,8 @@
     <security:http pattern="/js/**/*.*" security="none"/>
     <security:http pattern="/img/**/*.*" security="none"/>
     <security:http pattern="/login.jsp" security="none"/>
+    <security:http pattern="/loginerror.jsp" security="none"/>
+
 
     <security:http>
         <!--自定义权限不足处理handler-->
@@ -37,6 +39,7 @@
                 always-use-default-target="true"
                 authentication-success-handler-ref="myAuthenticationSuccessHandler"
                 authentication-failure-url="/loginerror.jsp"
+
         />
         <!--   4、注销设置
                   1)logout-url：指定注销的url；

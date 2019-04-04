@@ -64,18 +64,17 @@
                             <li>
                                 <a class="J_menuItem" href="${path}/stu/title/toTitle">毕设进度管理</a>
                             </li>
-                            <%--<li>--%>
-                                <%--<a class="J_menuItem" href="${path}/stu/weekly/toCalendar">毕设周报管理</a>--%>
-                            <%--</li>--%>
+
                             <li>
                                 <a class="J_menuItem" href="${path}/stu/title/toUpload">毕设文件管理</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="${path}/stu/weekly/toWeekly">查看周报</a>
+                                <a class="J_menuItem" href="${path}/stu/weekly/toCalendar">毕设周报日历</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="${path}/stu/weekly/toAdd">填写周报</a>
+                                <a class="J_menuItem" href="${path}/stu/weekly/toWeekly">查看周报</a>
                             </li>
+
                         </ul>
                     </li>
 

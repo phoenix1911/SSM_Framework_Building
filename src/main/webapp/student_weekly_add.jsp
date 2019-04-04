@@ -39,41 +39,43 @@
         </div>
     </div>
     <div class="row">
-    <div class="col-sm-6 ">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5>新增周报</h5>
+        <div class="col-sm-6 ">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>新增周报 第${week}周</h5>
 
-            </div>
-            <div class="ibox-content">
+                </div>
+                <div class="ibox-content">
 
-                <form action="${path}/stu/weekly/add" method="post" enctype="multipart/form-data" class="form-horizontal m-t" id="commentForm">
+                    <form action="${path}/stu/weekly/add" method="post" enctype="multipart/form-data" class="form-horizontal m-t" id="commentForm">
 
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">周报内容：</label>
-                        <div class="col-sm-8">
-                            <input id="cid"  name="describe" value="" type="text" class="form-control" required="" aria-required="true">
+                        <input type="hidden" name="week" value="${week}" >
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">周报内容：</label>
+                            <div class="col-sm-8">
+                                <input id="cid"  name="describe" value="" type="text" class="form-control" required="" aria-required="true">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">选择图片：</label>
-                        <div class="col-sm-8">
-                            <input  id="file_input" name="uploadfile" type="file" multiple class="form-control" required="" aria-required="true">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">选择图片：</label>
+                            <div class="col-sm-8">
+                                <input  id="file_input" name="uploadfile" type="file" multiple class="form-control" required="" aria-required="true">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <div class="col-sm-4 col-sm-offset-3">
-                            <button class="btn btn-primary" type="submit">提交</button>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-3">
+                                <button class="btn btn-primary" type="submit">提交</button>
+                            </div>
                         </div>
-                    </div>
 
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 

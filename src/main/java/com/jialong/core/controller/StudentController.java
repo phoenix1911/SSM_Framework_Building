@@ -90,13 +90,14 @@ public class StudentController {
         return "student_weekly";
     }
     @RequestMapping("/weekly/toAdd")
-    public String toAddWeekly(Model model) {
+    public String toAddWeekly(Model model,@RequestParam("week")int week) {
+        model.addAttribute("week", week);
         model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
-        return "student_weekly";
+        return "student_weekly_add";
     }
 
     @RequestMapping("/weekly/add")
-    public String addWeekly(@RequestParam("uploadfile") CommonsMultipartFile[] files ,@RequestParam("describe") String describe, Model model) {
+    public String addWeekly(@RequestParam("uploadfile") CommonsMultipartFile[] files ,@RequestParam("describe") String describe, Model model,@RequestParam(value = "week",required = false)String week) {
         Integer sid = Integer.valueOf(SecurityContextHolder.getContext().getAuthentication().getName());
         //获取学生对象
         Student student = studentService.queryById(sid);
@@ -105,6 +106,7 @@ public class StudentController {
         weekly.setSid(sid);
         weekly.setSname(student.getName());
         weekly.setDescribe(describe);
+        weekly.setWeeks(Integer.valueOf(week));
 
         Date day=new Date();
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -141,7 +143,7 @@ public class StudentController {
         }
         weeklyService.studentAddWeekly(weekly);
 
-        return "student_weekly_add";
+        return "student_weekly";
     }
 
 
