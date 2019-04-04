@@ -1,9 +1,10 @@
 package com.jialong.security.bean;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RoleExample {
+public class RoleExample implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;

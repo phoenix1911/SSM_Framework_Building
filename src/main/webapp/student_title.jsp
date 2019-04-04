@@ -87,7 +87,7 @@
                             </th>
 
                             <th>
-                                <a href="${path}/stu/title/" class="btn btn-primary btn-xs">周报管理</a>
+                                <a href="${path}/stu/weekly/toWeekly" class="btn btn-primary btn-xs">周报管理</a>
                                 <a href="${path}/stu/title/toUpload" class="btn btn-primary btn-xs">文件管理</a>
                             </th>
                         </tr>

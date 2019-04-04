@@ -92,7 +92,7 @@ public class StudentController {
     @RequestMapping("/weekly/toAdd")
     public String toAddWeekly(Model model) {
         model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
-        return "student_weekly_add";
+        return "student_weekly";
     }
 
     @RequestMapping("/weekly/add")

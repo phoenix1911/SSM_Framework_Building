@@ -27,7 +27,7 @@
                                 <li><a class="J_menuItem" href="mailbox.html">联系我们</a>
                                 </li>
                                 <li class="divider"></li>
-                                <li><a href="login.html">安全退出</a>
+                                <li><a href="${path}/logout">安全退出</a>
                                 </li>
                             </ul>
                         </div>

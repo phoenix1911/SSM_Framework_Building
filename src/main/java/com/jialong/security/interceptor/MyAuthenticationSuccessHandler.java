@@ -32,6 +32,6 @@ public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHand
             response.sendRedirect(basePath+"tea/toIndex");
             return;
         }
-        response.sendRedirect(basePath+"login.html");
+        response.sendRedirect(basePath+"login.jsp");
     }
 }

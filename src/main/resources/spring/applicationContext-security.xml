@@ -17,6 +17,7 @@
     <security:http pattern="/fonts/**/*.*" security="none"/>
     <security:http pattern="/js/**/*.*" security="none"/>
     <security:http pattern="/img/**/*.*" security="none"/>
+    <security:http pattern="/login.jsp" security="none"/>
 
     <security:http>
         <!--自定义权限不足处理handler-->
@@ -31,17 +32,17 @@
             5)authentication-failure-url：指定了身份验证失败时跳转到的页面；
          -->
         <security:form-login
-                login-page="/html/login.html"
+                login-page="/login.jsp"
                 login-processing-url="/login"
                 always-use-default-target="true"
                 authentication-success-handler-ref="myAuthenticationSuccessHandler"
-                authentication-failure-url="/html/loginerror.html"
+                authentication-failure-url="/loginerror.jsp"
         />
         <!--   4、注销设置
                   1)logout-url：指定注销的url；
                   2)logout-success-url：注销成功后登录返回的页面。
         -->
-        <security:logout logout-url="/logout" logout-success-url="/html/login.html"/>
+        <security:logout logout-url="/logout" logout-success-url="/login.jsp"/>
         <!--
             5、跨站请求设置（我们这里关闭）
                1)csrf disabled="true" 关闭 csrf ,如果不加会出现错误
