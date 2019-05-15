@@ -14,8 +14,7 @@ import java.util.Set;
  * Created by Tjl on 2019/3/20 15:17.
  */
 public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
-    public void onAuthenticationSuccess(HttpServletRequest request,
-                                        HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
 
         Set<String> roles = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
         String path = request.getContextPath() ;

@@ -34,8 +34,7 @@ public class MyAccessDecisionManager implements AccessDecisionManager {
      * @param configAttributes :当前URL所且有的角色
      */
     @Override
-    public void decide(Authentication authentication, Object object, Collection<ConfigAttribute> configAttributes)
-            throws AccessDeniedException, InsufficientAuthenticationException {
+    public void decide(Authentication authentication, Object object, Collection<ConfigAttribute> configAttributes) throws AccessDeniedException, InsufficientAuthenticationException {
         // 资源所需的角色列表，如果角色列表为空，则放行！继续下一个拦截器。
         if (configAttributes == null) {
             return;
@@ -61,7 +60,7 @@ public class MyAccessDecisionManager implements AccessDecisionManager {
             }
         }
         // 否则，提示没有权限访问该资源
-        throw new AccessDeniedException("no right没有访问权限");
+        throw new AccessDeniedException("当前没有访问权限，请联系管理员");
     }
 
     @Override

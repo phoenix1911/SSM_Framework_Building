@@ -39,9 +39,7 @@ public class RedisCache implements Cache {
 
     public Object getObject(Object key) {
         logger.debug("执行getObject方法");
-        Object value = SerializeUtil.unserialize(JedisUtil.getJedis().get(
-                SerializeUtil.serialize(key.toString())));
-        return value;
+        return SerializeUtil.unserialize(JedisUtil.getJedis().get(SerializeUtil.serialize(key.toString())));
 
     }
 

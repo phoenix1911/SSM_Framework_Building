@@ -53,7 +53,7 @@ public class AdminManageTeacherController {
     /**
      * 跳转至更新页面
      * @param model
-     * @param id
+     * @param tid
      * @return
      */
     @RequestMapping("toUpdate")
@@ -78,7 +78,7 @@ public class AdminManageTeacherController {
 
     /**
      * 删除学生
-     * @param id
+     * @param tid
      * @return
      */
     @RequestMapping("del")
@@ -134,7 +134,7 @@ public class AdminManageTeacherController {
                         String sfz = row.getCell(4).getStringCellValue();
                         String ttype = row.getCell(5).getStringCellValue();
 
-                        teacher = new Teacher(Integer.valueOf(id),name,Integer.valueOf(phonenumber),adress,Integer.valueOf(ttype),0,Long.valueOf(sfz));
+                        teacher = new Teacher(Integer.valueOf(id),name,Long.valueOf(phonenumber),adress,Integer.valueOf(ttype),0,Long.valueOf(sfz));
                         teacherService.insert(teacher);
                     }
                 }

@@ -19,6 +19,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MyFilterSecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
+
     private static Logger logger = Logger.getLogger(MyFilterSecurityMetadataSource.class);
 
     @Autowired

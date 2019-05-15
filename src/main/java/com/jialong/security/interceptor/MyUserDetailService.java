@@ -39,17 +39,6 @@ public class MyUserDetailService implements UserDetailsService {
         // 根据登录用户名获取用户信息
         Users user = usersMapper.selectByPrimaryKey(username);
         if (null != user) {
-//            // 存放权限
-//            Collection<GrantedAuthority> auths = new ArrayList<>();
-//            String action = user.getRoleName();
-//            if (StringUtils.isNotBlank(action)) {
-//                String[] roleaCtion = action.split(",");
-//                for (int i = 0; i < roleaCtion.length; i++) {
-//                    SimpleGrantedAuthority auth = new SimpleGrantedAuthority(roleaCtion[i]);
-//                    auths.add(auth);
-//                }
-//            }
-
 //            存放权限
             Collection<GrantedAuthority> auths = new ArrayList<>();
             List<String> strings = usersMapper.selectAuthorityByUsername(username);
@@ -59,8 +48,7 @@ public class MyUserDetailService implements UserDetailsService {
             }
 
             //spring security自带的User对象
-            User userDetails = new User(username, user.getPassword(), true, true, true, true, auths);
-            return userDetails;
+            return new User(username, user.getPassword(), true, true, true, true, auths);
         }
         return null;
     }

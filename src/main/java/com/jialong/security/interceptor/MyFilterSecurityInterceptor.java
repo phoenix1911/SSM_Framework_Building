@@ -21,8 +21,7 @@ import org.springframework.security.web.access.intercept.FilterInvocationSecurit
 /**
  *
  */
-public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor
-        implements Filter {
+public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor implements Filter {
 
     private FilterInvocationSecurityMetadataSource securityMetadataSource;
 
@@ -31,8 +30,7 @@ public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor
         return securityMetadataSource;
     }
 
-    public void setSecurityMetadataSource(
-            FilterInvocationSecurityMetadataSource securityMetadataSource) {
+    public void setSecurityMetadataSource(FilterInvocationSecurityMetadataSource securityMetadataSource) {
         this.securityMetadataSource = securityMetadataSource;
     }
 
@@ -47,15 +45,13 @@ public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor
     }
 
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response,
-                         FilterChain chain) throws IOException, ServletException {
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
         FilterInvocation fi = new FilterInvocation(request, response, chain);
         invoke(fi);
     }
 
-    public void invoke(FilterInvocation fi) throws IOException,
-            ServletException {
+    public void invoke(FilterInvocation fi) throws IOException, ServletException {
         /**
          * 最核心的代码就是@link InterceptorStatusToken token = super.beforeInvocation(fi);
          * 它会调用我们定义的MyInvocationSecurityMetadataSource.getAttributes方法和MyAccessDecisionManager.decide方法

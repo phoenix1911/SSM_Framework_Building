@@ -7,9 +7,7 @@ import java.io.Serializable;
 
 public class UserRole implements Serializable {
 
-    public UserRole() {
-
-    }
+    public UserRole() {}
 
     public UserRole(String username, Integer rid) {
         this.username = username;

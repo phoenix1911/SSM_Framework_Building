@@ -7,7 +7,7 @@ public class Teacher implements Serializable {
 
     private String tname;
 
-    private Integer tphonenumber;
+    private Long tphonenumber;
 
     private String address;
 
@@ -20,7 +20,7 @@ public class Teacher implements Serializable {
     public Teacher() {
     }
 
-    public Teacher(Integer tid, String tname, Integer tphonenumber, String address, Integer type, Integer isuploadtopic, Long sfz) {
+    public Teacher(Integer tid, String tname, Long tphonenumber, String address, Integer type, Integer isuploadtopic, Long sfz) {
         this.tid = tid;
         this.tname = tname;
         this.tphonenumber = tphonenumber;
@@ -55,11 +55,11 @@ public class Teacher implements Serializable {
         this.tname = tname == null ? null : tname.trim();
     }
 
-    public Integer getTphonenumber() {
+    public Long getTphonenumber() {
         return tphonenumber;
     }
 
-    public void setTphonenumber(Integer tphonenumber) {
+    public void setTphonenumber(Long tphonenumber) {
         this.tphonenumber = tphonenumber;
     }
 
