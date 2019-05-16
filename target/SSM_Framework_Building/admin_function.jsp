@@ -15,6 +15,11 @@
                         <a href="${path}/function/stuSelectTitleManage?enabled=1" class="btn btn-xs btn-info">启用</a>
                         <a href="${path}/function/stuSelectTitleManage?enabled=0" class="btn btn-xs btn-info">关闭</a>
                     </li>
+                    <li>
+                        <span>学生重新选题功能 状态：${sst==0?"关闭":"开启"}</span>
+                        <a href="${path}/function/stuSelectTitleManage?enabled=1" class="btn btn-xs btn-info">启用</a>
+                        <a href="${path}/function/stuSelectTitleManage?enabled=0" class="btn btn-xs btn-info">关闭</a>
+                    </li>
                 </ul>
             </div>
         </div>

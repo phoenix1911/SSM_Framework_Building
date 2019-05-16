@@ -73,7 +73,7 @@
                         <div class="col-sm-8">
                             <input id="ctid"  name="tid" minlength="10" type="text" class="form-control" required="" aria-required="true">
                         </div>
-                    </div>t
+                    </div>
 
                     <div class="form-group">
                         <label class="col-sm-3 control-label">姓名：</label>

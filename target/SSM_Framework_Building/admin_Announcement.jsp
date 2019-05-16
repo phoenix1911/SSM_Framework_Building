@@ -8,7 +8,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--360浏览器优先以webkit内核解析-->
 
 
     <title>公告视图</title>
@@ -112,17 +111,17 @@
 
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>标题</h5>
+                    <h5>简介</h5>
                 </div>
                 <div class="ibox-content">
-                    <p>jlfksdjkljflsdkajlkasdjfklsjadf。</p>
-                    <p>sdafsadfsfsdfsdaf：</p>
-                    <ol>
-                        <li>dfgdfsgdfgdfgdfgdfgfg</li>
-                        <li>dfsgdfgdfgdfgdfgsdfg</li>
-                        <li>dfjhkldfgjhkdfgjh</li>
-                        <li>ghjklfgjhklhgfjhkllhgfjhk</li>
-                    </ol>
+                    <p>毕业设计是本科教育的一个重要环节，是锻炼和检验学生专业综合能力的重要途径。毕业设计教学管理中，涉及导师选择、题目拟定、题目审核、开题报告、中期检查、导师指导、毕业答辩等多个环节，因此它是一项系统而复杂的工作。采用传统的毕业设计管理模式，指导教师分配、毕业设计题目审核等工作涉及学生多、信息量大，如不采取信息化的手段进行处理将影响毕业设计管理工作的效率。因此设计毕业设计管理系统具有重要的现实意义。</p>
+<%--                    <p>sdafsadfsfsdfsdaf：</p>--%>
+<%--                    <ol>--%>
+<%--                        <li>dfgdfsgdfgdfgdfgdfgfg</li>--%>
+<%--                        <li>dfsgdfgdfgdfgdfgsdfg</li>--%>
+<%--                        <li>dfjhkldfgjhkdfgjh</li>--%>
+<%--                        <li>ghjklfgjhklhgfjhkllhgfjhk</li>--%>
+<%--                    </ol>--%>
                 </div>
             </div>
             <div class="ibox float-e-margins">
@@ -156,4 +155,3 @@
 </html>
 
 
-</html>
