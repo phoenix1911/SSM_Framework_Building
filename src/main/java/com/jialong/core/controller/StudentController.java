@@ -147,7 +147,6 @@ public class StudentController {
     }
 
 
-
     /**
      * 跳转至论文选择页面
      * @param model
