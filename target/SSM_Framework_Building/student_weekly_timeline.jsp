@@ -23,7 +23,7 @@
                                         <p>
                                             学生选题，确定校内外指导教师，与指导教师联系沟通，明确毕业设计的具体任务和要求。
                                         </p>
-                                        <a href="${path}/stu/weekly/toAdd" class="btn btn-sm btn-primary"> 填写周报</a>
+                                        <a href="${path}/stu/weekly/toCalendar" class="btn btn-sm btn-primary"> 填写周报</a>
                                     </div>
                                 </div>
 
@@ -49,7 +49,7 @@
                                         <p>
                                             技术可行性分析，完善系统需求分析并确认系统功能。数据库设计，确定表之间关系并实现相关数据约束。完成基础数据录入或采集，整理数据关系，绘制e-r图。
                                         </p>
-                                        <a href="#" class="btn btn-sm btn-primary"> 填写周报</a>
+                                        <a href="${path}/stu/weekly/toCalendar" class="btn btn-sm btn-primary"> 填写周报</a>
                                     </div>
                                 </div>
 
@@ -62,7 +62,7 @@
                                         <p>
                                             完成前台页面设计，并实现系统基本功能。
                                         </p>
-                                        <a href="#" class="btn btn-sm btn-primary"> 填写周报</a>
+                                        <a href="${path}/stu/weekly/toCalendar" class="btn btn-sm btn-primary"> 填写周报</a>
                                     </div>
                                 </div>
 
@@ -75,7 +75,7 @@
                                         <p>
                                             完成中期检查报告并在系统中提交报告，等待审核。
                                         </p>
-                                        <a href="#" class="btn btn-sm btn-primary"> 填写周报</a>
+                                        <a href="${path}/stu/weekly/toCalendar" class="btn btn-sm btn-primary"> 填写周报</a>
                                     </div>
                                 </div>
 
@@ -88,7 +88,7 @@
                                         <p>
                                             完成所有编码，系统联调，测试，功能修改与完善。撰写毕业设计说明书。
                                         </p>
-                                        <a href="#" class="btn btn-sm btn-primary"> 填写周报</a>
+                                        <a href="${path}/stu/weekly/toCalendar" class="btn btn-sm btn-primary"> 填写周报</a>
                                     </div>
                                 </div>
 
@@ -102,7 +102,7 @@
                                         <p>
                                             完成设计说明书,外文翻译，准备答辩材料。
                                         </p>
-                                        <a href="#" class="btn btn-sm btn-primary"> 填写周报</a>
+                                        <a href="${path}/stu/weekly/toCalendar" class="btn btn-sm btn-primary"> 填写周报</a>
                                     </div>
                                 </div>
 
@@ -116,7 +116,7 @@
                                         <p>
                                             毕业设计答辩，提交归档所需毕业设计资料。
                                         </p>
-                                        <a href="#" class="btn btn-sm btn-primary"> 填写周报</a>
+                                        <a href="${path}/stu/weekly/toCalendar" class="btn btn-sm btn-primary"> 填写周报</a>
                                     </div>
                                 </div>
 

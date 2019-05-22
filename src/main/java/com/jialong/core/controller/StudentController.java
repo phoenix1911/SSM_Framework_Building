@@ -1,9 +1,6 @@
 package com.jialong.core.controller;
 
-import com.jialong.core.bean.Announcement;
-import com.jialong.core.bean.Student;
-import com.jialong.core.bean.Title;
-import com.jialong.core.bean.Weekly;
+import com.jialong.core.bean.*;
 import com.jialong.core.service.*;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +34,9 @@ public class StudentController {
 
     @Autowired
     private StudentService studentService;
+
+    @Autowired
+    private TeacherService teacherService;
 
     @Autowired
     private WeeklyService weeklyService;
@@ -169,10 +169,12 @@ public class StudentController {
         //修改学生表
         int sid = Integer.parseInt(SecurityContextHolder.getContext().getAuthentication().getName());
         Student student = studentService.queryById(sid);
+        Title title = titleService.queryById(id);
+        student.setXntid(title.getTid());
         student.setPaperid(id);
         studentService.update(student);
         //修改title表
-        Title title = titleService.queryById(id);
+//        Title title = titleService.queryById(id);
         title.setSid(sid);
         titleService.updateTitle(title);
 

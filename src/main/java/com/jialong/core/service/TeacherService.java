@@ -1,9 +1,6 @@
 package com.jialong.core.service;
 
-import com.jialong.core.bean.Student;
-import com.jialong.core.bean.Teacher;
-import com.jialong.core.bean.UserRole;
-import com.jialong.core.bean.UserRoleExample;
+import com.jialong.core.bean.*;
 import com.jialong.core.mapper.StudentMapper;
 import com.jialong.core.mapper.TeacherMapper;
 import com.jialong.core.mapper.UserRoleMapper;
@@ -36,6 +33,12 @@ public class TeacherService {
     public Teacher queryById(int id) {
         return teacherMapper.selectByPrimaryKey(id);
     }
+//    public Teacher queryByPaperid(int id) {
+//        TitleExample titleExample = new TitleExample();
+//        TitleExample.Criteria criteria = titleExample.createCriteria();
+//        criteria.andTid
+//        return teacherMapper.selectByPaperid(id);
+//    }
 
     public int update(Teacher teacher) {
         return teacherMapper.updateByPrimaryKey(teacher);
@@ -87,6 +90,7 @@ public class TeacherService {
 
         return 0;
     }
+
 
 
 }

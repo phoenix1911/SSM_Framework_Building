@@ -9,9 +9,7 @@
                     <h5>毕业设计列表</h5>
                 </div>
                 <div class="ibox-content">
-                    <div class="">
-                        <a href="${path}/tea/title/toAdd" class="btn btn-info" id="upload">添加毕设题目</a>
-                    </div>
+
                     <table class="table table-striped table-bordered table-hover dataTables-example">
                         <thead>
                         <tr>
