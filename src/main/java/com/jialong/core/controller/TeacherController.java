@@ -1,10 +1,8 @@
 package com.jialong.core.controller;
 
-import com.jialong.core.bean.Announcement;
-import com.jialong.core.bean.Teacher;
-import com.jialong.core.bean.Title;
-import com.jialong.core.bean.Weekly;
+import com.jialong.core.bean.*;
 import com.jialong.core.service.*;
+import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
+import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -42,6 +43,8 @@ public class TeacherController {
 
     @Value("#{configProperties['filepath']}")
     private String filepath;
+    @Value("#{configProperties['imgpath']}")
+    private String imgpath;
 
     @RequestMapping("toIndex")
     public String toIndex(Model model) {
@@ -151,6 +154,13 @@ public class TeacherController {
         return null;
     }
 
+    /**
+     * 教师审批方法
+     * @param id
+     * @param type
+     * @param mark
+     * @return
+     */
     @RequestMapping("/title/Approval")
     public String approval(@RequestParam("id") int id, @RequestParam("type") String type, @RequestParam("mark") int mark) {
         Title title = titleService.queryById(id);
@@ -175,7 +185,64 @@ public class TeacherController {
         List<Weekly> weeklies = weeklyService.selectWeeklyBySessionid(sessionid);
         model.addAttribute("filepath",filepath);
         model.addAttribute("list", weeklies);
+        model.addAttribute("sessionid", sessionid);
         return "teacher_communicate";
+    }
+
+    @RequestMapping("/weekly/add")
+    public String addWeekly(@RequestParam("uploadfile") CommonsMultipartFile[] files ,
+                            @RequestParam("describe") String describe,
+                            @RequestParam("sessionid") String sessionid,
+                            @RequestParam("scoregrade") String scoregrade,
+                            Model model,@RequestParam(value = "week",required = false)String week) {
+        Integer tid = Integer.valueOf(SecurityContextHolder.getContext().getAuthentication().getName());
+        //获取教师对象
+//        Student student = studentService.queryById(sid);
+        Teacher teacher = teacherService.queryById(tid);
+
+        Weekly weekly = new Weekly();
+        weekly.setTid(tid);
+        weekly.setTname(teacher.getTname());
+        weekly.setDescribe(describe);
+        weekly.setScoregrade(scoregrade);
+        weekly.setWeeks(Integer.valueOf(week));
+
+        Date day=new Date();
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        weekly.setDate(df.format(day));
+
+        long l = System.currentTimeMillis();
+        weekly.setSystemtime(String.valueOf(l));
+
+
+        weekly.setSessionid(sessionid);
+
+        if (files != null) {
+            weekly.setIncludepic(1);
+            for (int i = 0; i < files.length; i++) {
+                String origipath= "\\weekly\\" + sessionid + "\\" + l + files[i].getOriginalFilename();
+
+                if (i == 0) { weekly.setP1(origipath);}
+                if (i == 1) { weekly.setP2(origipath);}
+                if (i == 2) { weekly.setP3(origipath);}
+                if (i == 3) { weekly.setP4(origipath);}
+                if (i == 4) { weekly.setP5(origipath);}
+                if (i == 5) { weekly.setP6(origipath);}
+                if (i == 6) { weekly.setP7(origipath);}
+                if (i == 7) { weekly.setP8(origipath);}
+                String path = imgpath + origipath;
+                File destFile = new File(path);
+                try{
+                    //复制文件
+                    FileUtils.copyInputStreamToFile(files[i].getInputStream(),destFile);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        weeklyService.studentAddWeekly(weekly);
+
+        return "student_weekly";
     }
 
 

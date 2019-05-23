@@ -36,7 +36,7 @@
                                         <p>
                                             掌握文献查阅方法，通过查阅资料，完成开题报告。在系统中完成开题报告提交，等待指导教师审核。
                                         </p>
-                                        <a href="#" class="btn btn-sm btn-primary"> 填写周报</a>
+                                        <a href="${path}/stu/weekly/toCalendar" class="btn btn-sm btn-primary"> 填写周报</a>
                                     </div>
                                 </div>
 

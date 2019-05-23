@@ -118,17 +118,50 @@
 
                             </c:forEach>
                     </div>
-                    <div class="chat-form">
-                        <form role="form">
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="消息内容…"></textarea>
-                            </div>
-                            <div class="text-right">
-                                <button type="submit" class="btn btn-sm btn-primary m-t-n-xs"><strong>发送消息</strong>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                                <div class="chat-form" style="margin-right: 20px; margin-left:40px">
+                                    <form role="form" action="${path}/tea/weekly/add" method="post" enctype="multipart/form-data">
+                                        <div class="form-group" style="margin-bottom: 5px">
+<%--                                            <input  id="week" name="week"  class="form-control" required="" aria-required="true">--%>
+                                            <select name="week" class="form-control m-b">
+                                                <option value="1">第1周</option>
+                                                <option value="2">第2周</option>
+                                                <option value="3">第3周</option>
+                                                <option value="4">第4周</option>
+                                                <option value="5">第5周</option>
+                                                <option value="6">第6周</option>
+                                                <option value="7">第7周</option>
+                                                <option value="8">第8周</option>
+                                                <option value="9">第9周</option>
+                                                <option value="10">第10周</option>
+                                                <option value="11">第11周</option>
+                                                <option value="12">第12周</option>
+                                                <option value="13">第13周</option>
+                                                <option value="14">第14周</option>
+                                                <option value="15">第15周</option>
+                                                <option value="16">第16周</option>
+                                                <option value="17">第17周</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group" style="margin-bottom: 5px">
+                                            <textarea name="describe" class="form-control" placeholder="消息内容…"></textarea>
+                                        </div>
+                                        <div class="form-group" style="margin-bottom: 5px">
+                                            <input  id="file_input" name="uploadfile" type="file" multiple class="form-control" required="" aria-required="true">
+                                        </div>
+                                        <div class="form-group" style="margin-bottom: 5px">
+<%--                                            <input  id="scoregrade" name="scoregrade" class="form-control" required="" aria-required="true">--%>
+                                            <input type="radio" checked="checked" value="优" id="optionsRadios1" name="scoregrade"><button class="btn btn-info btn-xs">优</button>
+                                            <input type="radio"  value="良" id="optionsRadios2" name="scoregrade"><button class="btn btn-info btn-xs">良</button>
+                                            <input type="radio"  value="中" id="optionsRadios3" name="scoregrade"><button class="btn btn-info btn-xs">中</button>
+                                            <input type="radio"  value="差" id="optionsRadios4" name="scoregrade"><button class="btn btn-info btn-xs">差</button>
+                                        </div>
+                                            <input  id="sessionid" name="sessionid" value="${sessionid}"  type="hidden" >
+                                        <div class="text-right" style="margin-top:10px;align:right">
+                                            <button type="submit" class="btn btn-xl btn-primary m-t-n-xs"><strong>发送消息</strong>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                 </div>
             </div>
         </div></div>

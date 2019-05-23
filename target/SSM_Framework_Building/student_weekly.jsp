@@ -10,8 +10,6 @@
 
 
     <title>H+ 后台主题UI框架 - Blueimp相册</title>
-    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
-    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
 
     <link href="${path}/css/font-awesome.css?v=4.4.0" rel="stylesheet">
     <link href="${path}/css/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet">
@@ -142,21 +140,21 @@
                         </div>
 
                     </div>
-                    <div class="chat-form" style="margin-right: 20px; margin-left:40px">
-                        <form role="form" action="${path}/stu/weekly/add" method="post" enctype="multipart/form-data">
-                            <div class="form-group" style="margin-bottom: 5px">
-                                <textarea name="describe" class="form-control" placeholder="消息内容…"></textarea>
-                            </div>
-                            <div class="form-group" style="margin-bottom: 5px">
-                                <input  id="file_input" name="uploadfile" type="file" multiple class="form-control" required="" aria-required="true">
-                            </div>
+<%--                    <div class="chat-form" style="margin-right: 20px; margin-left:40px">--%>
+<%--                        <form role="form" action="${path}/stu/weekly/add" method="post" enctype="multipart/form-data">--%>
+<%--                            <div class="form-group" style="margin-bottom: 5px">--%>
+<%--                                <textarea name="describe" class="form-control" placeholder="消息内容…"></textarea>--%>
+<%--                            </div>--%>
+<%--                            <div class="form-group" style="margin-bottom: 5px">--%>
+<%--                                <input  id="file_input" name="uploadfile" type="file" multiple class="form-control" required="" aria-required="true">--%>
+<%--                            </div>--%>
 
-                            <div class="text-right" style="margin-top:10px;align:right">
-                                <button type="submit" class="btn btn-xl btn-primary m-t-n-xs"><strong>发送消息</strong>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+<%--                            <div class="text-right" style="margin-top:10px;align:right">--%>
+<%--                                <button type="submit" class="btn btn-xl btn-primary m-t-n-xs"><strong>发送消息</strong>--%>
+<%--                                </button>--%>
+<%--                            </div>--%>
+<%--                        </form>--%>
+<%--                    </div>--%>
                     </div>
                 </div>
 
