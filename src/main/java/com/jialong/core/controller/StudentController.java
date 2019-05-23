@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
@@ -143,7 +144,7 @@ public class StudentController {
         }
         weeklyService.studentAddWeekly(weekly);
         model.addAttribute("message", "添加周报成功");
-        return "student_weekly";
+        return "redirect:/stu/weekly/toWeekly";
     }
 
 
@@ -201,10 +202,11 @@ public class StudentController {
     }
 
     @RequestMapping("/title/toUpload")
-    public String toAdd(Model model) {
+    public String toAdd(@ModelAttribute("message")String message, Model model) {
         //获取学生的题目对象
         Title title = titleService.queryBySid(Integer.parseInt(SecurityContextHolder.getContext().getAuthentication().getName()));
         model.addAttribute("title", title);
+        model.addAttribute("message", message);
         return "student_title_upload";
     }
 

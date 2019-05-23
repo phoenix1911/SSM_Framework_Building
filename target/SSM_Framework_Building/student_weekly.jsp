@@ -167,11 +167,11 @@
 <!-- 全局js -->
 <script src="${path}/js/jquery.min.js?v=2.1.4"></script>
 <script src="${path}/js/bootstrap.min.js?v=3.3.6"></script>
-<script>
-    <c:if test="${message!=''}">
-    alert("${message}");
-    </c:if>
-</script>
+<%--<script>--%>
+<%--    <c:if test="${message!=''}">--%>
+<%--    alert("${message}");--%>
+<%--    </c:if>--%>
+<%--</script>--%>
 <!-- 自定义js -->
 <script src="${path}/js/content.js?v=1.0.0"></script>
 

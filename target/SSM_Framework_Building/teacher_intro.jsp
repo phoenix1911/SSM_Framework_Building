@@ -147,11 +147,11 @@
 
 <!-- 自定义js -->
 <script src="${path}/js/content.js"></script>
-<script>
-    <c:if test="${message!=''}">
-    alert("${message}");
-    </c:if>
-</script>
+<%--<script>--%>
+<%--    <c:if test="${message!=''}">--%>
+<%--    alert("${message}");--%>
+<%--    </c:if>--%>
+<%--</script>--%>
 <!-- 欢迎信息 -->
 <script src="${path}/js/welcome.js"></script>
 </body>

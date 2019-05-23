@@ -170,11 +170,11 @@
 
     });
 </script>
-<script>
-    <c:if test="${message!=''}">
-    alert("${message}");
-    </c:if>
-</script>
+<%--<script>--%>
+<%--    <c:if test="${message!=''}">--%>
+<%--    alert("${message}");--%>
+<%--    </c:if>--%>
+<%--</script>--%>
 <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
 <!--统计代码，可删除-->
 </body>

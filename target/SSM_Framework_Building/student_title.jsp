@@ -107,7 +107,7 @@
 <script src="${path}/js/bootstrap.min.js?v=3.3.6"></script>
 
 <script>
-    <c:if test="${message!=''}">
+    <c:if test="${message!=null}">
     alert("${message}");
     </c:if>
 </script>
