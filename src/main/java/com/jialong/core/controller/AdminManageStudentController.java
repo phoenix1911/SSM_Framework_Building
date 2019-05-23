@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
@@ -40,10 +41,11 @@ public class AdminManageStudentController {
      * 显示所有学生
      */
     @RequestMapping("allStudent")
-    public String list(@RequestParam(value = "pageNum",defaultValue = "1")Integer pageNum, Model model) {
+    public String list(@ModelAttribute("message")String message, @RequestParam(value = "pageNum",defaultValue = "1")Integer pageNum, Model model) {
         List<Student> students = studentService.selectAll();
         model.addAttribute("list", students);
         model.addAttribute("username", SecurityContextHolder.getContext().getAuthentication().getName());
+        model.addAttribute("message", message);
         return "admin_v2";
     }
 
@@ -70,6 +72,7 @@ public class AdminManageStudentController {
         studentService.update(student);
         student = studentService.queryById(student.getId());
         model.addAttribute("student", student);
+        model.addAttribute("message", "更新学生信息成功");
         return "redirect:/admin/student/allStudent";
     }
 
@@ -79,19 +82,21 @@ public class AdminManageStudentController {
      * @return
      */
     @RequestMapping("del")
-    public String delete(@RequestParam("id") int id) {
+    public String delete(Model model,@RequestParam("id") int id) {
         studentService.deleteById(id);
+        model.addAttribute("message", "删除学生成功");
         return "redirect:/admin/student/allStudent";
     }
 
     @RequestMapping("addone")
     public String insertone(Model model,Student student) {
         studentService.insert(student);
+        model.addAttribute("message", "添加学生成功");
         return "redirect:/admin/student/allStudent";
     }
 
     @RequestMapping("addmany")
-    public String insertmany(@RequestParam("uploadfile") CommonsMultipartFile file, HttpServletRequest request) {
+    public String insertmany(Model model,@RequestParam("uploadfile") CommonsMultipartFile file, HttpServletRequest request) {
         // MultipartFile是对当前上传的文件的封装，当要同时上传多个文件时，可以给定多个MultipartFile参数(数组)
         if (!file.isEmpty()) {
             String type = file.getOriginalFilename().substring(file.getOriginalFilename().indexOf("."));// 取文件格式后缀名
@@ -137,6 +142,7 @@ public class AdminManageStudentController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            model.addAttribute("message", "批量添加成功");
             return "redirect:/admin/student/allStudent";
         } else {
             return "redirect:upload_error.jsp";

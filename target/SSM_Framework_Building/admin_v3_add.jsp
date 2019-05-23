@@ -169,7 +169,10 @@
 
     </div>
 </div>
-
-
+<%--<script>--%>
+<%--    <c:if test="${message!=''}">--%>
+<%--    alert("${message}");--%>
+<%--    </c:if>--%>
+<%--</script>--%>
 </body>
 </html>

@@ -16,6 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
@@ -40,13 +41,14 @@ public class AdminManageTeacherController {
     private TeacherService teacherService;
 
     @RequestMapping("allTeacher")
-    public String list(@RequestParam(value = "pageNum",defaultValue = "1")Integer pageNum, Model model) {
+    public String list(@ModelAttribute("message")String message, @RequestParam(value = "pageNum",defaultValue = "1")Integer pageNum, Model model) {
 
 
         List<Teacher> teachers = teacherService.selectAll();
 
         model.addAttribute("list", teachers);
         model.addAttribute("username", SecurityContextHolder.getContext().getAuthentication().getName());
+        model.addAttribute("message", message);
         return "admin_v3";
     }
 
@@ -73,6 +75,7 @@ public class AdminManageTeacherController {
         teacherService.update(teacher);
         teacher = teacherService.queryById(teacher.getTid());
         model.addAttribute("teacher", teacher);
+        model.addAttribute("message", "教师信息更新成功");
         return "redirect:/admin/teacher/allTeacher";
     }
 
@@ -82,19 +85,21 @@ public class AdminManageTeacherController {
      * @return
      */
     @RequestMapping("del")
-    public String delete(@RequestParam("tid") int tid) {
+    public String delete(@RequestParam("tid") int tid,Model model) {
         teacherService.deleteById(tid);
+        model.addAttribute("message","教师删除成功");
         return "redirect:/admin/teacher/allTeacher";
     }
 
     @RequestMapping("addone")
     public String insertone(Model model,Teacher teacher) {
         teacherService.insert(teacher);
+        model.addAttribute("message", "教师信息添加成功");
         return "redirect:/admin/teacher/allTeacher";
     }
 
     @RequestMapping("addmany")
-    public String insertmany(@RequestParam("uploadfile") CommonsMultipartFile file, HttpServletRequest request) {
+    public String insertmany(Model model,@RequestParam("uploadfile") CommonsMultipartFile file, HttpServletRequest request) {
         // MultipartFile是对当前上传的文件的封装，当要同时上传多个文件时，可以给定多个MultipartFile参数(数组)
         if (!file.isEmpty()) {
             String type = file.getOriginalFilename().substring(file.getOriginalFilename().indexOf("."));// 取文件格式后缀名
@@ -145,7 +150,7 @@ public class AdminManageTeacherController {
             }
 
 
-
+            model.addAttribute("message", "批量添加成功");
             return "redirect:/admin/teacher/allTeacher";
         } else {
             return "redirect:upload_error.jsp";

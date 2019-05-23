@@ -6,49 +6,68 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea8b013f-a4a7-4db2-b6b6-ac63db19ef4b" name="Default Changelist" comment="修改学生周报提交无tid问题">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/admin/uploadStu/1557979681349.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/吕梁市矿山环境调查展示系统/XXXX系统任务书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/吕梁市矿山环境调查展示系统/xxx系统中期报告.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/吕梁市矿山环境调查展示系统/xxx系统开题报告.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/吕梁市矿山环境调查展示系统/xxx系统说明书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/在线考试系统的设计与开发/XXXX系统任务书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/在线考试系统的设计与开发/xxx系统中期报告.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/在线考试系统的设计与开发/xxx系统开题报告.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/在线考试系统的设计与开发/xxx系统说明书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/太原移动用户数据分析系统的设计与实现/XXXX系统任务书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/学习英语标准化考试系统的设计与实现/XXXX系统任务书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1080000004/15584898075701514010122田家龙.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1514010122/15585043938241514010122田家龙.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1514010122/15585803603211514010122田家龙.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1514010122/15585810041047.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1514010122/15585810041048.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/null_1080000001/15584882581481514010122田家龙.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/null_1080000003/15584884221721514010122田家龙.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1557979681349.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/吕梁市矿山环境调查展示系统/XXXX系统任务书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/吕梁市矿山环境调查展示系统/xxx系统中期报告.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/吕梁市矿山环境调查展示系统/xxx系统开题报告.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/吕梁市矿山环境调查展示系统/xxx系统说明书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/在线考试系统的设计与开发/XXXX系统任务书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/在线考试系统的设计与开发/xxx系统中期报告.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/在线考试系统的设计与开发/xxx系统开题报告.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/在线考试系统的设计与开发/xxx系统说明书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/太原移动用户数据分析系统的设计与实现/XXXX系统任务书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/学习英语标准化考试系统的设计与实现/XXXX系统任务书.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1080000004/15584898075701514010122田家龙.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15585043938241514010122田家龙.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15585803603211514010122田家龙.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15585810041047.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15585810041048.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/null_1080000001/15584882581481514010122田家龙.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/null_1080000003/15584884221721514010122田家龙.jpg" afterDir="false" />
+    <list default="true" id="ea8b013f-a4a7-4db2-b6b6-ac63db19ef4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/gfghjkjgh/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/title/艾斯黛拉看风景ask浪费/xxx系统开题报告.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/announcement/15586093012068.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1080000005/1558608228006" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1080000005/1558608247766" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1080000005/15586086490646.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1514010122/15586076406916.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1514010122/15586077414337.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1514010122/15586079553755.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/gfghjkjgh/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/艾斯黛拉看风景ask浪费/xxx系统开题报告.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15586093012068.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1080000005/1558608228006" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1080000005/1558608247766" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1080000005/15586086490646.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586076406916.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586077414337.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586079553755.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageTeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageTeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AnnouncementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AnnouncementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/高校毕业设计管理/教师信息模板 (2) (2).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/AdminManageStudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/AdminManageStudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/AdminManageTeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/AdminManageTeacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/AnnouncementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/AnnouncementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/StudentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/TeacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_function.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_function.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_roleresource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_roleresource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_userrole.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_userrole.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2_update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2_update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/高校毕业设计管理/教师信息模板 (2) (2).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/student_index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_intro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/student_intro.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title_upload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title_upload.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_calendar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_calendar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_timeline.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_timeline.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_intro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_intro.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/AdminManageStudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/AdminManageStudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/AdminManageTeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/AdminManageTeacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/AnnouncementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/AnnouncementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/StudentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/TeacherController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../ams21882/SSM_Framework_Building/target/" />
@@ -111,52 +130,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_roleresource.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-start-column="4" selection-end-line="100" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_userrole.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="108" lean-forward="true" selection-start-line="108" selection-start-column="4" selection-end-line="112" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_function.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="37" selection-start-line="37" selection-start-column="4" selection-end-line="41" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AnnouncementController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2822">
+              <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4250">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp">
+        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5338">
-              <caret line="157" selection-start-line="157" selection-end-line="157" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_index.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4794">
-              <caret line="141" column="74" selection-start-line="141" selection-start-column="61" selection-end-line="141" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6086">
-              <caret line="196" column="67" selection-start-line="196" selection-start-column="63" selection-end-line="196" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/StudentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="49" column="27" selection-start-line="46" selection-start-column="4" selection-end-line="49" selection-end-column="27" />
+            <state relative-caret-position="118">
+              <caret line="147" selection-start-line="147" selection-end-line="147" />
             </state>
           </provider>
         </entry>
@@ -169,12 +192,12 @@
         <option value="HTML File" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>f4 from announcement</find>
       <find>describe</find>
       <find>自H+ v3.0版发布</find>
       <find>具有以下te</find>
@@ -204,6 +227,7 @@
       <find>TitleSelect</find>
       <find>&lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt; 填写周报&lt;/a&gt;</find>
       <find>toCommunicate</find>
+      <find>model.</find>
     </findStrings>
     <replaceStrings>
       <replace>title</replace>
@@ -249,27 +273,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin_index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/teacher_index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/teacher_title.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/student_title.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jialong/security/bean/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jialong/security/bean/RoleExample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jialong/security/bean/RoleResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jialong/security/bean/RoleResourceExample.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/RoleResourceMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin_v1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/calender.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/header.jsp" />
-        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/js/calendar.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/calendar.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/loginerror.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext-security.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/loginerror.jsp" />
-        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/student_weekly_add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/student_index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/redis/RedisCache.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyAuthenticationSuccessHandler.java" />
@@ -279,27 +282,48 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyAccessDecisionManager.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/student_weekly_calendar.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/bean/UserRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageStudentController.java" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/bean/Teacher.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/mapper/TeacherMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageTeacherController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/service/TeacherService.java" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/header.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/js/myjs.js" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2.jsp" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3.jsp" />
-        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_add.jsp" />
-        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_userrole.jsp" />
-        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_function.jsp" />
-        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement.jsp" />
-        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_intro.jsp" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/student_intro.jsp" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/student_title.jsp" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/service/TeacherService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly.jsp" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_timeline.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_intro.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title_update.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title_add.jsp" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/student_title_upload.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AnnouncementController.java" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/login.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_index.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v1.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement_add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageStudentController.java" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2_add.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2_update.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_add.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_update.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/loginerror.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/student_index.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_index.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_calendar.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageTeacherController.java" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_roleresource.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_userrole.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_function.jsp" />
+        <option value="$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement.jsp" />
       </list>
     </option>
   </component>
@@ -363,6 +387,69 @@
             <path>
               <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jialong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jialong" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jialong" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -654,6 +741,9 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="12600" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="visualVMId" value="87708930277700" />
+      </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -670,6 +760,21 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug with VisualVM">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -773,14 +878,7 @@
       <workItem from="1557885998075" duration="2802000" />
       <workItem from="1557919395709" duration="17741000" />
       <workItem from="1558579303309" duration="103000" />
-      <workItem from="1558579449999" duration="2065000" />
-    </task>
-    <task id="LOCAL-00006" summary="修改配置">
-      <created>1552564986902</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1552564986902</updated>
+      <workItem from="1558579449999" duration="13258000" />
     </task>
     <task id="LOCAL-00007" summary=".">
       <created>1552614666281</created>
@@ -1118,7 +1216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558490193901</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="修改教师周报表单">
+      <created>1558581573714</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1558581573715</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1151,7 +1256,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="448468000" />
+    <option name="totallyTimeSpent" value="459661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1164,6 +1269,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1136" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7980769" visible="true" weight="0.16566867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1176,8 +1282,8 @@
       <window_info id="JRebel" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.12741935" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44683027" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.47022587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3415133" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" visible="true" weight="0.34867075" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960032" weight="0.32580644" />
@@ -1209,51 +1315,6 @@
       <window_info anchor="right" id="Database" order="11" weight="0.18113773" />
       <window_info anchor="right" id="Bean Validation" order="12" weight="0.14750378" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7980769" visible="true" weight="0.16566867" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.20192307" side_tool="true" weight="0.29500756" />
-      <window_info id="JRebel" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.12741935" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.116564415" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.28629857" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960032" weight="0.32580644" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49960032" weight="0.32515338" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.4870968" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3467742" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.4483871" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49960032" visible="true" weight="0.27505112" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" sideWeight="0.49880096" weight="0.32741934" />
-      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32903227" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.13190185" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.5145161" />
-      <window_info anchor="bottom" id="JRebel Console" order="17" side_tool="true" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="18" />
-      <window_info anchor="bottom" id="JRebel Executor" order="19" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="20" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="2" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.24962178" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.22005989" />
-      <window_info anchor="right" id="JSF" order="5" weight="0.32980332" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="CDI" order="7" weight="0.32980332" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32980332" />
-      <window_info anchor="right" id="Database" order="11" weight="0.18113773" />
-      <window_info anchor="right" id="Bean Validation" order="12" weight="0.14750378" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1309,7 +1370,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="admin界面_教师 功能完善" />
     <MESSAGE value="admin界面_添加教师类型选项" />
     <MESSAGE value="教师界面_论文题目显示 修改 删除 添加" />
     <MESSAGE value="教师界面_论文题目添加 文件上传" />
@@ -1334,121 +1394,14 @@
     <MESSAGE value="教师数据库类型修改 手机号int-&gt;long" />
     <MESSAGE value="修改所有公告界面" />
     <MESSAGE value="修改学生周报提交无tid问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改学生周报提交无tid问题" />
+    <MESSAGE value="修改教师周报表单" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改教师周报表单" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/redis/RedisCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="36" column="74" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyFilterSecurityMetadataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyUserDetailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyFilterSecurityInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/bean/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/bean/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/bean/TeacherExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="53" column="79" lean-forward="true" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_userrole.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_function.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyAccessDecisionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyAuthenticationSuccessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1479,13 +1432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/html/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-302" />
@@ -1496,71 +1442,10 @@
         <state relative-caret-position="-13328" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-404">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3308">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="508">
           <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_title_upload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_intro.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="55" column="54" lean-forward="true" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3186">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_intro.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2312">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" column="74" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -1582,11 +1467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1428" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/service/TitleService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1689">
@@ -1597,25 +1477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_title.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2390">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_timeline.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2832" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/CommonController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1623,73 +1484,293 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageStudentController.java">
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/js/myjs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret line="93" column="112" selection-start-line="93" selection-start-column="112" selection-end-line="93" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#list#0;class#AdminManageStudentController#0" />
-            <element signature="method#toUpdate#0;class#AdminManageStudentController#0" />
-            <element signature="method#update#0;class#AdminManageStudentController#0" />
-            <element signature="method#insertone#0;class#AdminManageStudentController#0" />
-            <element signature="method#insertmany#0;class#AdminManageStudentController#0" />
-          </folding>
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageTeacherController.java">
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/js/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_intro.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="150" column="9" selection-start-line="150" selection-start-column="9" selection-end-line="150" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AnnouncementController.java">
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_title.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
+        <state relative-caret-position="336">
+          <caret line="112" column="9" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp">
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5338">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4794">
-          <caret line="141" column="74" selection-start-line="141" selection-start-column="61" selection-end-line="141" selection-end-column="74" />
+        <state relative-caret-position="370">
+          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="322">
+          <caret line="173" column="9" selection-start-line="173" selection-start-column="9" selection-end-line="173" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java">
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_timeline.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6086">
-          <caret line="196" column="67" selection-start-line="196" selection-start-column="63" selection-end-line="196" selection-end-column="67" />
+        <state relative-caret-position="326">
+          <caret line="176" column="9" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_intro.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="153" column="9" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title_update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="167" column="24" selection-start-line="167" selection-start-column="24" selection-end-line="167" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_title_upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="49" column="27" selection-start-line="46" selection-start-column="4" selection-end-line="49" selection-end-column="27" />
+        <state relative-caret-position="-87">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="method#toIndex#0;class#StudentController#0" />
+            <element signature="method#toIntro#0;class#StudentController#0" />
+            <element signature="method#toCalender#0;class#StudentController#0" />
+            <element signature="method#toTimeline#0;class#StudentController#0" />
+            <element signature="method#toWeekly#0;class#StudentController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="76" column="67" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="67" />
+          <folding>
+            <element signature="method#toIndex#0;class#TeacherController#0" />
+            <element signature="method#toIntro#0;class#TeacherController#0" />
+            <element signature="method#toTitle#0;class#TeacherController#0" />
+            <element signature="method#insertone#0;class#TeacherController#0" />
+            <element signature="method#update#0;class#TeacherController#0" />
+            <element signature="method#delete#0;class#TeacherController#0" />
+            <element signature="method#download#0;class#TeacherController#0" />
+            <element signature="method#approval#0;class#TeacherController#0" />
+            <element signature="method#toCommunicate#0;class#TeacherController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="141" column="21" lean-forward="true" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="128" column="9" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageStudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4008">
+          <caret line="144" column="52" selection-start-line="144" selection-start-column="52" selection-end-line="144" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="162" lean-forward="true" selection-start-line="162" selection-start-column="4" selection-end-line="166" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2_update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-start-column="4" selection-end-line="100" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="171" selection-start-line="171" selection-start-column="4" selection-end-line="175" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="98" selection-start-line="98" selection-start-column="4" selection-end-line="102" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/loginerror.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7772">
+          <caret line="250" column="17" lean-forward="true" selection-start-line="246" selection-start-column="8" selection-end-line="250" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="269" column="21" lean-forward="true" selection-start-line="269" selection-start-column="21" selection-end-line="269" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="229" column="8" lean-forward="true" selection-start-line="229" selection-start-column="8" selection-end-line="233" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_calendar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="352" column="9" lean-forward="true" selection-start-line="352" selection-start-column="9" selection-end-line="352" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AdminManageTeacherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-956">
+          <caret line="152" column="52" selection-start-line="152" selection-start-column="52" selection-end-line="152" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#list#0;class#AdminManageTeacherController#0" />
+            <element signature="method#toUpdate#0;class#AdminManageTeacherController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_roleresource.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-start-column="4" selection-end-line="100" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_userrole.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-start-column="4" selection-end-line="112" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_function.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="37" selection-start-line="37" selection-start-column="4" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/AnnouncementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2822">
+          <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4250">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
         </state>
       </provider>
     </entry>

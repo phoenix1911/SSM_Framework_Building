@@ -96,8 +96,11 @@
 
 <script src="js/demo/form-validate-demo.js"></script>
 
-
+<%--<script>--%>
+<%--    <c:if test="${message!=''}">--%>
+<%--    alert("${message}");--%>
+<%--    </c:if>--%>
+<%--</script>--%>
 
 </body>
-
 </html>

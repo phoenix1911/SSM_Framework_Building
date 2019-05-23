@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
@@ -36,23 +37,25 @@ public class AnnouncementController {
     private String imgpath;
 
     @RequestMapping("/toAnnouncement")
-    public String toAnnouncement(Model model) {
+    public String toAnnouncement(@ModelAttribute("message") String message,Model model) {
         List<Announcement> adminAnnouncement = announcementService.selectByAnnouncementtype("网站概览");
         List<Announcement> teacherAnnouncement = announcementService.selectByAnnouncementtype("公告");
 
         model.addAttribute("adminAnnouncement", adminAnnouncement);
         model.addAttribute("teacherAnnouncement", teacherAnnouncement);
         model.addAttribute("sid", SecurityContextHolder.getContext().getAuthentication().getName());
+        model.addAttribute("message", message);
         return "admin_Announcement";
     }
 
     @RequestMapping("/announcement/toAdd")
     public String toAdd(Model model) {
+
         return "admin_Announcement_add";
     }
 
     @RequestMapping("/announcement/add")
-    public String add(@RequestParam("uploadfile") CommonsMultipartFile[] files, @RequestParam("title") String title, @RequestParam("describe") String describe, @RequestParam("usertype") String usertype) {
+    public String add(Model model,@RequestParam("uploadfile") CommonsMultipartFile[] files, @RequestParam("title") String title, @RequestParam("describe") String describe, @RequestParam("usertype") String usertype) {
         Announcement announcement = new Announcement();
         announcement.setUsertype(usertype);
         announcement.setTitle(title);
@@ -104,11 +107,12 @@ public class AnnouncementController {
             }
 
         announcementService.add(announcement);
+        model.addAttribute("message", "添加成功");
         return "admin_Announcement_add";
     }
 
     @RequestMapping("/announcement/addwzgl")
-    public String addwzgl(@RequestParam("title") String title, @RequestParam("describe") String describe) {
+    public String addwzgl(@RequestParam("title") String title,Model model, @RequestParam("describe") String describe) {
         Announcement announcement = new Announcement();
         announcement.setUsertype("admin");
         announcement.setTitle(title);
@@ -123,6 +127,7 @@ public class AnnouncementController {
         announcement.setAnnouncementtype("网站概览");
         announcement.setIncludefile(0);
         announcementService.add(announcement);
+        model.addAttribute("message", "添加成功");
         return "admin_Announcement_add";
     }
 
@@ -134,6 +139,7 @@ public class AnnouncementController {
         } else {
             model.addAttribute("message", "删除失败");
         }
+
         return "redirect:/admin/toAnnouncement";
     }
 

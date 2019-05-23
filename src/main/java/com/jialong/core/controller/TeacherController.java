@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
@@ -18,6 +19,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Tjl on 2019/3/26 11:12.
@@ -72,11 +74,12 @@ public class TeacherController {
      * @return
      */
     @RequestMapping("/title/toTitle")
-    public String toTitle(Model model) {
+    public String toTitle(@ModelAttribute("message") String message,Model model) {
         String tid = SecurityContextHolder.getContext().getAuthentication().getName();
         List<Title> titleList = titleService.queryByTid(Integer.parseInt(tid));
         model.addAttribute("tid", tid);
         model.addAttribute("list", titleList);
+        model.addAttribute("message",message);
         return "teacher_title";
     }
 
@@ -88,12 +91,13 @@ public class TeacherController {
     }
 
     @RequestMapping("/title/add")
-    public String insertone(@RequestParam("uploadfile") CommonsMultipartFile file, Title title) {
+    public String insertone(@RequestParam("uploadfile") CommonsMultipartFile file, Title title,Model model) {
 
         titleService.uploadrws(file, title);
         String tid = SecurityContextHolder.getContext().getAuthentication().getName();
         title.setTid(Integer.valueOf(tid));
         titleService.insert(title);
+        model.addAttribute("message", "添加题目成功");
         return "redirect:/tea/title/toTitle";
     }
 
@@ -110,12 +114,13 @@ public class TeacherController {
     }
 
     @RequestMapping("/title/update")
-    public String update(@RequestParam("uploadfile") CommonsMultipartFile file, Title title) {
+    public String update(@RequestParam("uploadfile") CommonsMultipartFile file, Title title,Model model) {
 
         titleService.uploadrws(file, title);
         String tid = SecurityContextHolder.getContext().getAuthentication().getName();
         title.setTid(Integer.valueOf(tid));
         titleService.updateTitleAndRWS(title);
+        model.addAttribute("message", "题目更新成功");
         return "redirect:/tea/title/toTitle";
     }
 
@@ -127,9 +132,10 @@ public class TeacherController {
      * @return
      */
     @RequestMapping("/title/del")
-    public String delete(@RequestParam("id") int id) {
+    public String delete(@RequestParam("id") int id,Model model) {
         //TODO 删除时一起删除文件
         titleService.deleteById(id);
+        model.addAttribute("message", "删除题目成功");
         return "redirect:/tea/title/toTitle";
     }
 
@@ -241,8 +247,8 @@ public class TeacherController {
             }
         }
         weeklyService.studentAddWeekly(weekly);
-
-        return "student_weekly";
+        model.addAttribute("message", "添加周报成功");
+        return "redirect:/tea/title/toTitle";
     }
 
 

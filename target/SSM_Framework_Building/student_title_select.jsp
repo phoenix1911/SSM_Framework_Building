@@ -25,7 +25,18 @@
                                 <th>${title.id}</th>
                                 <th>${title.title}</th>
                                 <th><a href="${path}/tea/title/download?id=${title.id}&type=rws" class="btn btn-info btn-xs">查看任务书</a></th>
-                                <th><a href="${path}/stu/title/TitleSelect?id=${title.id}" class="btn btn-success btn-xs">选题</a></th>
+<%--                                <th>${message}</th>--%>
+
+                                <c:choose>
+                                    <c:when test="${selectstatus=='已选题'}">
+                                        <th>已选题</th>
+                                    </c:when>
+                                    <c:when test="${selectstatus=='未选题'}">
+                                        <th><a href="${path}/stu/title/TitleSelect?id=${title.id}" class="btn btn-success btn-xs">选题</a></th>
+                                    </c:when>
+                                </c:choose>
+
+
                             </tr>
                         </c:forEach>
                         </tbody>
@@ -45,6 +56,11 @@
 <script src="${path}/js/jquery.min.js?v=2.1.4"></script>
 <script src="${path}/js/bootstrap.min.js?v=3.3.6"></script>
 
+<script>
+    <c:if test="${message!=''}">
+    alert("${message}");
+    </c:if>
+</script>
 
 
 <script src="${path}/js/plugins/jeditable/jquery.jeditable.js"></script>

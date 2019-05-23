@@ -106,7 +106,11 @@
 <script src="${path}/js/jquery.min.js?v=2.1.4"></script>
 <script src="${path}/js/bootstrap.min.js?v=3.3.6"></script>
 
-
+<script>
+    <c:if test="${message!=''}">
+    alert("${message}");
+    </c:if>
+</script>
 
 <script src="${path}/js/plugins/jeditable/jquery.jeditable.js"></script>
 

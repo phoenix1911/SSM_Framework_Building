@@ -142,7 +142,7 @@ public class StudentController {
             }
         }
         weeklyService.studentAddWeekly(weekly);
-
+        model.addAttribute("message", "添加周报成功");
         return "student_weekly";
     }
 
@@ -156,6 +156,14 @@ public class StudentController {
     public String toTitleSelect(Model model) {
         List<Title> titleList = titleService.queryNotSelected();
         model.addAttribute("list", titleList);
+
+        String sid = SecurityContextHolder.getContext().getAuthentication().getName();
+        Student student = studentService.queryById(Integer.parseInt(sid));
+        if (student.getPaperid() != null) {
+            model.addAttribute("selectstatus", "当前已选题目");
+        } else {
+            model.addAttribute("selectstatus", "未选题");
+        }
         return "student_title_select";
     }
 
@@ -165,7 +173,7 @@ public class StudentController {
      * @return
      */
     @RequestMapping("/title/TitleSelect")
-    public String titleSelect(@RequestParam("id") int id) {
+    public String titleSelect(@RequestParam("id") int id,Model model) {
         //修改学生表
         int sid = Integer.parseInt(SecurityContextHolder.getContext().getAuthentication().getName());
         Student student = studentService.queryById(sid);
@@ -178,7 +186,9 @@ public class StudentController {
         title.setSid(sid);
         titleService.updateTitle(title);
 
-        return "student_title";
+        model.addAttribute("message","选题成功");
+
+        return "student_title_select";
     }
 
     @RequestMapping("/title/toTitle")
@@ -205,7 +215,7 @@ public class StudentController {
      * @return
      */
     @RequestMapping("/title/upload")
-    public String insertone(@RequestParam("uploadfile") CommonsMultipartFile file,@RequestParam("type") String type) {
+    public String insertone(@RequestParam("uploadfile") CommonsMultipartFile file,@RequestParam("type") String type,Model model) {
 
         //获取学生的题目对象
         Title title = titleService.queryBySid(Integer.parseInt(SecurityContextHolder.getContext().getAuthentication().getName()));
@@ -220,6 +230,7 @@ public class StudentController {
 
                 try {
                     FileUtils.copyInputStreamToFile(file.getInputStream(), destFile);// 复制临时文件到指定目录下
+                    model.addAttribute("message", "开题报告已上传");
                 } catch (IOException e) { e.printStackTrace(); }
             }
             if (("zqbg").equals(type)) {
@@ -231,6 +242,7 @@ public class StudentController {
 
                 try {
                     FileUtils.copyInputStreamToFile(file.getInputStream(), destFile);// 复制临时文件到指定目录下
+                    model.addAttribute("message", "中期报告已上传");
                 } catch (IOException e) { e.printStackTrace(); }
 
             }
@@ -243,6 +255,7 @@ public class StudentController {
 
                 try {
                     FileUtils.copyInputStreamToFile(file.getInputStream(), destFile);// 复制临时文件到指定目录下
+                    model.addAttribute("message", "毕设说明书已上传");
                 } catch (IOException e) { e.printStackTrace(); }
             }
         }

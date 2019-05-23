@@ -163,6 +163,12 @@
 </div>
 
 <!-- 全局js -->
+<script>
+    <c:if test="${message!=''}">
+    alert("${message}");
+    </c:if>
+</script>
+
 <script src="${path}/js/jquery.min.js?v=2.1.4"></script>
 <script src="${path}/js/bootstrap.min.js?v=3.3.6"></script>
 
@@ -177,21 +183,7 @@
 <!-- 自定义js -->
 <script src="${path}/js/content.js?v=1.0.0"></script>
 
-<%--layer插件--%>
-<%--<script src="${path}/js/plugins/layer/layer.min.js"></script>--%>
-<%--<script>--%>
-    <%--$('#upload').on('click', function(){--%>
-        <%--layer.open({--%>
-            <%--type: 2,--%>
-            <%--title: '添加学生',--%>
-            <%--maxmin: true,--%>
-            <%--shadeClose: true, //点击遮罩关闭层--%>
-            <%--area : ['800px' , '520px'],--%>
-            <%--content: '${path}/admin_v2_add.jsp'--%>
-        <%--});--%>
-    <%--});--%>
-<%--</script>--%>
-<!-- 分页插件 -->
+
 <script>
     $(document).ready(function () {
         $('.dataTables-example').dataTable();

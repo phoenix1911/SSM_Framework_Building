@@ -135,7 +135,11 @@
 
     <!-- 自定义js -->
     <script src="js/content.js"></script>
-
+<%--    <script>--%>
+<%--        <c:if test="${message!=''}">--%>
+<%--        alert("${message}");--%>
+<%--        </c:if>--%>
+<%--    </script>--%>
     <!-- 欢迎信息 -->
     <script src="js/welcome.js"></script>
 </body>

@@ -244,7 +244,11 @@
 
     <!-- 第三方插件 -->
     <script src="${path}/js/plugins/pace/pace.min.js"></script>
-
+<%--    <script>--%>
+<%--        <c:if test="${message!=''}">--%>
+<%--        alert("${message}");--%>
+<%--        </c:if>--%>
+<%--    </script>--%>
 </body>
 
 </html>
