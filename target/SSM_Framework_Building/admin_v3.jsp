@@ -38,7 +38,7 @@
                             <th>电话</th>
                             <th>办公地址</th>
                             <th>教师类型</th>
-                            <th>是否上传题目</th>
+<%--                            <th>是否上传题目</th>--%>
                             <th>编辑</th>
 
                         </tr>
@@ -51,7 +51,7 @@
                             <th>${teacher.tphonenumber}</th>
                             <th>${teacher.address}</th>
                             <th>${teacher.type==0?"校内老师":"校外老师"}</th>
-                            <th>${empty teacher.isuploadtopic?"未上传":"已上传"}</th>
+<%--                            <th>${empty teacher.isuploadtopic?"未上传":"已上传"}</th>--%>
                             <th>
                                 <a href="${path}/admin/teacher/toUpdate?tid=${teacher.tid}" class="btn">修改</a>
                                 <a href="${path}/admin/teacher/del?tid=${teacher.tid}" class="btn">删除</a>

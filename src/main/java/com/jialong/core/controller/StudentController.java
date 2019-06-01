@@ -186,11 +186,30 @@ public class StudentController {
 //        Title title = titleService.queryById(id);
         title.setSid(sid);
         titleService.updateTitle(title);
-
         model.addAttribute("message","选题成功");
-
         return "student_title_select";
     }
+    /**
+     * 学生选题 修改学生表
+     * @return
+     */
+    @RequestMapping("/title/TitleCancelSelect")
+    public String titleCancelSelect(Model model) {
+        //修改学生表
+        int sid = Integer.parseInt(SecurityContextHolder.getContext().getAuthentication().getName());
+        Student student = studentService.queryById(sid);
+        Title title = titleService.queryById(student.getPaperid());
+        student.setXntid(null);
+        student.setPaperid(null);
+        studentService.update(student);
+        //修改title表
+//        Title title = titleService.queryById(id);
+        title.setSid(0);
+        titleService.updateTitle(title);
+        model.addAttribute("message","取消选题成功");
+        return "student_title_select";
+    }
+
 
     @RequestMapping("/title/toTitle")
     public String toTitle(Model model) {

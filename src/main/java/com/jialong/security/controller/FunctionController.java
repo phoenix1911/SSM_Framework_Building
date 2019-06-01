@@ -34,4 +34,9 @@ public class FunctionController {
         roleResourceService.updateStuSelectTitle(enabled);
         return "admin_function";
     }
+//    @RequestMapping("stuCancelSelectTitleManage")
+////    public String stuCancelSelectTitleManage(@RequestParam("enabled") int enabled) {
+////        roleResourceService.updateStuSelectTitle(enabled);
+////        return "admin_function";
+////    }
 }
