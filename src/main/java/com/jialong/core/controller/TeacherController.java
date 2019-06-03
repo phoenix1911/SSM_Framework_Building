@@ -223,7 +223,7 @@ public class TeacherController {
 
         weekly.setSessionid(sessionid);
 
-        if (files != null) {
+        if (files[0].getSize() != 0) {
             weekly.setIncludepic(1);
             for (int i = 0; i < files.length; i++) {
                 String origipath= "\\weekly\\" + sessionid + "\\" + l + files[i].getOriginalFilename();

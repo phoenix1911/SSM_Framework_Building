@@ -146,7 +146,7 @@
                                             <textarea name="describe" class="form-control" placeholder="消息内容…"></textarea>
                                         </div>
                                         <div class="form-group" style="margin-bottom: 5px">
-                                            <input  id="file_input" name="uploadfile" type="file" multiple class="form-control" required="" aria-required="true">
+                                            <input  id="file_input" name="uploadfile" type="file" multiple class="form-control"  aria-required="true">
                                         </div>
                                         <div class="form-group" style="margin-bottom: 5px">
 <%--                                            <input  id="scoregrade" name="scoregrade" class="form-control" required="" aria-required="true">--%>
