@@ -263,7 +263,11 @@
     <script src="${path}/js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="${path}/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="${path}/js/plugins/layer/layer.min.js"></script>
-
+<%--    <script>--%>
+<%--        <c:if test="${message!=''}">--%>
+<%--        alert("${message}");--%>
+<%--        </c:if>--%>
+<%--    </script>--%>
     <!-- 自定义js -->
     <script src="${path}/js/hplus.js?v=4.1.0"></script>
     <script src="${path}/js/contabs.js"></script>

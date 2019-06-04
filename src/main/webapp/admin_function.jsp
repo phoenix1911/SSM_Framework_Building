@@ -15,6 +15,11 @@
                         <a href="${path}/function/stuSelectTitleManage?enabled=1" class="btn btn-xs btn-info">启用</a>
                         <a href="${path}/function/stuSelectTitleManage?enabled=0" class="btn btn-xs btn-info">关闭</a>
                     </li>
+<%--                    <li>--%>
+<%--                        <span>学生重新选题功能 状态：${scst==0?"关闭":"开启"}</span>--%>
+<%--                        <a href="${path}/function/stuCancelSelectTitleManage?enabled=1" class="btn btn-xs btn-info">启用</a>--%>
+<%--                        <a href="${path}/function/stuCancelSelectTitleManage?enabled=0" class="btn btn-xs btn-info">关闭</a>--%>
+<%--                    </li>--%>
                 </ul>
             </div>
         </div>
@@ -30,7 +35,11 @@
 <script src="js/jquery.min.js?v=2.1.4"></script>
 <script src="js/bootstrap.min.js?v=3.3.6"></script>
 <script src="js/plugins/layer/layer.min.js"></script>
-
+<%--<script>--%>
+<%--    <c:if test="${message!=''}">--%>
+<%--    alert("${message}");--%>
+<%--    </c:if>--%>
+<%--</script>--%>
 <!-- 自定义js -->
 <script src="js/content.js"></script>
 

@@ -8,10 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--360浏览器优先以webkit内核解析-->
 
 
-    <title>学生界面</title>
+    <title>学生主页</title>
 
     <link rel="shortcut icon" href="${path}/img/favicon.ico">
     <link href="${path}/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
@@ -36,7 +35,7 @@
                     <tr>
                         <th>标题</th>
                         <th>内容</th>
-                        <th>操作</th>
+                        <%--                        <th>操作</th>--%>
                     </tr>
                     </thead>
                     <tbody>
@@ -44,9 +43,9 @@
                         <tr class="gradeX">
                             <th>${adminAnnouncement.title}</th>
                             <th>${adminAnnouncement.describe}</th>
-                            <th>
-                                -
-                            </th>
+                                <%--                            <th>--%>
+                                <%--                                <a href="${path}/admin/announcement/del?id=${adminAnnouncement.id}">删除</a>--%>
+                                <%--                            </th>--%>
                         </tr>
                     </c:forEach>
                     </tbody>
@@ -70,56 +69,39 @@
                 <div class="ibox-content no-padding">
                     <div class="panel-body">
                         <div class="panel-group" id="version">
-                        <c:forEach var="tA" items="${requestScope.get('teacherAnnouncement')}" varStatus="status">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h5 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#version" href="#v${tA.tid+""+tA.id}">${tA.title}</a><code class="pull-right">${tA.date}</code>
-                                    </h5>
-                                </div>
-                                <div id="v${tA.tid+""+tA.id}" class="panel-collapse collapse ">
-                                    <div class="panel-body">
+                            <c:forEach var="tA" items="${requestScope.get('teacherAnnouncement')}" varStatus="status">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#version" href="#v${tA.tid+""+tA.id}">${tA.title}</a> <code class="pull-right"> ${tA.date}</code>
+                                        </h5>
+                                    </div>
+                                    <div id="v${tA.tid+""+tA.id}" class="panel-collapse collapse ">
+                                        <div class="panel-body">
 
                                             <li>${tA.describe}</li>
+                                            <c:choose><c:when test="${tA.f1!=null}"> <a href="${path}/common/download?path=${tA.f1}" >下载附件1</a></c:when></c:choose>
+                                            <c:choose><c:when test="${tA.f2!=null}"> <a href="${path}/common/download?path=${tA.f2}" >下载附件2</a></c:when></c:choose>
+                                            <c:choose><c:when test="${tA.f3!=null}"> <a href="${path}/common/download?path=${tA.f3}" >下载附件3</a></c:when></c:choose>
+                                            <c:choose><c:when test="${tA.f4!=null}"> <a href="${path}/common/download?path=${tA.f4}" >下载附件4</a></c:when></c:choose>
 
-                                        <c:choose>
-                                            <c:when test="${tA.includepic!=0}">
-                                               <li> <img alt="?" style="width: 140px; height: 140px" src="${path}/img/p1.jpg"/></li>
-                                            </c:when>
-                                        </c:choose>
+                                            <c:choose>
+                                                <c:when test="${tA.includepic!=0}">
+                                                    <c:choose><c:when test="${tA.p1!=null}"> <a href="${path}/img${tA.p1}" title="图片" data-gallery=""><img src="${path}/img${tA.p1}" style="height: 120px;width: 120px;"></a></c:when></c:choose>
+                                                    <c:choose><c:when test="${tA.p2!=null}"> <a href="${path}/img${tA.p2}" title="图片" data-gallery=""><img src="${path}/img${tA.p2}" style="height: 120px;width: 120px;"></a></c:when></c:choose>
+                                                    <c:choose><c:when test="${tA.p3!=null}"> <a href="${path}/img${tA.p3}" title="图片" data-gallery=""><img src="${path}/img${tA.p3}" style="height: 120px;width: 120px;"></a></c:when></c:choose>
+                                                    <c:choose><c:when test="${tA.p4!=null}"> <a href="${path}/img${tA.p4}" title="图片" data-gallery=""><img src="${path}/img${tA.p4}" style="height: 120px;width: 120px;"></a></c:when></c:choose>
+                                                    <c:choose><c:when test="${tA.p5!=null}"> <a href="${path}/img${tA.p5}" title="图片" data-gallery=""><img src="${path}/img${tA.p5}" style="height: 120px;width: 120px;"></a></c:when></c:choose>
+                                                </c:when>
+
+                                            </c:choose>
 
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <%--<div class="panel panel-default">--%>
-                                <%--<div class="panel-heading">--%>
-                                    <%--<h5 class="panel-title">--%>
-                                        <%--<a data-toggle="collapse" data-parent="#version" href="#v40">v4.1.0</a><code class="pull-right">2015.10.21</code>--%>
-                                    <%--</h5>--%>
-                                <%--</div>--%>
-                                <%--<div id="v40" class="panel-collapse collapse">--%>
-                                    <%--<div class="panel-body">--%>
-                                        <%--<ol>--%>
-                                            <%--<li>升级bootstrap到最新版本3.3.5；</li>--%>
-                                            <%--<li>升级jquery版本到最新版本2.1.4；</li>--%>
-                                            <%--<li>升级Font Awesome到最新版本4.4.0；</li>--%>
-                                            <%--<li>修复了登录页面的一处错误；</li>--%>
-                                            <%--<li>修复了主页面出现多个滚动条的问题；</li>--%>
-                                            <%--<li>修复了已知的各种浏览器兼容问题；</li>--%>
-                                            <%--<li>修复了layphoto和suggest等页面的显示问题；</li>--%>
-                                            <%--<li>新增Glyphicons字体图标的预览；</li>--%>
-                                            <%--<li>新增对不支持的浏览器的友好提示；</li>--%>
-                                            <%--<li>新增视频/音乐播放器的支持；</li>--%>
-                                            <%--<li>新增Bootstrap Table(推荐)；</li>--%>
-                                            <%--<li>进一步完善了开发文档；</li>--%>
-                                            <%--<li>提供了离线支持，开箱即用；</li>--%>
-                                            <%--<li>对IE系列的浏览器支持更好。</li>--%>
-                                        <%--</ol>--%>
-                                    <%--</div>--%>
-                                <%--</div>--%>
-                            <%--</div>--%>
-                        </c:forEach>
+
+                            </c:forEach>
                         </div>
                     </div>
                 </div>
@@ -129,17 +111,17 @@
 
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>sdafsdaf</h5>
+                    <h5>简介</h5>
                 </div>
                 <div class="ibox-content">
-                    <p>safasdfsdfasfsfasfsd。</p>
-                    <p>wetwettwet：</p>
-                    <ol>
-                        <li>asfsdafsdfasdf</li>
-                        <li>sadfffffffffffffff</li>
-                        <li>ffffffffffffffffff</li>
-                        <li>ffffffffffffffffffffff</li>
-                    </ol>
+                    <p>毕业设计是本科教育的一个重要环节，是锻炼和检验学生专业综合能力的重要途径。毕业设计教学管理中，涉及导师选择、题目拟定、题目审核、开题报告、中期检查、导师指导、毕业答辩等多个环节，因此它是一项系统而复杂的工作。采用传统的毕业设计管理模式，指导教师分配、毕业设计题目审核等工作涉及学生多、信息量大，如不采取信息化的手段进行处理将影响毕业设计管理工作的效率。因此设计毕业设计管理系统具有重要的现实意义。</p>
+                    <%--                    <p>sdafsadfsfsdfsdaf：</p>--%>
+                    <%--                    <ol>--%>
+                    <%--                        <li>dfgdfsgdfgdfgdfgdfgfg</li>--%>
+                    <%--                        <li>dfsgdfgdfgdfgdfgsdfg</li>--%>
+                    <%--                        <li>dfjhkldfgjhkdfgjh</li>--%>
+                    <%--                        <li>ghjklfgjhklhgfjhkllhgfjhk</li>--%>
+                    <%--                    </ol>--%>
                 </div>
             </div>
             <div class="ibox float-e-margins">
@@ -162,7 +144,11 @@
 <script src="${path}/js/jquery.min.js?v=2.1.4"></script>
 <script src="${path}/js/bootstrap.min.js?v=3.3.6"></script>
 <script src="${path}/js/plugins/layer/layer.min.js"></script>
-
+<%--<script>--%>
+<%--    <c:if test="${message!=''}">--%>
+<%--    alert("${message}");--%>
+<%--    </c:if>--%>
+<%--</script>--%>
 <!-- 自定义js -->
 <script src="${path}/js/content.js"></script>
 
@@ -173,4 +159,3 @@
 </html>
 
 
-</html>

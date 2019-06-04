@@ -32,5 +32,4 @@
 
     <link href="${path}/css/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet">
 
-
 </head>

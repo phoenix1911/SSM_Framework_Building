@@ -8,72 +8,964 @@
   <component name="ChangeListManager">
     <list default="true" id="ea8b013f-a4a7-4db2-b6b6-ac63db19ef4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RoleResourceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RoleResourceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/吕梁市矿山环境调查展示系统/XXXX系统任务书.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/吕梁市矿山环境调查展示系统/xxx系统中期报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/吕梁市矿山环境调查展示系统/xxx系统开题报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/吕梁市矿山环境调查展示系统/xxx系统说明书.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/在线考试系统的设计与开发/XXXX系统任务书.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/在线考试系统的设计与开发/xxx系统中期报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/在线考试系统的设计与开发/xxx系统开题报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/在线考试系统的设计与开发/xxx系统说明书.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/太原移动用户数据分析系统的设计与实现/XXXX系统任务书.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/艾斯黛拉看风景ask浪费/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/艾斯黛拉看风景ask浪费/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/艾斯黛拉看风景ask浪费/p.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/艾斯黛拉看风景ask浪费/xxx系统中期报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/艾斯黛拉看风景ask浪费/xxx系统开题报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/艾斯黛拉看风景ask浪费/教师信息模板 (2) (1).xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/艾斯黛拉看风景ask浪费/毕业设计中期检查表-需提交到系统.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/file/title/高校毕业设计管理/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1080000004/15584898075701514010122田家龙.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1080000005/1558608228006" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1080000005/1558608247766" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/weekly/2345345_1080000005/15586086490646.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/weekly/null_1080000001/15584882581481514010122田家龙.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/weekly/null_1080000003/15584884221721514010122田家龙.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/RoleResourceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/RoleResourceMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/UserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/UserRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_function.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_function.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/gfghjkjgh/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/weekly/2345345_1514010122/1553838273869p.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/weekly/2345345_1514010122/1553838273869p.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/weekly/2345345_1514010122/1553838330903p.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/weekly/2345345_1514010122/1553838330903p.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/weekly/2345345_1514010122/p.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/weekly/2345345_1514010122/p.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/吕梁市矿山环境调查展示系统/XXXX系统任务书.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/吕梁市矿山环境调查展示系统/xxx系统中期报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/吕梁市矿山环境调查展示系统/xxx系统开题报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/吕梁市矿山环境调查展示系统/xxx系统说明书.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/在线考试系统的设计与开发/XXXX系统任务书.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/在线考试系统的设计与开发/xxx系统中期报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/在线考试系统的设计与开发/xxx系统开题报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/在线考试系统的设计与开发/xxx系统说明书.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/太原移动用户数据分析系统的设计与实现/XXXX系统任务书.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/艾斯黛拉看风景ask浪费/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/艾斯黛拉看风景ask浪费/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/艾斯黛拉看风景ask浪费/p.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/艾斯黛拉看风景ask浪费/xxx系统中期报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/艾斯黛拉看风景ask浪费/xxx系统开题报告.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/艾斯黛拉看风景ask浪费/教师信息模板 (2) (1).xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/艾斯黛拉看风景ask浪费/毕业设计中期检查表-需提交到系统.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/高校毕业设计/教师信息模板 (2) (1).xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/高校毕业设计管理/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1080000004/15584898075701514010122田家龙.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1080000005/1558608228006" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1080000005/1558608247766" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1080000005/15586086490646.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/null_1080000001/15584882581481514010122田家龙.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/null_1080000003/15584884221721514010122田家龙.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/RoleResourceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/RoleResourceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_Announcement.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_Announcement_add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_function.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_roleresource.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_userrole.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_v1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_v2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_v2_add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_v2_update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_v3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_v3_add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin_v3_update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginerror.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student_index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student_intro.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student_title.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student_title_select.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student_title_upload.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student_weekly.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student_weekly_add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student_weekly_calendar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student_weekly_timeline.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teacher_communicate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teacher_index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teacher_intro.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teacher_title.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teacher_title_add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/teacher_title_update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/Announcement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/AnnouncementExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/AnnouncementExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/AnnouncementExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/AnnouncementExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/StudentExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/StudentExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/StudentExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/StudentExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/TeacherExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/TeacherExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/TeacherExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/TeacherExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/Title.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/TitleExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/TitleExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/TitleExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/TitleExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/UserRoleExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/UserRoleExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/UserRoleExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/UserRoleExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/Weekly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/WeeklyExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/WeeklyExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/WeeklyExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/bean/WeeklyExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/AdminManageStudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/AdminManageTeacherController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/AnnouncementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/CommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/controller/TeacherController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/mapper/AnnouncementMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/mapper/StudentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/mapper/TeacherMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/mapper/TitleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/mapper/UserRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/mapper/WeeklyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/service/AnnouncementService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/service/BaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/service/TeacherService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/service/TitleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/core/service/WeeklyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/redis/JedisUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/redis/RedisCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/redis/SerializeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/Resource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/ResourceExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/ResourceExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/ResourceExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/ResourceExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/RoleExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/RoleExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/RoleExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/RoleExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/RoleResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/RoleResourceExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/RoleResourceExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/RoleResourceExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/RoleResourceExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/UsersExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/UsersExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/UsersExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/bean/UsersExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/controller/FunctionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/controller/RoleResourceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/controller/UserRoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/interceptor/MyAccessDecisionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/interceptor/MyAuthenticationSuccessHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/interceptor/MyFilterSecurityInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/interceptor/MyFilterSecurityMetadataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/interceptor/MyUserDetailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/mapper/ResourceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/mapper/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/mapper/RoleResourceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/mapper/UsersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/service/RoleResourceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/service/UserRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/security/service/UsersService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/test/date.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/test/testfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/testgenerator/bean/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/testgenerator/controller/CountryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/testgenerator/mapper/CountryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/testgenerator/service/CountryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/testssm/bean/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/testssm/bean/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/testssm/controller/CityController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/testssm/mapper/CityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/testssm/service/CityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/com/jialong/testssm/service/serviceImpl/CityServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/AnnouncementMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/CityMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/CountryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/ResourceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/RoleResourceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/TeacherMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/TitleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/UserRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/UsersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mapper/WeeklyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/mybatis-configuration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/spring/applicationContext-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/spring/applicationContext-fileUpload.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/spring/applicationContext-mybatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/spring/applicationContext-redis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/spring/applicationContext-security.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/spring/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/apiguardian-api-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/commons-dbcp-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/commons-fileupload-1.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/commons-logging-1.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/commons-pool-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/commons-pool2-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/druid-1.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/ehcache-core-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/fastjson-1.2.31.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jackson-annotations-2.8.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jackson-core-2.8.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jackson-core-asl-1.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jackson-databind-2.8.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jackson-dataformat-xml-2.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jackson-jaxrs-base-2.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jackson-jaxrs-xml-provider-2.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jackson-mapper-asl-1.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jackson-module-jaxb-annotations-2.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/javaee-api-7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/javax.mail-1.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jedis-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jsqlparser-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/junit-jupiter-api-5.5.0-M1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/junit-platform-commons-1.5.0-M1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/mapper-3.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/mybatis-3.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/mybatis-ehcache-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/mybatis-generator-core-1.3.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/mybatis-spring-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/mysql-connector-java-5.1.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/opentest4j-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/pagehelper-5.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/persistence-api-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/poi-3.10-FINAL.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/poi-ooxml-3.10-FINAL.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/poi-ooxml-schemas-3.10-FINAL.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/slf4j-api-1.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-aop-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-beans-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-context-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-context-support-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-core-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-data-redis-1.6.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-expression-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-jdbc-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-oxm-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-security-config-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-security-core-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-security-web-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-test-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-tx-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/stax-api-1.0-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/stax-api-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/stax2-api-3.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/woodstox-core-asl-4.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/lib/xmlbeans-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement_add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_function.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_roleresource.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_userrole.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2_add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v2_update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/admin_v3_update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/bootstrap-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/demo/webuploader-demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/patterns/header-profile-skin-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/patterns/header-profile-skin-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/patterns/header-profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/patterns/shattered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/css/blueimp-gallery-indicator.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/css/blueimp-gallery-video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/css/blueimp-gallery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/css/blueimp-gallery.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/img/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/img/error.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/img/play-pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/img/play-pause.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/img/video-play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/blueimp/img/video-play.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/bootstrap-table/bootstrap-table.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/chosen/chosen-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/chosen/chosen-sprite@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/chosen/chosen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/clockpicker/clockpicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/codemirror/ambiance.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/colorpicker/img/bootstrap-colorpicker/alpha-horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/colorpicker/img/bootstrap-colorpicker/alpha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/colorpicker/img/bootstrap-colorpicker/hue-horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/colorpicker/img/bootstrap-colorpicker/hue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/colorpicker/img/bootstrap-colorpicker/saturation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/cropper/cropper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/dataTables/dataTables.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/datapicker/datepicker3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/dropzone/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/dropzone/dropzone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/duallistbox/bootstrap-duallistbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/footable/fonts/footable.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/footable/fonts/footable.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/footable/fonts/footable.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/footable/fonts/footable.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/footable/footable.core.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/fullcalendar/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/fullcalendar/fullcalendar.print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/iCheck/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/iCheck/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/iCheck/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/images/sort_asc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/images/sort_desc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/images/sprite-skin-flat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/images/spritemap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/images/spritemap@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/ionRangeSlider/ion.rangeSlider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jQueryUI/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jQueryUI/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jQueryUI/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jQueryUI/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jQueryUI/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jasny/jasny-bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jqgrid/ui.jqgrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jsTree/32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jsTree/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/jsTree/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/markdown/bootstrap-markdown.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/morris/morris-0.4.3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/multiselect/bootstrap-multiselect.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/nouslider/jquery.nouislider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/plyr/plyr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/plyr/sprite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/simditor/simditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/steps/jquery.steps.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/summernote/summernote-bs3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/summernote/summernote.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/sweetalert/sweetalert.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/switchery/switchery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/toastr/toastr.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/treeview/bootstrap-treeview.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/plugins/webuploader/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/demo/allCity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/demo/allCountry.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/demo/allStudent.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/demo/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/demo/insertCity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/demo/testjson.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/demo/updateCity.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1554170592762.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1554170722388.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1554276360546.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1554276485751.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1554276723893.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1554276909051.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1554277004938.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1557220234198.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1557220581267.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1557277547955.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadStu/1557979681349.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadTea/1554276594935.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/admin/uploadTea/1557220679222.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/announcement/1554277685898毕业设计中期检查表-需提交到系统.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/announcement/1554277685905任务书.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/template/StudentTemplate.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/template/TeacherTemplate.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/template/中期报告模板.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/template/任务书模板.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/template/学生信息模板.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/template/开题报告模板.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/template/说明书模板.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/file/title/学习英语标准化考试系统的设计与实现/XXXX系统任务书.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/admin/admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/index_v1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/index_v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/index_v3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/loginerror.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/agile_board.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/badges_labels.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/basic_gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/blueimp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/chat_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/clients.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/code_editor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/css_animation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/diff.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/draggable_panels.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/empty_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/file_manager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/fontawesome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_advanced.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_avatar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_builder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_editors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_file_upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_markdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_simditor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_validate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_webuploader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/form_wizard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/forum_main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/glyphicons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/graph_echarts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/graph_flot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/graph_metrics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/graph_morris.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/graph_peity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/graph_rickshaw.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/graph_sparkline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/grid_options.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/iconfont.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/ie.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/index_v1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/index_v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/index_v3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/index_v4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/index_v5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/invoice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/invoice_print.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/jstree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/layer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/layerdate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/layouts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/lockscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/login_v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/mail_compose.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/mail_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/mailbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/modal_window.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/nestable_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/notifications.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/pin_board.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/plyr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/project_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/search_results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/social_feed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/spinners.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/suggest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/sweetalert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/table_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/table_bootstrap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/table_data_tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/table_foo_table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/table_jqgrid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/tabs_panels.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/teams_board.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/timeline_v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/toastr_notifications.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/tree_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/typography.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/webim.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/temp/widgets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/html/users/users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/a1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/a2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/a3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/a4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/a5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/a6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/a7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/a8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/a9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/1554170592724.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/1554170722381.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/1554171522259.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/1554171522278.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/1554171733380.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/1554172864143.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15541731849971.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15541731850133.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15541731850194.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15541731850245.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15541731850356.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15541735484891.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15541735484952.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15541735485014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15541735485075.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15541735485186.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/1554277466493test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/announcement/15586093012068.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/browser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/browser.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/iconfont-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/index.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/index_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/loading-upload.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/locked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/login-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/p1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/p2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/p3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/p_big1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/p_big2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/p_big3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/profile_big.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/profile_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/sprite-skin-flat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/webuploader.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/1553839654899p.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/1553839654899p.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/1553839907600p.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/1553839907600p.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/1553844327824p.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/1553844327824p.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/1553844396544p.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15538448566541.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15538448566542.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15538448566543.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15538448566544.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15538448566545.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15538448566546.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15538448566547.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15538448566548.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15541022270991.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15541022270995.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/155427885027421.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15542788502748.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/1554278850274f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15542799633125.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15543682113693.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15543694273042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15543694589847.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15578924249847.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15585043938241514010122田家龙.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15585803603211514010122田家龙.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15585810041047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15585810041048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586076406916.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586077414337.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586079553755.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586113136213.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586113136218.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586116100505.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586119623661.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586119623662.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586119623663.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586119623664.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586119623667.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/weekly/2345345_1514010122/15586119623668.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/img/wenku_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/contabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/bootstrap-table-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/bootstrap_table_test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/bootstrap_table_test2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/echarts-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/flot-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/form-advanced-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/form-validate-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/layer-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/morris-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/peity-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/photos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/rickshaw-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/sparkline-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/table_base.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/treeview-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/demo/webuploader-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/hplus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/jquery-ui-1.10.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/jquery-ui.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/beautifyhtml/beautifyhtml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/blueimp/jquery.blueimp-gallery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/bootstrap-table/bootstrap-table.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/chartJs/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/chosen/chosen.jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/clockpicker/clockpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/apl/apl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/apl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/asterisk/asterisk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/asterisk/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/clike/clike.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/clike/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/clike/scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/clojure/clojure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/clojure/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/cobol/cobol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/cobol/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/coffeescript/coffeescript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/coffeescript/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/commonlisp/commonlisp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/commonlisp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/css/css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/css/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/css/less.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/css/less_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/css/scss.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/css/scss_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/css/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/cypher/cypher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/cypher/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/d/d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/d/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/dart/dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/dart/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/diff/diff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/diff/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/django/django.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/django/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/dockerfile/dockerfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/dockerfile/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/dtd/dtd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/dtd/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/dylan/dylan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/dylan/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/ebnf/ebnf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/ebnf/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/ecl/ecl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/ecl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/eiffel/eiffel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/eiffel/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/erlang/erlang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/erlang/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/fortran/fortran.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/fortran/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/gas/gas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/gas/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/gfm/gfm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/gfm/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/gfm/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/gherkin/gherkin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/gherkin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/go/go.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/go/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/groovy/groovy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/groovy/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/haml/haml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/haml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/haml/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/haskell/haskell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/haskell/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/haxe/haxe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/haxe/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/htmlembedded/htmlembedded.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/htmlembedded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/htmlmixed/htmlmixed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/htmlmixed/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/http/http.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/http/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/idl/idl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/idl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/jade/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/jade/jade.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/javascript/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/javascript/javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/javascript/json-ld.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/javascript/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/javascript/typescript.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/jinja2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/jinja2/jinja2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/julia/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/julia/julia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/kotlin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/kotlin/kotlin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/livescript/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/livescript/livescript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/lua/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/lua/lua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/markdown/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/markdown/markdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/markdown/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/meta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/mirc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/mirc/mirc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/mllike/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/mllike/mllike.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/modelica/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/modelica/modelica.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/nginx/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/nginx/nginx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/ntriples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/ntriples/ntriples.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/octave/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/octave/octave.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/pascal/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/pascal/pascal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/pegjs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/pegjs/pegjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/perl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/perl/perl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/php/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/php/php.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/php/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/pig/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/pig/pig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/properties/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/properties/properties.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/puppet/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/puppet/puppet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/python/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/python/python.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/q/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/q/q.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/r/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/r/r.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/rpm/changes/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/rpm/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/rpm/rpm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/rst/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/rst/rst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/ruby/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/ruby/ruby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/ruby/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/rust/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/rust/rust.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/sass/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/sass/sass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/scheme/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/scheme/scheme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/shell/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/shell/shell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/shell/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/sieve/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/sieve/sieve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/slim/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/slim/slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/slim/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/smalltalk/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/smalltalk/smalltalk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/smarty/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/smarty/smarty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/smartymixed/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/smartymixed/smartymixed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/solr/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/solr/solr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/soy/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/soy/soy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/sparql/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/sparql/sparql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/spreadsheet/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/spreadsheet/spreadsheet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/sql/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/sql/sql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/stex/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/stex/stex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/stex/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/tcl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/tcl/tcl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/textile/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/textile/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/textile/textile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/tiddlywiki/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/tiddlywiki/tiddlywiki.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/tiddlywiki/tiddlywiki.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/tiki/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/tiki/tiki.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/tiki/tiki.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/toml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/toml/toml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/tornado/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/tornado/tornado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/turtle/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/turtle/turtle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/vb/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/vb/vb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/vbscript/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/vbscript/vbscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/velocity/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/velocity/velocity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/verilog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/verilog/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/verilog/verilog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/xml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/xml/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/xml/xml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/xquery/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/xquery/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/xquery/xquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/yaml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/yaml/yaml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/z80/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/codemirror/mode/z80/z80.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/colorpicker/bootstrap-colorpicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/cropper/cropper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/dataTables/dataTables.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/dataTables/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/datapicker/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/diff_match_patch/diff_match_patch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/dropzone/dropzone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/duallistbox/jquery.bootstrap-duallistbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/easypiechart/jquery.easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/echarts/echarts-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/fancybox/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/fancybox/fancybox_loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/fancybox/fancybox_loading@2x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/fancybox/fancybox_overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/fancybox/fancybox_sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/fancybox/fancybox_sprite@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/fancybox/jquery.fancybox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/fancybox/jquery.fancybox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/flot/curvedLines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/flot/jquery.flot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/flot/jquery.flot.pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/flot/jquery.flot.resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/flot/jquery.flot.spline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/flot/jquery.flot.symbol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/flot/jquery.flot.tooltip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/footable/footable.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/fullcalendar/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/fullcalendar/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/gritter/images/gritter-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/gritter/images/gritter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/gritter/images/ie-spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/gritter/jquery.gritter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/gritter/jquery.gritter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/iCheck/icheck.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/ionRangeSlider/ion.rangeSlider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/ionRangeSlider/jasny/jasny-bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/jasny/jasny-bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/jeditable/jquery.jeditable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/jqgrid/i18n/grid.locale-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/jqgrid/jquery.jqGrid.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/jquery-ui/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/jsKnob/jquery.knob.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/jsTree/jstree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/jsTree/jstree.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/extend/layer.ext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/laydate/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/laydate/need/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/laydate/skins/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/laydate/skins/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/layer.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/layim/data/chatlog.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/layim/data/friend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/layim/data/group.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/layim/data/groups.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/layim/layim.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/layim/layim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/layim/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/icon_ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/textbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/xubox_ico0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/xubox_loading0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/xubox_loading1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/xubox_loading2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/xubox_loading3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/default/xubox_title0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/layer.ext.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/moon/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/layer/skin/moon/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/markdown/bootstrap-markdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/markdown/bootstrap-markdown.zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/markdown/markdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/markdown/to-markdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/metisMenu/jquery.metisMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/morris/morris.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/morris/raphael-2.1.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/multiselect/bootstrap-multiselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/nestable/jquery.nestable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/nouslider/jquery.nouislider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/pace/pace.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/peity/jquery.peity.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/plyr/plyr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/preetyTextDiff/jquery.pretty-text-diff.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/prettyfile/bootstrap-prettyfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/rickshaw/rickshaw.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/rickshaw/vendor/d3.v3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/simditor/hotkeys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/simditor/hotkeys.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/simditor/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/simditor/module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/simditor/module.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/simditor/simditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/simditor/simditor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/simditor/uploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/simditor/uploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/slimscroll/jquery.slimscroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/sparkline/jquery.sparkline.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/staps/jquery.steps.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/suggest/bootstrap-suggest.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/suggest/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/summernote/summernote-zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/summernote/summernote.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/sweetalert/sweetalert.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/switchery/switchery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/toastr/toastr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/treeview/bootstrap-treeview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/validate/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/validate/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/validate/messages_zh.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/Uploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.fis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.flashonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.flashonly.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.html5only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.html5only.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.noimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.noimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.nolog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.nolog.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.withoutimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/plugins/webuploader/webuploader.withoutimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/js/welcome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/loginerror.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_intro.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_title_upload.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_calendar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/student_weekly_timeline.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_intro.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title_add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title_update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jialong/core/controller/TeacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TeacherMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserRoleMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../ams21882/SSM_Framework_Building/target/" />
@@ -137,19 +1029,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin_Announcement.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RoleResourceMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="47" />
+            <state relative-caret-position="66">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -157,26 +1040,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserRoleMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="99">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RoleResourceMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="2" column="68" lean-forward="true" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
               <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="121" column="84" selection-start-line="121" selection-start-column="70" selection-end-line="121" selection-end-column="84" />
+            <state relative-caret-position="99">
+              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+            <state relative-caret-position="89">
+              <caret line="225" selection-start-line="225" selection-end-line="225" />
               <folding>
                 <element signature="method#toIndex#0;class#TeacherController#0" />
                 <element signature="method#toIntro#0;class#TeacherController#0" />
@@ -188,56 +1089,6 @@
                 <element signature="method#approval#0;class#TeacherController#0" />
                 <element signature="method#toCommunicate#0;class#TeacherController#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v1.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-788">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/service/TitleService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2298#2299#0" expanded="true" />
-                <element signature="e#2351#2352#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/mapper/TitleMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TitleMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7956">
-              <caret line="234" column="2" selection-start-line="234" selection-start-column="2" selection-end-line="234" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -331,7 +1182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyFilterSecurityInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyFilterSecurityMetadataSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyUserDetailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/security/interceptor/MyAccessDecisionManager.java" />
@@ -340,7 +1190,6 @@
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/bean/Teacher.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/mapper/TeacherMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/service/TeacherService.java" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/header.jsp" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/js/myjs.js" />
@@ -382,6 +1231,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserRoleMapper.xml" />
         <option value="$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml" />
       </list>
     </option>
   </component>
@@ -456,21 +1307,6 @@
               <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jialong" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -478,7 +1314,8 @@
               <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
@@ -486,76 +1323,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="weekly" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="weekly" type="462c0819:PsiDirectoryNode" />
-              <item name="2345345_1000000001" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-              <item name="title" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="weekly" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="SSM_Framework_Building" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="weekly" type="462c0819:PsiDirectoryNode" />
-              <item name="2345345_1000000001" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM_Framework_Building" type="b2602c69:ProjectViewProjectNode" />
@@ -582,7 +1349,7 @@
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../poi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -596,23 +1363,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp" />
+      <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\target\SSM_Framework_Building" />
+      <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp\img" />
+      <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\target\SSM_Framework_Building\img" />
+      <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp\js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jialong.core.service" />
+      <recent name="com.jialong.core.controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp" />
       <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp\demo" />
       <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp\file\template" />
       <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp\html" />
       <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp\users" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.jialong.core.service" />
-      <recent name="com.jialong.core.controller" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\target\SSM_Framework_Building" />
-      <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp" />
-      <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp\img" />
-      <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\target\SSM_Framework_Building\img" />
-      <recent name="C:\Users\JiaLong\Documents\IdeaProject\SSM_Framework_Building\src\main\webapp\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1419,7 +2186,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="483265000" />
+    <option name="totallyTimeSpent" value="484254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1431,9 +2198,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="1498" height="1128" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7980769" visible="true" weight="0.23958333" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7980769" visible="true" weight="0.23373677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1444,8 +2212,8 @@
       <window_info id="JRebel" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.12741935" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3415133" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" visible="true" weight="0.44329897" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.9259259" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.94949496" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960032" weight="0.32580644" />
@@ -1574,24 +2342,6 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java</url>
-          <line>225</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java</url>
-          <line>226</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java</url>
-          <line>227</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1600,44 +2350,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/mapper/TeacherMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/service/TeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="40" column="7" selection-start-line="35" selection-start-column="6" selection-end-line="40" selection-end-column="7" />
-          <folding>
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1068#1069#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/js/myjs.js" />
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/js/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_title_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_Announcement_add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -1916,13 +2628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/admin_v1.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-788">
@@ -1937,20 +2642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RoleResourceMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/teacher_communicate.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1958,10 +2649,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin_v3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1155" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/SSM_Framework_Building/student_title_select.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin_v2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student_title_select.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1127" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin_Announcement.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jialong/core/controller/TeacherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+        <state relative-caret-position="89">
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
           <folding>
             <element signature="method#toIndex#0;class#TeacherController#0" />
             <element signature="method#toIntro#0;class#TeacherController#0" />
@@ -1973,6 +2693,34 @@
             <element signature="method#approval#0;class#TeacherController#0" />
             <element signature="method#toCommunicate#0;class#TeacherController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RoleResourceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="68" lean-forward="true" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
         </state>
       </provider>
     </entry>

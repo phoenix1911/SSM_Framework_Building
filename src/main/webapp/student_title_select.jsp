@@ -6,12 +6,11 @@
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>毕业设计列表</h5>
+                    <h5>毕业设计列表 <p style="text-align: right"><a href="${path}/stu/title/TitleCancelSelect" class=" btn btn-success btn-xl">取消当前选题</a></p></h5>
                 </div>
+
                 <div class="ibox-content">
-                    <div class="">
-                        <a href="${path}/tea/title/toAdd" class="btn btn-info" id="upload">添加毕设题目</a>
-                    </div>
+
                     <table class="table table-striped table-bordered table-hover dataTables-example">
                         <thead>
                         <tr>
@@ -27,7 +26,18 @@
                                 <th>${title.id}</th>
                                 <th>${title.title}</th>
                                 <th><a href="${path}/tea/title/download?id=${title.id}&type=rws" class="btn btn-info btn-xs">查看任务书</a></th>
-                                <th><a href="${path}/stu/title/TitleSelect?id=${title.id}" class="btn btn-success btn-xs">选题</a></th>
+<%--                                <th>${message}</th>--%>
+
+                                <c:choose>
+                                    <c:when test="${selectstatus=='当前已选题目'}">
+                                        <th>当前已选题目</th>
+                                    </c:when>
+                                    <c:when test="${selectstatus=='未选题'}">
+                                        <th><a href="${path}/stu/title/TitleSelect?id=${title.id}" class="btn btn-success btn-xs">选题</a></th>
+                                    </c:when>
+                                </c:choose>
+
+
                             </tr>
                         </c:forEach>
                         </tbody>
@@ -47,6 +57,11 @@
 <script src="${path}/js/jquery.min.js?v=2.1.4"></script>
 <script src="${path}/js/bootstrap.min.js?v=3.3.6"></script>
 
+<%--<script>--%>
+<%--    <c:if test="${message!=null}">--%>
+<%--    alert("${message}");--%>
+<%--    </c:if>--%>
+<%--</script>--%>
 
 
 <script src="${path}/js/plugins/jeditable/jquery.jeditable.js"></script>

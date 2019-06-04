@@ -30,7 +30,7 @@
                             <th>
                                 <c:choose>
                                     <c:when test="${title.rwsstate=='已上传'}">
-                                        <a href="${path}/stu/title/download?type=rws" class="btn btn-info btn-xs">查看</a>
+                            <a href="${path}/tea/title/download?id=${title.id}&type=rws" class="btn btn-info btn-xs">查看任务书</a>
                                     </c:when>
                                 </c:choose>
                             </th>
@@ -106,7 +106,11 @@
 <script src="${path}/js/jquery.min.js?v=2.1.4"></script>
 <script src="${path}/js/bootstrap.min.js?v=3.3.6"></script>
 
-
+<script>
+    <c:if test="${message!=null}">
+    alert("${message}");
+    </c:if>
+</script>
 
 <script src="${path}/js/plugins/jeditable/jquery.jeditable.js"></script>
 
